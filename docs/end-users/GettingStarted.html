@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-root="https://fsprojects.github.io/fantomas/">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Florian Verdonck, Jindřich Ivánek, David Schaefer">
+  <title>Getting Started
+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://fsprojects.github.io/fantomas/images/favicon.ico">
+  <link type="text/css" rel="stylesheet" href="https://fsprojects.github.io/fantomas/content/fsdocs-custom.css" />
+  <script type="text/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
+  <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+  <!-- END SEARCH BOX: this adds support for the search box -->
+  
+</head>
+
+<body>
+     <aside class="bg-primary h-100 fs-5">
+      <div id="sidebar-header" class="d-flex justify-content-end mt-1">
+      <button class="btn d-md-none" id="close-mobile-menu" aria-controls="sidebar-wrapper" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="sidebar-toggle fs-3 bi bi-x-lg"></i>
+                  </button>
+              </div>
+      <div id="sidebar-logo" class="d-flex justify-content-center p-5">
+        <a href="https://fsprojects.github.io/fantomas/docs/index.html" ><img id="fsdocs-logo" src="https://fsprojects.github.io/fantomas//images/logo-fantomas-white.svg" /></a>
+      </div>
+      <div id="sidebar-content" class="accordion accordion-flush ps-0 text-white fs-6">
+        <div id="end-users-wrapper" class="accordion-item">
+    <li class="docs-menu">
+        <button id="end-users-button"
+            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#end-users" aria-expanded="false"
+            aria-control="end-users" type="button">
+            End-users
+        </button>
+        <div id="end-users" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
+            <ul class="list-unstyled fw-normal mb-0">
+                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GettingStarted.html" class="nav-link pb-2 d-block" > Getting Started
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/StyleGuide.html" class="nav-link pb-2 d-block" > Style guide
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Configuration.html" class="nav-link pb-2 d-block" > Configuration
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/IgnoreFiles.html" class="nav-link pb-2 d-block" > Ignore Files
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FormattingCheck.html" class="nav-link pb-2 d-block" > Formatting Check
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GitHooks.html" class="nav-link pb-2 d-block" > Git hooks
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/VisualStudio.html" class="nav-link pb-2 d-block" > Visual Studio
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Rider.html" class="nav-link pb-2 d-block" > JetBrains Rider
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/VSCode.html" class="nav-link pb-2 d-block" > Visual Studio Code
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link pb-2 d-block" > Generating source code
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link pb-2 d-block" > FAQ
+</a></li>
+
+            </ul>
+        </div>
+    </li>
+</div>
+<div id="contributors-wrapper" class="accordion-item">
+    <li class="docs-menu">
+        <button id="contributors-button"
+            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#contributors" aria-expanded="false"
+            aria-control="contributors" type="button">
+            Contributors
+        </button>
+        <div id="contributors" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
+            <ul class="list-unstyled fw-normal mb-0">
+                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Index.html" class="nav-link pb-2 d-block" > Contributors
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/FSharp.html" class="nav-link pb-2 d-block" > F#
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Getting Started.html" class="nav-link pb-2 d-block" > Getting started
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Solution Structure.html" class="nav-link pb-2 d-block" > Solution structure
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Prepare Context.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (1)
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Print AST with Context.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (2)
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Formatted Code.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (3)
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Conditional Compilation Directives.html" class="nav-link pb-2 d-block" > Formatting Conditional Compilation Directives
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/How Can I Contribute.html" class="nav-link pb-2 d-block" > How can I contribute?
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/The Missing Comment.html" class="nav-link pb-2 d-block" > The Missing Comment
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Glossary.html" class="nav-link pb-2 d-block" > Glossary
+</a></li>
+
+            </ul>
+        </div>
+    </li>
+</div>
+        <div id="api_reference-wrapper" class="accordion-item">
+    <li class="docs-menu">
+        <button id="api_reference-button"
+            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#api_reference" aria-expanded="false"
+            aria-control="api_reference" type="button">
+            API Reference
+        </button>
+        <div id="api_reference" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
+            <ul class="list-unstyled fw-normal mb-0">
+                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/reference/index.html" class="nav-link pb-2 d-block" > All Namespaces</a></li>
+
+            </ul>
+        </div>
+    </li>
+</div>
+      </div>
+    </aside>
+    <main class="doc-content">
+     <nav class="navbar navbar-expand-sm border py-1">
+        <div class="container-fluid flex-nowrap">
+          <button class="btn" id="toggle-mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="sidebar-toggle fs-3 bi bi-list"></i>
+          </button>
+          <div id="mobile-navbar" class="container-fluid d-flex justify-content-between d-sm-none">
+            <i class="invisible bi bi-github fs-3 align-self-end"></i>
+         <a href="./index.html" ><img id="fsdocs-logo-mobile" width="32" height="32" src="https://fsprojects.github.io/fantomas//images/logo.png" /></a>
+            <a class="nav-link m-0 p-0" target="_blank" href="https://github.com/fsprojects/fantomas/"> <i class="bi bi-github fs-3 align-self-end"></i>
+</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                <a class="nav-link active" aria-current="page" href="https://fsprojects.github.io/fantomas/docs/index.html">Docs</a>
+                <a class="nav-link" target="_blank" href="https://fsprojects.github.io/fantomas-tools/">Tools</a>
+            </div>
+            <form class="d-flex">
+              <div class="input-group me-4">
+              <label for="search-by">
+                <i class="fas fa-search"></i>
+              </label>
+                <div class="btn border-end-0 border">
+                  <i class="bi bi-search"></i>
+                </div>
+                <input aria-label="Search" class="form-control  border-start-0 border" data-search-input=""
+                  id="search-by" type="search" placeholder="Search..." />
+                <span class="input-group-append">
+                </span>
+                <span data-search-clear="">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+            </form>
+            <a class="nav-link m-0 p-0" target="_blank" href="https://github.com/fsprojects/fantomas/">GitHub<i
+                class="bi bi-box-arrow-up-right mx-2"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div id="fsdocs-content" class="bg-white m-2 m-sm-5 p-3 p-sm-4">
+        
+<h1><a name="Getting-Started" class="anchor" href="#Getting-Started">Getting Started</a></h1>
+<p>Fantomas should be installed as a <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">.NET tool</a>.<br />
+It is recommended to install it as a local tool and stick to a certain version per repository.</p>
+<h2><a name="Installation" class="anchor" href="#Installation">Installation</a></h2>
+<p>Create a <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use">.NET tool manifest</a> to install tools locally.
+You can skip this step if you wish to install Fantomas globally.</p>
+<blockquote>
+<p>dotnet new tool-manifest</p>
+</blockquote>
+<p>Install the command line tool with:</p>
+<blockquote>
+<p>dotnet tool install fantomas</p>
+</blockquote>
+<p>or install the tool globally with</p>
+<blockquote>
+<p>dotnet tool install -g fantomas</p>
+</blockquote>
+<h2><a name="Usage" class="anchor" href="#Usage">Usage</a></h2>
+<p>For the overview how to use the tool, you can type the command</p>
+<pre class="fssnip highlighted"><code lang="fsharp"><span class="id">dotnet</span> <span class="id">fantomas</span> <span class="pn">--</span><span class="id">help</span>
+</code></pre>
+<pre class="fssnip highlighted"><code lang="fsharp"><span class="id">USAGE</span><span class="pn">:</span> <span class="id">dotnet</span> <span class="id">fantomas</span> <span class="pn">[</span><span class="o">--</span><span class="id">help</span><span class="pn">]</span> <span class="pn">[</span><span class="o">--</span><span class="id">recurse</span><span class="pn">]</span> <span class="pn">[</span><span class="o">--</span><span class="id">force</span><span class="pn">]</span> <span class="pn">[</span><span class="o">--</span><span class="id">profile</span><span class="pn">]</span> <span class="pn">[</span><span class="o">--</span><span class="id">fsi</span> <span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="id">string</span><span class="pn">&gt;]</span> <span class="pn">[</span><span class="o">--</span><span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="id">stdin</span><span class="pn">]</span> <span class="pn">[</span><span class="o">--</span><span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="id">stdout</span><span class="pn">]</span> <span class="pn">[</span><span class="o">--</span><span class="id">out</span> <span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs1', 4)" onmouseover="showTip(event, 'fs1', 4)" class="id">string</span><span class="pn">&gt;]</span> <span class="pn">[</span><span class="o">--</span><span class="id">check</span><span class="pn">]</span> <span class="pn">[</span><span class="o">--</span><span class="id">daemon</span><span class="pn">]</span> <span class="pn">[</span><span class="o">--</span><span class="id">version</span><span class="pn">]</span> <span class="pn">[&lt;</span><span onmouseout="hideTip(event, 'fs1', 5)" onmouseover="showTip(event, 'fs1', 5)" class="id">string</span><span class="pn">&gt;</span><span class="pn">]</span>
+
+<span class="id">INPUT</span><span class="pn">:</span>
+
+    <span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs1', 6)" onmouseover="showTip(event, 'fs1', 6)" class="id">string</span><span class="pn">&gt;</span>           <span class="id">Input</span> <span class="id">paths</span><span class="pn">:</span> <span class="id">can</span> <span class="id">be</span> <span class="id">multiple</span> <span class="id">folders</span> <span class="k">or</span> <span class="id">files</span> <span class="k">with</span> <span class="o">*.</span><span class="id">fs</span><span class="pn">,</span><span class="o">*.</span><span class="id">fsi</span><span class="pn">,</span><span class="o">*.</span><span class="id">fsx</span><span class="pn">,</span><span class="o">*.</span><span class="id">ml</span><span class="pn">,</span><span class="o">*.</span><span class="id">mli</span> <span class="id">extension</span><span class="pn">.</span>
+
+<span class="id">OPTIONS</span><span class="pn">:</span>
+
+    <span class="o">--</span><span class="id">recurse</span><span class="pn">,</span> <span class="o">-</span><span class="id">r</span>         <span class="id">Process</span> <span class="id">the</span> <span class="id">input</span> <span class="id">folder</span> <span class="id">recursively</span><span class="pn">.</span>
+    <span class="o">--</span><span class="id">force</span>               <span class="id">Print</span> <span class="id">the</span> <span class="id">source</span> <span class="id">unchanged</span> <span class="k">if</span> <span class="id">it</span> <span class="id">cannot</span> <span class="id">be</span> <span class="id">parsed</span> <span class="id">correctly</span><span class="pn">.</span>
+    <span class="o">--</span><span class="id">profile</span>             <span class="id">Print</span> <span class="id">performance</span> <span class="id">profiling</span> <span class="id">information</span><span class="pn">.</span>
+    <span class="o">--</span><span class="id">fsi</span> <span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs1', 7)" onmouseover="showTip(event, 'fs1', 7)" class="id">string</span><span class="pn">&gt;</span>        <span class="id">Read</span> <span class="id">F#</span> <span class="id">source</span> <span class="id">from</span> <span onmouseout="hideTip(event, 'fs2', 8)" onmouseover="showTip(event, 'fs2', 8)" class="id">stdin</span> <span class="k">as</span> <span class="id">F#</span> <span class="id">signatures</span><span class="pn">.</span>
+    <span class="o">--</span><span onmouseout="hideTip(event, 'fs2', 9)" onmouseover="showTip(event, 'fs2', 9)" class="id">stdin</span>               <span class="id">Read</span> <span class="id">F#</span> <span class="id">source</span> <span class="id">from</span> <span class="id">standard</span> <span class="id">input</span><span class="pn">.</span>
+    <span class="o">--</span><span onmouseout="hideTip(event, 'fs3', 10)" onmouseover="showTip(event, 'fs3', 10)" class="id">stdout</span>              <span class="id">Write</span> <span class="id">the</span> <span class="id">formatted</span> <span class="id">source</span> <span class="id">code</span> <span class="k">to</span> <span class="id">standard</span> <span class="id">output</span><span class="pn">.</span>
+    <span class="o">--</span><span class="id">out</span> <span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs1', 11)" onmouseover="showTip(event, 'fs1', 11)" class="id">string</span><span class="pn">&gt;</span>        <span class="id">Give</span> <span class="id">a</span> <span class="id">valid</span> <span class="id">path</span> <span class="k">for</span> <span class="id">files</span><span class="o">/</span><span class="id">folders</span><span class="pn">.</span> <span class="id">Files</span> <span class="id">should</span> <span class="id">have</span> <span class="pn">.</span><span class="id">fs</span><span class="pn">,</span> <span class="pn">.</span><span class="id">fsx</span><span class="pn">,</span> <span class="pn">.</span><span class="id">fsi</span><span class="pn">,</span> <span class="pn">.</span><span class="id">ml</span> <span class="k">or</span> <span class="pn">.</span><span class="id">mli</span> <span class="id">extension</span> <span class="id">only</span><span class="pn">.</span>
+    <span class="o">--</span><span class="id">check</span>               <span class="id">Don&#39;t</span> <span class="id">format</span> <span class="id">files</span><span class="pn">,</span> <span class="id">just</span> <span class="id">check</span> <span class="k">if</span> <span class="id">they</span> <span class="id">have</span> <span class="id">changed</span><span class="pn">.</span> <span class="id">Exits</span> <span class="k">with</span> <span class="n">0</span> <span class="k">if</span> <span class="id">it&#39;s</span> <span class="id">formatted</span> <span class="id">correctly</span><span class="pn">,</span> <span class="k">with</span> <span class="n">1</span> <span class="k">if</span> <span class="id">some</span> <span class="id">files</span> <span class="id">need</span> <span class="id">formatting</span> <span class="k">and</span> <span class="n">99</span> <span class="k">if</span> <span class="id">there</span> <span class="id">was</span> <span class="id">an</span> <span class="k">internal</span> <span class="id">error</span>
+    <span class="o">--</span><span class="id">daemon</span>              <span class="id">Daemon</span> <span class="id">mode</span><span class="pn">,</span> <span class="id">launches</span> <span class="id">an</span> <span class="id">LSP</span><span class="o">-</span><span class="id">like</span> <span class="id">server</span> <span class="k">to</span> <span class="id">can</span> <span class="id">be</span> <span class="id">used</span> <span class="id">by</span> <span class="id">editor</span> <span class="id">tooling</span><span class="pn">.</span>
+    <span class="o">--</span><span class="id">version</span><span class="pn">,</span> <span class="o">-</span><span class="id">v</span>         <span class="id">Displays</span> <span class="id">the</span> <span class="id">version</span> <span class="k">of</span> <span class="id">Fantomas</span>
+    <span class="o">--</span><span class="id">help</span>                <span class="id">display</span> <span class="id">this</span> <span onmouseout="hideTip(event, 'fs4', 12)" onmouseover="showTip(event, 'fs4', 12)" class="id">list</span> <span class="k">of</span> <span class="id">options</span><span class="pn">.</span>
+</code></pre>
+<p>You have to specify an input path and optionally an output path.
+The output path is prompted by <code>--out</code> e.g.</p>
+<pre class="fssnip highlighted"><code lang="fsharp"><span class="id">dotnet</span> <span class="id">fantomas</span> <span class="pn">.</span><span class="o">/</span><span class="id">input</span><span class="o">/</span><span onmouseout="hideTip(event, 'fs5', 13)" onmouseover="showTip(event, 'fs5', 13)" class="id">array</span><span class="pn">.</span><span class="id">fs</span> <span class="o">--</span><span class="id">out</span> <span class="pn">.</span><span class="o">/</span><span class="id">output</span><span class="o">/</span><span onmouseout="hideTip(event, 'fs5', 14)" onmouseover="showTip(event, 'fs5', 14)" class="id">array</span><span class="pn">.</span><span class="id">fs</span> 
+</code></pre>
+<p>Both paths have to be files or folders at the same time.
+If they are folders, the structure of input folder will be reflected in the output one.
+The tool will explore the input folder recursively if you set <code>--recurse</code> option.
+If you omit the output path, Fantomas will overwrite the input files unless the content did not change.</p>
+<h3><a name="Multiple-paths" class="anchor" href="#Multiple-paths">Multiple paths</a></h3>
+<p><em>starting version 4.5</em></p>
+<p>Multiple paths can be passed as last argument, these can be both files and folders.<br />
+This cannot be combined with the <code>--out</code> flag.<br />
+When combined with the <code>--recurse</code> flag, all passed folders will be processed recursively.</p>
+<p>One interesting use-case of passing down multiple paths is that you can easily control the selection and filtering of paths from the current shell.</p>
+<p>Consider the following PowerShell script:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip"><code lang="powershell"># Filter all added and modified files in git
+# A useful function to add to your $PROFILE
+function Format-Changed(){
+    $files = 
+        git status --porcelain `
+        | Where-Object { ($_.StartsWith(" M") -or $_.StartsWith("AM")) `
+        -and (Test-FSharpExtension $_) } | ForEach-Object { $_.substring(3) }
+    &amp; "dotnet" "fantomas" $files
+}
+</code></pre></td></tr></table>
+<p>Or usage with <code>find</code> on Unix:</p>
+<table class="pre"><tr><td class="snippet"><pre class="fssnip"><code lang="bash">find my-project/ -type f -name "*.fs" -not -path "*obj*" | xargs dotnet fantomas --check
+</code></pre></td></tr></table>
+<fantomas-nav previous="../index.html" next="./StyleGuide.html"></fantomas-nav>
+
+        <div class="fsdocs-tip" id="fs1">Multiple items<br />val string: value: &#39;T -&gt; string<br /><em>&lt;summary&gt;Converts the argument to a string using &lt;c&gt;ToString&lt;/c&gt;.&lt;/summary&gt;<br />&lt;remarks&gt;For standard integer and floating point values the and any type that implements &lt;c&gt;IFormattable&lt;/c&gt;&lt;c&gt;ToString&lt;/c&gt; conversion uses &lt;c&gt;CultureInfo.InvariantCulture&lt;/c&gt;. &lt;/remarks&gt;<br />&lt;param name=&quot;value&quot;&gt;The input value.&lt;/param&gt;<br />&lt;returns&gt;The converted string.&lt;/returns&gt;<br />&lt;example id=&quot;string-example&quot;&gt;&lt;code lang=&quot;fsharp&quot;&gt;&lt;/code&gt;&lt;/example&gt;</em><br /><br />--------------------<br />type string = System.String<br /><em>&lt;summary&gt;An abbreviation for the CLI type &lt;see cref=&quot;T:System.String&quot; /&gt;.&lt;/summary&gt;<br />&lt;category&gt;Basic Types&lt;/category&gt;</em></div>
+<div class="fsdocs-tip" id="fs2">val stdin&lt;&#39;T&gt; : System.IO.TextReader<br /><em>&lt;summary&gt;Reads the value of the property &lt;see cref=&quot;P:System.Console.In&quot; /&gt;. &lt;/summary&gt;</em></div>
+<div class="fsdocs-tip" id="fs3">val stdout&lt;&#39;T&gt; : System.IO.TextWriter<br /><em>&lt;summary&gt;Reads the value of the property &lt;see cref=&quot;P:System.Console.Out&quot; /&gt;.&lt;/summary&gt;</em></div>
+<div class="fsdocs-tip" id="fs4">type &#39;T list = List&lt;&#39;T&gt;<br /><em>&lt;summary&gt;The type of immutable singly-linked lists. &lt;/summary&gt;<br />&lt;remarks&gt;See the &lt;see cref=&quot;T:Microsoft.FSharp.Collections.ListModule&quot; /&gt; module for further operations related to lists.
+
+ Use the constructors &lt;c&gt;[]&lt;/c&gt; and &lt;c&gt;::&lt;/c&gt; (infix) to create values of this type, or
+ the notation &lt;c&gt;[1; 2; 3]&lt;/c&gt;. Use the values in the &lt;c&gt;List&lt;/c&gt; module to manipulate 
+ values of this type, or pattern match against the values directly.
+
+  See also &lt;a href=&quot;https://docs.microsoft.com/dotnet/fsharp/language-reference/lists&quot;&gt;F# Language Guide - Lists&lt;/a&gt;.
+ &lt;/remarks&gt;</em></div>
+<div class="fsdocs-tip" id="fs5">type &#39;T array = &#39;T[]<br /><em>&lt;summary&gt;Single dimensional, zero-based arrays, written &lt;c&gt;int[]&lt;/c&gt;, &lt;c&gt;string[]&lt;/c&gt; etc.&lt;/summary&gt;<br />&lt;remarks&gt;Use the values in the &lt;see cref=&quot;T:Microsoft.FSharp.Collections.ArrayModule&quot; /&gt; module to manipulate values 
+ of this type, or the notation &lt;c&gt;arr.[x]&lt;/c&gt; to get/set array
+ values.&lt;/remarks&gt;<br />&lt;category&gt;Basic Types&lt;/category&gt;</em></div>
+
+      </div>
+        <div id="push"></div>
+    </main>
+  <script type="module" src="https://fsprojects.github.io/fantomas/content/docs-setup.js"></script>
+  <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+  <script type="text/javascript">var fsdocs_search_baseurl = 'https://fsprojects.github.io/fantomas/';</script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+  <script type="text/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
+  <!-- END SEARCH BOX: this adds support for the search box -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script type="module" src="https://fsprojects.github.io/fantomas/content/webcomponents.js"></script>
+  <script type="module">
+      import mermaid from "https://cdn.skypack.dev/mermaid";
+      mermaid.initialize({
+          startOnLoad: true,
+          theme: "base",
+          themeVariables: {
+              primaryColor: '#eff5f7'
+          }
+      });
+  </script>
+</body>
+</html>
