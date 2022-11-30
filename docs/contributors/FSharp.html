@@ -123,6 +123,9 @@
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
 </a></li>
 
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link pb-2 d-block" > Releases
+</a></li>
+
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Glossary.html" class="nav-link pb-2 d-block" > Glossary
 </a></li>
 
@@ -302,28 +305,17 @@ These events are used to achieve this.</p>
 <fantomas-nav previous="./index.html" next="./Getting%20Started.html"></fantomas-nav>
 
         <div class="fsdocs-tip" id="fs1">active recognizer For: &#39;a -&gt; &#39;b option</div>
-<div class="fsdocs-tip" id="fs2">type &#39;T option = Option&lt;&#39;T&gt;<br /><em>&lt;summary&gt;The type of optional values. When used from other CLI languages the
- empty option is the &lt;c&gt;null&lt;/c&gt; value. &lt;/summary&gt;<br />&lt;remarks&gt;Use the constructors &lt;c&gt;Some&lt;/c&gt; and &lt;c&gt;None&lt;/c&gt; to create values of this type.
- Use the values in the &lt;c&gt;Option&lt;/c&gt; module to manipulate values of this type,
- or pattern match against the values directly.
-
- &#39;None&#39; values will appear as the value &lt;c&gt;null&lt;/c&gt; to other CLI languages.
- Instance methods on this type will appear as static methods to other CLI languages
- due to the use of &lt;c&gt;null&lt;/c&gt; as a value representation.&lt;/remarks&gt;<br />&lt;category index=&quot;3&quot;&gt;Options&lt;/category&gt;</em></div>
-<div class="fsdocs-tip" id="fs3">[&lt;Struct&gt;]
-type bool = System.Boolean<br /><em>&lt;summary&gt;An abbreviation for the CLI type &lt;see cref=&quot;T:System.Boolean&quot; /&gt;.&lt;/summary&gt;<br />&lt;category&gt;Basic Types&lt;/category&gt;</em></div>
+<div class="fsdocs-tip" id="fs2">type &#39;T option = Option&lt;&#39;T&gt;</div>
+<div class="fsdocs-tip" id="fs3">type bool = System.Boolean</div>
 <div class="fsdocs-tip" id="fs4">type SynExpr =
   member FullRange: obj</div>
-<div class="fsdocs-tip" id="fs5">union case Option.Some: Value: &#39;T -&gt; Option&lt;&#39;T&gt;<br /><em>&lt;summary&gt;The representation of &quot;Value of type &#39;T&quot;&lt;/summary&gt;<br />&lt;param name=&quot;Value&quot;&gt;The input value.&lt;/param&gt;<br />&lt;returns&gt;An option representing the value.&lt;/returns&gt;</em></div>
-<div class="fsdocs-tip" id="fs6">union case Option.None: Option&lt;&#39;T&gt;<br /><em>&lt;summary&gt;The representation of &quot;No value&quot;&lt;/summary&gt;</em></div>
+<div class="fsdocs-tip" id="fs5">union case Option.Some: Value: &#39;T -&gt; Option&lt;&#39;T&gt;</div>
+<div class="fsdocs-tip" id="fs6">union case Option.None: Option&lt;&#39;T&gt;</div>
 <div class="fsdocs-tip" id="fs7">val memberFlags: SynExpr</div>
 <div class="fsdocs-tip" id="fs8">module Option
 
-from Microsoft.FSharp.Core<br /><em>&lt;summary&gt;Contains operations for working with options.&lt;/summary&gt;<br />&lt;category&gt;Options&lt;/category&gt;</em></div>
-<div class="fsdocs-tip" id="fs9">val toList: option: &#39;T option -&gt; &#39;T list<br /><em>&lt;summary&gt;Convert the option to a list of length 0 or 1.&lt;/summary&gt;<br />&lt;param name=&quot;option&quot;&gt;The input option.&lt;/param&gt;<br />&lt;returns&gt;The result list.&lt;/returns&gt;<br />&lt;example id=&quot;toList-1&quot;&gt;&lt;code lang=&quot;fsharp&quot;&gt;
- (None: int option) |&amp;gt; Option.toList // evaluates to []
- Some 42 |&amp;gt; Option.toList // evaluates to [42]
- &lt;/code&gt;&lt;/example&gt;</em></div>
+from Microsoft.FSharp.Core</div>
+<div class="fsdocs-tip" id="fs9">val toList: option: &#39;T option -&gt; &#39;T list</div>
 
       </div>
         <div id="push"></div>
