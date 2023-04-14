@@ -72,6 +72,9 @@
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link pb-2 d-block" > Generating source code
 </a></li>
 
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link pb-2 d-block" > Upgrade guide
+</a></li>
+
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link pb-2 d-block" > FAQ
 </a></li>
 
@@ -120,6 +123,9 @@
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link pb-2 d-block" > Updating the compiler sources
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link pb-2 d-block" > Releases
@@ -249,7 +255,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5157', 5157)" onmouseover="showTip(event, '5157', 5157)">
+              <code onmouseout="hideTip(event, '5200', 5200)" onmouseover="showTip(event, '5200', 5200)">
                 <p>
                   <a id="``.ctor``">
                     <a href="#``.ctor``">
@@ -258,7 +264,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5157">
+              <div class="fsdocs-tip" id="5200">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ILTypeDef<span><span>(<span>name,&#32;attributes,&#32;layout,&#32;implements,&#32;genericParams,&#32;extends,&#32;methods,&#32;nestedTypes,&#32;fields,&#32;methodImpls,&#32;events,&#32;properties,&#32;isKnownToBeAttribute,&#32;securityDecls,&#32;customAttrs</span>)</span></span></span></code>
@@ -279,7 +285,7 @@
                         attributes
                       </b>
                       :
-                      <code><a href="https://docs.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
+                      <code><a href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
                     </span>
                     <br/>
                     <span>
@@ -398,162 +404,166 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.#ctor`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.#ctor\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.#ctor`')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                  </div>
+                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.#ctor\'/>')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                  </div>
+                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                  </a>
+                  <p class="fsdocs-summary">
+                    
  Functional creation of a value, immediate
 
-              </p>
-            </div>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  name
-                </span>
-                :
-                <code>string</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  attributes
-                </span>
-                :
-                <code><a href="https://docs.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  layout
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedeflayout.html">ILTypeDefLayout</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  implements
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypes.html">ILTypes</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  genericParams
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilgenericparameterdefs.html">ILGenericParameterDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  extends
-                </span>
-                :
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltype.html">ILType</a>&#32;option</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  methods
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethoddefs.html">ILMethodDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  nestedTypes
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedefs.html">ILTypeDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  fields
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilfielddefs.html">ILFieldDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  methodImpls
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethodimpldefs.html">ILMethodImplDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  events
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ileventdefs.html">ILEventDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  properties
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilpropertydefs.html">ILPropertyDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  isKnownToBeAttribute
-                </span>
-                :
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  securityDecls
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilsecuritydecls.html">ILSecurityDecls</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  customAttrs
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilattributes.html">ILAttributes</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedef.html">ILTypeDef</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+                  </p>
+                </div>
+              </summary>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    name
+                  </span>
+                  :
+                  <code>string</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    attributes
+                  </span>
+                  :
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    layout
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedeflayout.html">ILTypeDefLayout</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    implements
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypes.html">ILTypes</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    genericParams
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilgenericparameterdefs.html">ILGenericParameterDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    extends
+                  </span>
+                  :
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltype.html">ILType</a>&#32;option</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    methods
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethoddefs.html">ILMethodDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    nestedTypes
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedefs.html">ILTypeDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    fields
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilfielddefs.html">ILFieldDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    methodImpls
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethodimpldefs.html">ILMethodImplDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    events
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ileventdefs.html">ILEventDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    properties
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilpropertydefs.html">ILPropertyDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    isKnownToBeAttribute
+                  </span>
+                  :
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    securityDecls
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilsecuritydecls.html">ILSecurityDecls</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    customAttrs
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilattributes.html">ILAttributes</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedef.html">ILTypeDef</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </details>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5158', 5158)" onmouseover="showTip(event, '5158', 5158)">
+              <code onmouseout="hideTip(event, '5201', 5201)" onmouseover="showTip(event, '5201', 5201)">
                 <p>
                   <a id="``.ctor``">
                     <a href="#``.ctor``">
@@ -562,7 +572,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5158">
+              <div class="fsdocs-tip" id="5201">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ILTypeDef<span><span>(<span>name,&#32;attributes,&#32;layout,&#32;implements,&#32;genericParams,&#32;extends,&#32;methods,&#32;nestedTypes,&#32;fields,&#32;methodImpls,&#32;events,&#32;properties,&#32;isKnownToBeAttribute,&#32;securityDeclsStored,&#32;customAttrsStored,&#32;metadataIndex</span>)</span></span></span></code>
@@ -583,7 +593,7 @@
                         attributes
                       </b>
                       :
-                      <code><a href="https://docs.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
+                      <code><a href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
                     </span>
                     <br/>
                     <span>
@@ -710,164 +720,168 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.#ctor`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.#ctor\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.#ctor`')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                  </div>
+                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.#ctor\'/>')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                  </div>
+                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                  </a>
+                  <p class="fsdocs-summary">
+                    
  Functional creation of a value, using delayed reading via a metadata index, for ilread.fs
 
-              </p>
-            </div>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  name
-                </span>
-                :
-                <code>string</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  attributes
-                </span>
-                :
-                <code><a href="https://docs.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  layout
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedeflayout.html">ILTypeDefLayout</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  implements
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypes.html">ILTypes</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  genericParams
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilgenericparameterdefs.html">ILGenericParameterDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  extends
-                </span>
-                :
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltype.html">ILType</a>&#32;option</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  methods
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethoddefs.html">ILMethodDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  nestedTypes
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedefs.html">ILTypeDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  fields
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilfielddefs.html">ILFieldDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  methodImpls
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethodimpldefs.html">ILMethodImplDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  events
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ileventdefs.html">ILEventDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  properties
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilpropertydefs.html">ILPropertyDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  isKnownToBeAttribute
-                </span>
-                :
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  securityDeclsStored
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilsecuritydeclsstored.html">ILSecurityDeclsStored</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  customAttrsStored
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilattributesstored.html">ILAttributesStored</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  metadataIndex
-                </span>
-                :
-                <code>int32</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedef.html">ILTypeDef</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+                  </p>
+                </div>
+              </summary>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    name
+                  </span>
+                  :
+                  <code>string</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    attributes
+                  </span>
+                  :
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    layout
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedeflayout.html">ILTypeDefLayout</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    implements
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypes.html">ILTypes</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    genericParams
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilgenericparameterdefs.html">ILGenericParameterDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    extends
+                  </span>
+                  :
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltype.html">ILType</a>&#32;option</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    methods
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethoddefs.html">ILMethodDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    nestedTypes
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedefs.html">ILTypeDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    fields
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilfielddefs.html">ILFieldDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    methodImpls
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethodimpldefs.html">ILMethodImplDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    events
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ileventdefs.html">ILEventDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    properties
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilpropertydefs.html">ILPropertyDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    isKnownToBeAttribute
+                  </span>
+                  :
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    securityDeclsStored
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilsecuritydeclsstored.html">ILSecurityDeclsStored</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    customAttrsStored
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilattributesstored.html">ILAttributesStored</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    metadataIndex
+                  </span>
+                  :
+                  <code>int32</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedef.html">ILTypeDef</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </details>
           </td>
         </tr>
       </tbody>
@@ -892,7 +906,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5159', 5159)" onmouseover="showTip(event, '5159', 5159)">
+              <code onmouseout="hideTip(event, '5202', 5202)" onmouseover="showTip(event, '5202', 5202)">
                 <p>
                   <a id="Access">
                     <a href="#Access">
@@ -901,7 +915,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5159">
+              <div class="fsdocs-tip" id="5202">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Access</span></code>
@@ -917,23 +931,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Access`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Access\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -948,7 +945,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5160', 5160)" onmouseover="showTip(event, '5160', 5160)">
+              <code onmouseout="hideTip(event, '5203', 5203)" onmouseover="showTip(event, '5203', 5203)">
                 <p>
                   <a id="Attributes">
                     <a href="#Attributes">
@@ -957,7 +954,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5160">
+              <div class="fsdocs-tip" id="5203">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Attributes</span></code>
@@ -965,7 +962,7 @@
                   <br/>
                   <span>
                     Returns: 
-                    <code><a href="https://docs.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
+                    <code><a href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
                   </span>
                   <br/>
                 </div>
@@ -973,29 +970,12 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Attributes`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Attributes\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><a href="https://docs.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -1004,7 +984,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5161', 5161)" onmouseover="showTip(event, '5161', 5161)">
+              <code onmouseout="hideTip(event, '5204', 5204)" onmouseover="showTip(event, '5204', 5204)">
                 <p>
                   <a id="CustomAttrs">
                     <a href="#CustomAttrs">
@@ -1013,7 +993,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5161">
+              <div class="fsdocs-tip" id="5204">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.CustomAttrs</span></code>
@@ -1029,23 +1009,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.CustomAttrs`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.CustomAttrs\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1060,7 +1023,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5162', 5162)" onmouseover="showTip(event, '5162', 5162)">
+              <code onmouseout="hideTip(event, '5205', 5205)" onmouseover="showTip(event, '5205', 5205)">
                 <p>
                   <a id="Encoding">
                     <a href="#Encoding">
@@ -1069,7 +1032,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5162">
+              <div class="fsdocs-tip" id="5205">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Encoding</span></code>
@@ -1085,23 +1048,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Encoding`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Encoding\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1116,7 +1062,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5163', 5163)" onmouseover="showTip(event, '5163', 5163)">
+              <code onmouseout="hideTip(event, '5206', 5206)" onmouseover="showTip(event, '5206', 5206)">
                 <p>
                   <a id="Events">
                     <a href="#Events">
@@ -1125,7 +1071,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5163">
+              <div class="fsdocs-tip" id="5206">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Events</span></code>
@@ -1141,23 +1087,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Events`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Events\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1172,7 +1101,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5164', 5164)" onmouseover="showTip(event, '5164', 5164)">
+              <code onmouseout="hideTip(event, '5207', 5207)" onmouseover="showTip(event, '5207', 5207)">
                 <p>
                   <a id="Extends">
                     <a href="#Extends">
@@ -1181,7 +1110,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5164">
+              <div class="fsdocs-tip" id="5207">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Extends</span></code>
@@ -1197,23 +1126,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Extends`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Extends\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1228,7 +1140,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5165', 5165)" onmouseover="showTip(event, '5165', 5165)">
+              <code onmouseout="hideTip(event, '5208', 5208)" onmouseover="showTip(event, '5208', 5208)">
                 <p>
                   <a id="Fields">
                     <a href="#Fields">
@@ -1237,7 +1149,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5165">
+              <div class="fsdocs-tip" id="5208">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Fields</span></code>
@@ -1253,23 +1165,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Fields`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Fields\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1284,7 +1179,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5166', 5166)" onmouseover="showTip(event, '5166', 5166)">
+              <code onmouseout="hideTip(event, '5209', 5209)" onmouseover="showTip(event, '5209', 5209)">
                 <p>
                   <a id="GenericParams">
                     <a href="#GenericParams">
@@ -1293,7 +1188,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5166">
+              <div class="fsdocs-tip" id="5209">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.GenericParams</span></code>
@@ -1309,23 +1204,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.GenericParams`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.GenericParams\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1340,7 +1218,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5167', 5167)" onmouseover="showTip(event, '5167', 5167)">
+              <code onmouseout="hideTip(event, '5210', 5210)" onmouseover="showTip(event, '5210', 5210)">
                 <p>
                   <a id="HasSecurity">
                     <a href="#HasSecurity">
@@ -1349,7 +1227,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5167">
+              <div class="fsdocs-tip" id="5210">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.HasSecurity</span></code>
@@ -1365,41 +1243,45 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.HasSecurity`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.HasSecurity\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.HasSecurity`')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                  </div>
+                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.HasSecurity\'/>')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                  </div>
+                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                  </a>
+                  <p class="fsdocs-summary">
+                    
  Some classes are marked "HasSecurity" even if there are no permissions attached,
  e.g. if they use SuppressUnmanagedCodeSecurityAttribute
 
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+                  </p>
+                </div>
+              </summary>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </details>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5168', 5168)" onmouseover="showTip(event, '5168', 5168)">
+              <code onmouseout="hideTip(event, '5211', 5211)" onmouseover="showTip(event, '5211', 5211)">
                 <p>
                   <a id="Implements">
                     <a href="#Implements">
@@ -1408,7 +1290,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5168">
+              <div class="fsdocs-tip" id="5211">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Implements</span></code>
@@ -1424,23 +1306,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Implements`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Implements\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1455,7 +1320,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5169', 5169)" onmouseover="showTip(event, '5169', 5169)">
+              <code onmouseout="hideTip(event, '5212', 5212)" onmouseover="showTip(event, '5212', 5212)">
                 <p>
                   <a id="IsAbstract">
                     <a href="#IsAbstract">
@@ -1464,7 +1329,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5169">
+              <div class="fsdocs-tip" id="5212">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsAbstract</span></code>
@@ -1480,23 +1345,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsAbstract`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsAbstract\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1511,7 +1359,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5170', 5170)" onmouseover="showTip(event, '5170', 5170)">
+              <code onmouseout="hideTip(event, '5213', 5213)" onmouseover="showTip(event, '5213', 5213)">
                 <p>
                   <a id="IsClass">
                     <a href="#IsClass">
@@ -1520,7 +1368,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5170">
+              <div class="fsdocs-tip" id="5213">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsClass</span></code>
@@ -1536,23 +1384,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsClass`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsClass\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1567,7 +1398,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5171', 5171)" onmouseover="showTip(event, '5171', 5171)">
+              <code onmouseout="hideTip(event, '5214', 5214)" onmouseover="showTip(event, '5214', 5214)">
                 <p>
                   <a id="IsComInterop">
                     <a href="#IsComInterop">
@@ -1576,7 +1407,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5171">
+              <div class="fsdocs-tip" id="5214">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsComInterop</span></code>
@@ -1592,40 +1423,44 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsComInterop`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsComInterop\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsComInterop`')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                  </div>
+                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsComInterop\'/>')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                  </div>
+                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                  </a>
+                  <p class="fsdocs-summary">
+                    
  Class or interface generated for COM interop.
 
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+                  </p>
+                </div>
+              </summary>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </details>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5172', 5172)" onmouseover="showTip(event, '5172', 5172)">
+              <code onmouseout="hideTip(event, '5215', 5215)" onmouseover="showTip(event, '5215', 5215)">
                 <p>
                   <a id="IsDelegate">
                     <a href="#IsDelegate">
@@ -1634,7 +1469,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5172">
+              <div class="fsdocs-tip" id="5215">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsDelegate</span></code>
@@ -1650,23 +1485,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsDelegate`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsDelegate\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1681,7 +1499,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5173', 5173)" onmouseover="showTip(event, '5173', 5173)">
+              <code onmouseout="hideTip(event, '5216', 5216)" onmouseover="showTip(event, '5216', 5216)">
                 <p>
                   <a id="IsEnum">
                     <a href="#IsEnum">
@@ -1690,7 +1508,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5173">
+              <div class="fsdocs-tip" id="5216">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsEnum</span></code>
@@ -1706,23 +1524,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsEnum`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsEnum\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1737,7 +1538,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5174', 5174)" onmouseover="showTip(event, '5174', 5174)">
+              <code onmouseout="hideTip(event, '5217', 5217)" onmouseover="showTip(event, '5217', 5217)">
                 <p>
                   <a id="IsInterface">
                     <a href="#IsInterface">
@@ -1746,7 +1547,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5174">
+              <div class="fsdocs-tip" id="5217">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsInterface</span></code>
@@ -1762,23 +1563,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsInterface`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsInterface\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1793,7 +1577,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5175', 5175)" onmouseover="showTip(event, '5175', 5175)">
+              <code onmouseout="hideTip(event, '5218', 5218)" onmouseover="showTip(event, '5218', 5218)">
                 <p>
                   <a id="IsKnownToBeAttribute">
                     <a href="#IsKnownToBeAttribute">
@@ -1802,7 +1586,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5175">
+              <div class="fsdocs-tip" id="5218">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsKnownToBeAttribute</span></code>
@@ -1818,23 +1602,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsKnownToBeAttribute`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsKnownToBeAttribute\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1849,7 +1616,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5176', 5176)" onmouseover="showTip(event, '5176', 5176)">
+              <code onmouseout="hideTip(event, '5219', 5219)" onmouseover="showTip(event, '5219', 5219)">
                 <p>
                   <a id="IsSealed">
                     <a href="#IsSealed">
@@ -1858,7 +1625,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5176">
+              <div class="fsdocs-tip" id="5219">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsSealed</span></code>
@@ -1874,23 +1641,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsSealed`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsSealed\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1905,7 +1655,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5177', 5177)" onmouseover="showTip(event, '5177', 5177)">
+              <code onmouseout="hideTip(event, '5220', 5220)" onmouseover="showTip(event, '5220', 5220)">
                 <p>
                   <a id="IsSerializable">
                     <a href="#IsSerializable">
@@ -1914,7 +1664,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5177">
+              <div class="fsdocs-tip" id="5220">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsSerializable</span></code>
@@ -1930,23 +1680,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsSerializable`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsSerializable\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -1961,7 +1694,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5178', 5178)" onmouseover="showTip(event, '5178', 5178)">
+              <code onmouseout="hideTip(event, '5221', 5221)" onmouseover="showTip(event, '5221', 5221)">
                 <p>
                   <a id="IsSpecialName">
                     <a href="#IsSpecialName">
@@ -1970,7 +1703,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5178">
+              <div class="fsdocs-tip" id="5221">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsSpecialName</span></code>
@@ -1986,23 +1719,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsSpecialName`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsSpecialName\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2017,7 +1733,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5179', 5179)" onmouseover="showTip(event, '5179', 5179)">
+              <code onmouseout="hideTip(event, '5222', 5222)" onmouseover="showTip(event, '5222', 5222)">
                 <p>
                   <a id="IsStruct">
                     <a href="#IsStruct">
@@ -2026,7 +1742,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5179">
+              <div class="fsdocs-tip" id="5222">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsStruct</span></code>
@@ -2042,23 +1758,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsStruct`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsStruct\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2073,7 +1772,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5180', 5180)" onmouseover="showTip(event, '5180', 5180)">
+              <code onmouseout="hideTip(event, '5223', 5223)" onmouseover="showTip(event, '5223', 5223)">
                 <p>
                   <a id="IsStructOrEnum">
                     <a href="#IsStructOrEnum">
@@ -2082,7 +1781,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5180">
+              <div class="fsdocs-tip" id="5223">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsStructOrEnum</span></code>
@@ -2098,23 +1797,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsStructOrEnum`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.IsStructOrEnum\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2129,7 +1811,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5181', 5181)" onmouseover="showTip(event, '5181', 5181)">
+              <code onmouseout="hideTip(event, '5224', 5224)" onmouseover="showTip(event, '5224', 5224)">
                 <p>
                   <a id="Layout">
                     <a href="#Layout">
@@ -2138,7 +1820,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5181">
+              <div class="fsdocs-tip" id="5224">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Layout</span></code>
@@ -2154,23 +1836,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Layout`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Layout\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2185,7 +1850,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5182', 5182)" onmouseover="showTip(event, '5182', 5182)">
+              <code onmouseout="hideTip(event, '5225', 5225)" onmouseover="showTip(event, '5225', 5225)">
                 <p>
                   <a id="MethodImpls">
                     <a href="#MethodImpls">
@@ -2194,7 +1859,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5182">
+              <div class="fsdocs-tip" id="5225">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.MethodImpls</span></code>
@@ -2210,23 +1875,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.MethodImpls`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.MethodImpls\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2241,7 +1889,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5183', 5183)" onmouseover="showTip(event, '5183', 5183)">
+              <code onmouseout="hideTip(event, '5226', 5226)" onmouseover="showTip(event, '5226', 5226)">
                 <p>
                   <a id="Methods">
                     <a href="#Methods">
@@ -2250,7 +1898,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5183">
+              <div class="fsdocs-tip" id="5226">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Methods</span></code>
@@ -2266,23 +1914,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Methods`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Methods\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2297,7 +1928,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5184', 5184)" onmouseover="showTip(event, '5184', 5184)">
+              <code onmouseout="hideTip(event, '5227', 5227)" onmouseover="showTip(event, '5227', 5227)">
                 <p>
                   <a id="Name">
                     <a href="#Name">
@@ -2306,7 +1937,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5184">
+              <div class="fsdocs-tip" id="5227">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Name</span></code>
@@ -2322,23 +1953,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Name`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Name\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2353,7 +1967,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5185', 5185)" onmouseover="showTip(event, '5185', 5185)">
+              <code onmouseout="hideTip(event, '5228', 5228)" onmouseover="showTip(event, '5228', 5228)">
                 <p>
                   <a id="NestedTypes">
                     <a href="#NestedTypes">
@@ -2362,7 +1976,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5185">
+              <div class="fsdocs-tip" id="5228">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.NestedTypes</span></code>
@@ -2378,23 +1992,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.NestedTypes`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.NestedTypes\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2409,7 +2006,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5186', 5186)" onmouseover="showTip(event, '5186', 5186)">
+              <code onmouseout="hideTip(event, '5229', 5229)" onmouseover="showTip(event, '5229', 5229)">
                 <p>
                   <a id="Properties">
                     <a href="#Properties">
@@ -2418,7 +2015,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5186">
+              <div class="fsdocs-tip" id="5229">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Properties</span></code>
@@ -2434,23 +2031,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Properties`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.Properties\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2465,7 +2045,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5187', 5187)" onmouseover="showTip(event, '5187', 5187)">
+              <code onmouseout="hideTip(event, '5230', 5230)" onmouseover="showTip(event, '5230', 5230)">
                 <p>
                   <a id="SecurityDecls">
                     <a href="#SecurityDecls">
@@ -2474,7 +2054,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5187">
+              <div class="fsdocs-tip" id="5230">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.SecurityDecls</span></code>
@@ -2490,23 +2070,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.SecurityDecls`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:FSharp.Compiler.AbstractIL.IL.ILTypeDef.SecurityDecls\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -2521,7 +2084,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5188', 5188)" onmouseover="showTip(event, '5188', 5188)">
+              <code onmouseout="hideTip(event, '5231', 5231)" onmouseover="showTip(event, '5231', 5231)">
                 <p>
                   <a id="With">
                     <a href="#With">
@@ -2530,7 +2093,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5188">
+              <div class="fsdocs-tip" id="5231">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.With</span></code>
@@ -2551,7 +2114,7 @@
                         ?attributes
                       </b>
                       :
-                      <code><a href="https://docs.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
+                      <code><a href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
                     </span>
                     <br/>
                     <span>
@@ -2670,162 +2233,166 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.With`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.With\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.With`')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                  </div>
+                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.With\'/>')">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                  </div>
+                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                  </a>
+                  <p class="fsdocs-summary">
+                    
  Functional update
 
-              </p>
-            </div>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?name
-                </span>
-                :
-                <code>string</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?attributes
-                </span>
-                :
-                <code><a href="https://docs.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?layout
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedeflayout.html">ILTypeDefLayout</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?implements
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypes.html">ILTypes</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?genericParams
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilgenericparameterdefs.html">ILGenericParameterDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?extends
-                </span>
-                :
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltype.html">ILType</a>&#32;option</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?methods
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethoddefs.html">ILMethodDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?nestedTypes
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedefs.html">ILTypeDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?fields
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilfielddefs.html">ILFieldDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?methodImpls
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethodimpldefs.html">ILMethodImplDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?events
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ileventdefs.html">ILEventDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?properties
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilpropertydefs.html">ILPropertyDefs</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?isKnownToBeAttribute
-                </span>
-                :
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?customAttrs
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilattributes.html">ILAttributes</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?securityDecls
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilsecuritydecls.html">ILSecurityDecls</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedef.html">ILTypeDef</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+                  </p>
+                </div>
+              </summary>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?name
+                  </span>
+                  :
+                  <code>string</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?attributes
+                  </span>
+                  :
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?layout
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedeflayout.html">ILTypeDefLayout</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?implements
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypes.html">ILTypes</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?genericParams
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilgenericparameterdefs.html">ILGenericParameterDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?extends
+                  </span>
+                  :
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltype.html">ILType</a>&#32;option</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?methods
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethoddefs.html">ILMethodDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?nestedTypes
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedefs.html">ILTypeDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?fields
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilfielddefs.html">ILFieldDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?methodImpls
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilmethodimpldefs.html">ILMethodImplDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?events
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ileventdefs.html">ILEventDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?properties
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilpropertydefs.html">ILPropertyDefs</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?isKnownToBeAttribute
+                  </span>
+                  :
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?customAttrs
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilattributes.html">ILAttributes</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?securityDecls
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-ilsecuritydecls.html">ILSecurityDecls</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-abstractil-il-iltypedef.html">ILTypeDef</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </details>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5189', 5189)" onmouseover="showTip(event, '5189', 5189)">
+              <code onmouseout="hideTip(event, '5232', 5232)" onmouseover="showTip(event, '5232', 5232)">
                 <p>
                   <a id="WithAbstract">
                     <a href="#WithAbstract">
@@ -2834,7 +2401,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5189">
+              <div class="fsdocs-tip" id="5232">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithAbstract</span></code>
@@ -2862,23 +2429,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithAbstract`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithAbstract\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -2903,7 +2453,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5190', 5190)" onmouseover="showTip(event, '5190', 5190)">
+              <code onmouseout="hideTip(event, '5233', 5233)" onmouseover="showTip(event, '5233', 5233)">
                 <p>
                   <a id="WithAccess">
                     <a href="#WithAccess">
@@ -2912,7 +2462,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5190">
+              <div class="fsdocs-tip" id="5233">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithAccess</span></code>
@@ -2940,23 +2490,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithAccess`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithAccess\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -2981,7 +2514,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5191', 5191)" onmouseover="showTip(event, '5191', 5191)">
+              <code onmouseout="hideTip(event, '5234', 5234)" onmouseover="showTip(event, '5234', 5234)">
                 <p>
                   <a id="WithEncoding">
                     <a href="#WithEncoding">
@@ -2990,7 +2523,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5191">
+              <div class="fsdocs-tip" id="5234">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithEncoding</span></code>
@@ -3018,23 +2551,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithEncoding`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithEncoding\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3059,7 +2575,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5192', 5192)" onmouseover="showTip(event, '5192', 5192)">
+              <code onmouseout="hideTip(event, '5235', 5235)" onmouseover="showTip(event, '5235', 5235)">
                 <p>
                   <a id="WithHasSecurity">
                     <a href="#WithHasSecurity">
@@ -3068,7 +2584,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5192">
+              <div class="fsdocs-tip" id="5235">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithHasSecurity</span></code>
@@ -3096,23 +2612,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithHasSecurity`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithHasSecurity\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3137,7 +2636,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5193', 5193)" onmouseover="showTip(event, '5193', 5193)">
+              <code onmouseout="hideTip(event, '5236', 5236)" onmouseover="showTip(event, '5236', 5236)">
                 <p>
                   <a id="WithImport">
                     <a href="#WithImport">
@@ -3146,7 +2645,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5193">
+              <div class="fsdocs-tip" id="5236">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithImport</span></code>
@@ -3174,23 +2673,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithImport`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithImport\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3215,7 +2697,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5194', 5194)" onmouseover="showTip(event, '5194', 5194)">
+              <code onmouseout="hideTip(event, '5237', 5237)" onmouseover="showTip(event, '5237', 5237)">
                 <p>
                   <a id="WithInitSemantics">
                     <a href="#WithInitSemantics">
@@ -3224,7 +2706,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5194">
+              <div class="fsdocs-tip" id="5237">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithInitSemantics</span></code>
@@ -3252,23 +2734,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithInitSemantics`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithInitSemantics\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3293,7 +2758,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5195', 5195)" onmouseover="showTip(event, '5195', 5195)">
+              <code onmouseout="hideTip(event, '5238', 5238)" onmouseover="showTip(event, '5238', 5238)">
                 <p>
                   <a id="WithKind">
                     <a href="#WithKind">
@@ -3302,7 +2767,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5195">
+              <div class="fsdocs-tip" id="5238">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithKind</span></code>
@@ -3330,23 +2795,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithKind`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithKind\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3371,7 +2819,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5196', 5196)" onmouseover="showTip(event, '5196', 5196)">
+              <code onmouseout="hideTip(event, '5239', 5239)" onmouseover="showTip(event, '5239', 5239)">
                 <p>
                   <a id="WithLayout">
                     <a href="#WithLayout">
@@ -3380,7 +2828,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5196">
+              <div class="fsdocs-tip" id="5239">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithLayout</span></code>
@@ -3408,23 +2856,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithLayout`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithLayout\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3449,7 +2880,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5197', 5197)" onmouseover="showTip(event, '5197', 5197)">
+              <code onmouseout="hideTip(event, '5240', 5240)" onmouseover="showTip(event, '5240', 5240)">
                 <p>
                   <a id="WithNestedAccess">
                     <a href="#WithNestedAccess">
@@ -3458,7 +2889,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5197">
+              <div class="fsdocs-tip" id="5240">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithNestedAccess</span></code>
@@ -3486,23 +2917,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithNestedAccess`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithNestedAccess\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3527,7 +2941,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5198', 5198)" onmouseover="showTip(event, '5198', 5198)">
+              <code onmouseout="hideTip(event, '5241', 5241)" onmouseover="showTip(event, '5241', 5241)">
                 <p>
                   <a id="WithSealed">
                     <a href="#WithSealed">
@@ -3536,7 +2950,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5198">
+              <div class="fsdocs-tip" id="5241">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithSealed</span></code>
@@ -3564,23 +2978,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithSealed`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithSealed\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3605,7 +3002,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5199', 5199)" onmouseover="showTip(event, '5199', 5199)">
+              <code onmouseout="hideTip(event, '5242', 5242)" onmouseover="showTip(event, '5242', 5242)">
                 <p>
                   <a id="WithSerializable">
                     <a href="#WithSerializable">
@@ -3614,7 +3011,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5199">
+              <div class="fsdocs-tip" id="5242">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithSerializable</span></code>
@@ -3642,23 +3039,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithSerializable`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithSerializable\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -3683,7 +3063,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '5200', 5200)" onmouseover="showTip(event, '5200', 5200)">
+              <code onmouseout="hideTip(event, '5243', 5243)" onmouseover="showTip(event, '5243', 5243)">
                 <p>
                   <a id="WithSpecialName">
                     <a href="#WithSpecialName">
@@ -3692,7 +3072,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="5200">
+              <div class="fsdocs-tip" id="5243">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WithSpecialName</span></code>
@@ -3720,23 +3100,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithSpecialName`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:FSharp.Compiler.AbstractIL.IL.ILTypeDef.WithSpecialName\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">

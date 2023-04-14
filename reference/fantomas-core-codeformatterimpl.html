@@ -72,6 +72,9 @@
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link pb-2 d-block" > Generating source code
 </a></li>
 
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link pb-2 d-block" > Upgrade guide
+</a></li>
+
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link pb-2 d-block" > FAQ
 </a></li>
 
@@ -120,6 +123,9 @@
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link pb-2 d-block" > Updating the compiler sources
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link pb-2 d-block" > Releases
@@ -231,19 +237,19 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1001', 1001)" onmouseover="showTip(event, '1001', 1001)">
+              <code onmouseout="hideTip(event, '1016', 1016)" onmouseover="showTip(event, '1016', 1016)">
                 <p>
                   <a id="formatAST">
                     <a href="#formatAST">
-                      <code><span>CodeFormatterImpl.formatAST&#32;<span>ast&#32;sourceText&#32;config</span></span></code>
+                      <code><span>CodeFormatterImpl.formatAST&#32;<span>ast&#32;sourceText&#32;config&#32;cursor</span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1001">
+              <div class="fsdocs-tip" id="1016">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>CodeFormatterImpl.formatAST&#32;<span>ast&#32;sourceText&#32;config</span></span></code>
+                  <code><span>CodeFormatterImpl.formatAST&#32;<span>ast&#32;sourceText&#32;config&#32;cursor</span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
@@ -269,14 +275,22 @@
                         config
                       </b>
                       :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a></code>
+                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig.html">FormatConfig</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        cursor
+                      </b>
+                      :
+                      <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-text-pos.html">pos</a>&#32;option</span></code>
                     </span>
                     <br/>
                   </ul>
                   <br/>
                   <span>
                     Returns: 
-                    <code>string</code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatresult.html">FormatResult</a></code>
                   </span>
                   <br/>
                 </div>
@@ -284,23 +298,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.Core.CodeFormatterImpl.formatAST`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.Core.CodeFormatterImpl.formatAST\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -323,7 +320,15 @@
                   config
                 </span>
                 :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig.html">FormatConfig</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cursor
+                </span>
+                :
+                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-text-pos.html">pos</a>&#32;option</span></code>
               </dt>
               <dd class="fsdocs-param-docs"></dd>
             </dl>
@@ -332,7 +337,7 @@
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code>string</code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatresult.html">FormatResult</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -341,19 +346,19 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1002', 1002)" onmouseover="showTip(event, '1002', 1002)">
+              <code onmouseout="hideTip(event, '1017', 1017)" onmouseover="showTip(event, '1017', 1017)">
                 <p>
                   <a id="formatDocument">
                     <a href="#formatDocument">
-                      <code><span>CodeFormatterImpl.formatDocument&#32;<span>config&#32;isSignature&#32;source</span></span></code>
+                      <code><span>CodeFormatterImpl.formatDocument&#32;<span>config&#32;isSignature&#32;source&#32;cursor</span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1002">
+              <div class="fsdocs-tip" id="1017">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>CodeFormatterImpl.formatDocument&#32;<span>config&#32;isSignature&#32;source</span></span></code>
+                  <code><span>CodeFormatterImpl.formatDocument&#32;<span>config&#32;isSignature&#32;source&#32;cursor</span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
@@ -363,7 +368,7 @@
                         config
                       </b>
                       :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a></code>
+                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig.html">FormatConfig</a></code>
                     </span>
                     <br/>
                     <span>
@@ -382,11 +387,19 @@
                       <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-text-isourcetext.html">ISourceText</a></code>
                     </span>
                     <br/>
+                    <span>
+                      <b>
+                        cursor
+                      </b>
+                      :
+                      <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-text-pos.html">pos</a>&#32;option</span></code>
+                    </span>
+                    <br/>
                   </ul>
                   <br/>
                   <span>
                     Returns: 
-                    <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;string&gt;</span></code>
+                    <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatresult.html">FormatResult</a>&gt;</span></code>
                   </span>
                   <br/>
                 </div>
@@ -394,30 +407,13 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.Core.CodeFormatterImpl.formatDocument`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.Core.CodeFormatterImpl.formatDocument\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
                   config
                 </span>
                 :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig.html">FormatConfig</a></code>
               </dt>
               <dd class="fsdocs-param-docs"></dd>
               <dt class="fsdocs-param">
@@ -436,13 +432,21 @@
                 <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-text-isourcetext.html">ISourceText</a></code>
               </dt>
               <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cursor
+                </span>
+                :
+                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-text-pos.html">pos</a>&#32;option</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
             </dl>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;string&gt;</span></code>
+                <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatresult.html">FormatResult</a>&gt;</span></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -451,7 +455,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1003', 1003)" onmouseover="showTip(event, '1003', 1003)">
+              <code onmouseout="hideTip(event, '1018', 1018)" onmouseover="showTip(event, '1018', 1018)">
                 <p>
                   <a id="getSourceText">
                     <a href="#getSourceText">
@@ -460,7 +464,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1003">
+              <div class="fsdocs-tip" id="1018">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>CodeFormatterImpl.getSourceText&#32;<span>source</span></span></code>
@@ -488,23 +492,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.Core.CodeFormatterImpl.getSourceText`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.Core.CodeFormatterImpl.getSourceText\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -529,7 +516,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1004', 1004)" onmouseover="showTip(event, '1004', 1004)">
+              <code onmouseout="hideTip(event, '1019', 1019)" onmouseover="showTip(event, '1019', 1019)">
                 <p>
                   <a id="parse">
                     <a href="#parse">
@@ -538,7 +525,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1004">
+              <div class="fsdocs-tip" id="1019">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>CodeFormatterImpl.parse&#32;<span>isSignature&#32;source</span></span></code>
@@ -566,7 +553,7 @@
                   <br/>
                   <span>
                     Returns: 
-                    <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;<span><span>(<span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-syntax-parsedinput.html">ParsedInput</a>&#32;*&#32;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-definecombination.html">DefineCombination</a></span>)</span>[]</span>&gt;</span></code>
+                    <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;<span><span>(<span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-syntax-parsedinput.html">ParsedInput</a>&#32;*&#32;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-definecombination.html">DefineCombination</a></span>)</span>[]</span>&gt;</span></code>
                   </span>
                   <br/>
                 </div>
@@ -574,23 +561,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.Core.CodeFormatterImpl.parse`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.Core.CodeFormatterImpl.parse\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
@@ -614,7 +584,7 @@
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;<span><span>(<span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-syntax-parsedinput.html">ParsedInput</a>&#32;*&#32;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-definecombination.html">DefineCombination</a></span>)</span>[]</span>&gt;</span></code>
+                <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;<span><span>(<span><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-syntax-parsedinput.html">ParsedInput</a>&#32;*&#32;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-definecombination.html">DefineCombination</a></span>)</span>[]</span>&gt;</span></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>

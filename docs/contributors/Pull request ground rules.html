@@ -73,6 +73,9 @@
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link pb-2 d-block" > Generating source code
 </a></li>
 
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link pb-2 d-block" > Upgrade guide
+</a></li>
+
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link pb-2 d-block" > FAQ
 </a></li>
 
@@ -121,6 +124,9 @@
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link pb-2 d-block" > Updating the compiler sources
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link pb-2 d-block" > Releases
@@ -217,7 +223,7 @@ Try and find a suitable file in <code>Fantomas.Core.Tests</code>, or introduce a
 
 <span class="k">open</span> <span class="id">NUnit</span><span class="pn">.</span><span class="id">Framework</span>
 <span class="k">open</span> <span class="id">FsUnit</span>
-<span class="k">open</span> <span class="id">Fantomas</span><span class="pn">.</span><span class="id">Core</span><span class="pn">.</span><span class="id">Tests</span><span class="pn">.</span><span class="id">TestHelper</span>
+<span class="k">open</span> <span class="id">Fantomas</span><span class="pn">.</span><span class="id">Core</span><span class="pn">.</span><span class="id">Tests</span><span class="pn">.</span><span class="id">TestHelpers</span>
 
 <span class="c">// add tests here...</span>
 </code></pre>
@@ -329,6 +335,32 @@ your changes caused any tests to fail.</p>
 Someone might be able to warn you in advance that your change will have wide implications for the rest of Fantomas, or might be able to point you in the right direction.
 However, this can only happen if you discuss your proposed changes early and often.
 It's often better to check <em>before</em> contributing that you're setting off on the right path.</p>
+<h2><a name="Coding-conventions" class="anchor" href="#Coding-conventions">Coding conventions</a></h2>
+<p>For consistency sake we have a few coding conventions. Please respect those to keep everything as streamlined as possible.</p>
+<h3><a name="Member-declaration" class="anchor" href="#Member-declaration">Member declaration</a></h3>
+<ul>
+<li>Use <code>x</code> as the the <code>self-identifier</code> if you need it.</li>
+</ul>
+<pre class="fssnip highlighted"><code lang="fsharp"><span class="k">type</span> <span class="id">Foo</span><span class="pn">(</span><span class="pn">)</span> <span class="o">=</span>
+    <span class="k">member</span> <span class="id">_</span><span class="pn">.</span><span class="id">Children</span> <span class="o">=</span> <span class="pn">[</span><span class="pn">]</span>
+    
+    <span class="c">// ✔️ OK</span>
+    <span class="k">member</span> <span class="id">x</span><span class="pn">.</span><span class="id">Length</span> <span class="o">=</span> <span class="id">x</span><span class="pn">.</span><span class="id">Children</span><span class="pn">.</span><span class="id">Length</span>
+    
+    <span class="c">// ❌ Not preferred, we use `x`</span>
+    <span class="k">member</span> <span class="id">this</span><span class="pn">.</span><span class="id">WrongLength</span> <span class="o">=</span> <span class="id">this</span><span class="pn">.</span><span class="id">Children</span><span class="pn">.</span><span class="id">Length</span> <span class="o">-</span> <span class="n">1</span>
+</code></pre>
+<ul>
+<li>Use <code>_</code> when you don't need the <code>self-identifier</code>.</li>
+<li>Use <code>member val</code> when possible.</li>
+</ul>
+<pre class="fssnip highlighted"><code lang="fsharp"><span class="k">type</span> <span class="id">Foo</span><span class="pn">(</span><span class="id">v</span><span class="pn">:</span> <span class="id">Value</span><span class="pn">)</span> <span class="o">=</span>
+    <span class="c">// ✔️ OK</span>
+    <span class="k">member</span> <span class="k">val</span> <span class="id">Value</span> <span class="o">=</span> <span class="id">v</span>
+    
+        <span class="c">// ❌ Not preferred.</span>
+    <span class="k">member</span> <span class="id">_</span><span class="pn">.</span><span class="id">WrongValue</span> <span class="o">=</span> <span class="id">v</span>
+</code></pre>
 <h2><a name="Fixing-style-guide-inconsistencies" class="anchor" href="#Fixing-style-guide-inconsistencies">Fixing style guide inconsistencies</a></h2>
 <p>Fantomas tries to keep up with the style guides, but as these are living documents, it can occur that something is listed in the style that Fantomas is not respecting.
 In this case, please create an issue using our <a href="https://fsprojects.github.io/fantomas-tools/#/">online tool</a>.
@@ -341,7 +373,7 @@ Strive to ensure that end users can always update to the latest patch revision o
 <p>A user should only need to deal with style changes when they have explicitly <a href="https://github.com/fsprojects/fantomas/blob/main/docs/Documentation.md#updating-to-a-new-fantomas-version">chosen to upgrade</a> to a new minor or major version.
 In case no major or minor branch was created yet, please reach out to the maintainers.
 The maintainers will frequently rebase this branch on top of the main branch and release alpha/beta packages accordingly.</p>
-<fantomas-nav previous="./The%20Missing%20Comment.html" next="./Releases.html"></fantomas-nav>
+<fantomas-nav previous="./The%20Missing%20Comment.html" next="./Updating%20the%20compiler.html"></fantomas-nav>
 
         
       </div>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Florian Verdonck, Jindřich Ivánek, David Schaefer">
-  <title>RecordNodeExtra (fantomas)</title>
+  <title>MultilineFormatterType (fantomas)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -72,6 +72,9 @@
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link pb-2 d-block" > Generating source code
 </a></li>
 
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link pb-2 d-block" > Upgrade guide
+</a></li>
+
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link pb-2 d-block" > FAQ
 </a></li>
 
@@ -120,6 +123,9 @@
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link pb-2 d-block" > Updating the compiler sources
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link pb-2 d-block" > Releases
@@ -192,7 +198,7 @@
       <div id="fsdocs-content" class="bg-white m-2 m-sm-5 p-3 p-sm-4">
         <div>
   <h2>
-    RecordNodeExtra Type
+    MultilineFormatterType Type
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
@@ -205,14 +211,20 @@
       Assembly: Fantomas.Core.dll
     </dt>
     <dt>
-      Parent Module: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak.html">
-        SyntaxOak
-      </a>
-    </dt>
-    <dt>
       Base Type: 
       <code>obj</code>
+    </dt>
+    <dt>
+      All Interfaces: 
+      <code><span><a href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-multilineformattertype.html">MultilineFormatterType</a>&gt;</span></code>
+      , 
+      <code><a href="https://learn.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a></code>
+      , 
+      <code><span><a href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-multilineformattertype.html">MultilineFormatterType</a>&gt;</span></code>
+      , 
+      <code><a href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a></code>
+      , 
+      <code><a href="https://learn.microsoft.com/dotnet/api/system.collections.istructuralcomparable">IStructuralComparable</a></code>
     </dt>
   </dl>
   <div class="fsdocs-xmldoc">
@@ -244,75 +256,19 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7087', 7087)" onmouseover="showTip(event, '7087', 7087)">
+              <code onmouseout="hideTip(event, '7373', 7373)" onmouseover="showTip(event, '7373', 7373)">
                 <p>
-                  <a id="Inherit">
-                    <a href="#Inherit">
-                      <code><span>Inherit&#32;inheritConstructor</span></code>
+                  <a id="CharacterWidth">
+                    <a href="#CharacterWidth">
+                      <code><span>CharacterWidth</span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7087">
+              <div class="fsdocs-tip" id="7373">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>Inherit&#32;inheritConstructor</span></code>
-                  <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        inheritConstructor
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-inheritconstructor.html">InheritConstructor</a></code>
-                    </span>
-                    <br/>
-                  </ul>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  inheritConstructor
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-inheritconstructor.html">InheritConstructor</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '7088', 7088)" onmouseover="showTip(event, '7088', 7088)">
-                <p>
-                  <a id="None">
-                    <a href="#None">
-                      <code><span>None</span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="7088">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>None</span></code>
+                  <code><span>CharacterWidth</span></code>
                   <br/>
                   <br/>
                 </div>
@@ -334,32 +290,20 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7089', 7089)" onmouseover="showTip(event, '7089', 7089)">
+              <code onmouseout="hideTip(event, '7374', 7374)" onmouseover="showTip(event, '7374', 7374)">
                 <p>
-                  <a id="With">
-                    <a href="#With">
-                      <code><span>With&#32;expr</span></code>
+                  <a id="NumberOfItems">
+                    <a href="#NumberOfItems">
+                      <code><span>NumberOfItems</span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7089">
+              <div class="fsdocs-tip" id="7374">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>With&#32;expr</span></code>
+                  <code><span>NumberOfItems</span></code>
                   <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        expr
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-expr.html">Expr</a></code>
-                    </span>
-                    <br/>
-                  </ul>
                   <br/>
                 </div>
               </div>
@@ -375,16 +319,6 @@
                 
               </p>
             </div>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  expr
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-expr.html">Expr</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
           </td>
         </tr>
       </tbody>
@@ -413,36 +347,36 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7090', 7090)" onmouseover="showTip(event, '7090', 7090)">
+              <code onmouseout="hideTip(event, '7375', 7375)" onmouseover="showTip(event, '7375', 7375)">
                 <p>
-                  <a id="Node">
-                    <a href="#Node">
-                      <code><span>RecordNodeExtra.Node<span><span>(<span>extra</span>)</span></span></span></code>
+                  <a id="OfConfigString">
+                    <a href="#OfConfigString">
+                      <code><span>MultilineFormatterType.OfConfigString<span><span>(<span>cfgString</span>)</span></span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7090">
+              <div class="fsdocs-tip" id="7375">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>RecordNodeExtra.Node<span><span>(<span>extra</span>)</span></span></span></code>
+                  <code><span>MultilineFormatterType.OfConfigString<span><span>(<span>cfgString</span>)</span></span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
                   <ul>
                     <span>
                       <b>
-                        extra
+                        cfgString
                       </b>
                       :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-recordnodeextra.html">RecordNodeExtra</a></code>
+                      <code>string</code>
                     </span>
                     <br/>
                   </ul>
                   <br/>
                   <span>
                     Returns: 
-                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-node.html">Node</a>&#32;option</span></code>
+                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-multilineformattertype.html">MultilineFormatterType</a>&#32;option</span></code>
                   </span>
                   <br/>
                 </div>
@@ -450,30 +384,13 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.Core.SyntaxOak.RecordNodeExtra.Node`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.Core.SyntaxOak.RecordNodeExtra.Node\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
-                  extra
+                  cfgString
                 </span>
                 :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-recordnodeextra.html">RecordNodeExtra</a></code>
+                <code>string</code>
               </dt>
               <dd class="fsdocs-param-docs"></dd>
             </dl>
@@ -482,7 +399,68 @@
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-node.html">Node</a>&#32;option</span></code>
+                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-multilineformattertype.html">MultilineFormatterType</a>&#32;option</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '7376', 7376)" onmouseover="showTip(event, '7376', 7376)">
+                <p>
+                  <a id="ToConfigString">
+                    <a href="#ToConfigString">
+                      <code><span>MultilineFormatterType.ToConfigString<span><span>(<span>cfg</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="7376">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MultilineFormatterType.ToConfigString<span><span>(<span>cfg</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        cfg
+                      </b>
+                      :
+                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-multilineformattertype.html">MultilineFormatterType</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>string</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  cfg
+                </span>
+                :
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-multilineformattertype.html">MultilineFormatterType</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code>string</code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Florian Verdonck, Jindřich Ivánek, David Schaefer">
-  <title>EndOfLineStyle (fantomas)</title>
+  <title>Activity (fantomas)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -72,6 +72,9 @@
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link pb-2 d-block" > Generating source code
 </a></li>
 
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link pb-2 d-block" > Upgrade guide
+</a></li>
+
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link pb-2 d-block" > FAQ
 </a></li>
 
@@ -120,6 +123,9 @@
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link pb-2 d-block" > Updating the compiler sources
 </a></li>
 
 <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link pb-2 d-block" > Releases
@@ -192,91 +198,65 @@
       <div id="fsdocs-content" class="bg-white m-2 m-sm-5 p-3 p-sm-4">
         <div>
   <h2>
-    EndOfLineStyle Type
+    Activity Module
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
       Namespace: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core.html">
-        Fantomas.Core
+      <a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-diagnostics.html">
+        FSharp.Compiler.Diagnostics
       </a>
     </dt>
     <dt>
-      Assembly: Fantomas.Core.dll
-    </dt>
-    <dt>
-      Parent Module: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig.html">
-        FormatConfig
-      </a>
-    </dt>
-    <dt>
-      Base Type: 
-      <code>obj</code>
-    </dt>
-    <dt>
-      All Interfaces: 
-      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a>&gt;</span></code>
-      , 
-      <code><a href="https://docs.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a></code>
-      , 
-      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a>&gt;</span></code>
-      , 
-      <code><a href="https://docs.microsoft.com/dotnet/api/system.icomparable">IComparable</a></code>
-      , 
-      <code><a href="https://docs.microsoft.com/dotnet/api/system.collections.istructuralcomparable">IStructuralComparable</a></code>
+      Assembly: Fantomas.FCS.dll
     </dt>
   </dl>
   <div class="fsdocs-xmldoc">
     <div>
       <p class="fsdocs-summary">
         
+ For activities following the dotnet distributed tracing concept
+ https://learn.microsoft.com/dotnet/core/diagnostics/distributed-tracing-concepts?source=recommendations
+
       </p>
     </div>
   </div>
-  <div></div>
-  <div></div>
-  <div></div>
   <div>
     <h3>
-      Union cases
+      Nested modules
     </h3>
-    <table class="table outer-list fsdocs-member-list">
+    <table class="table outer-list fsdocs-entity-list">
       <thead>
         <tr>
-          <td class="fsdocs-member-list-header">
-            Union case
+          <td>
+            Modules
           </td>
-          <td class="fsdocs-member-list-header">
+          <td>
             Description
           </td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '6321', 6321)" onmouseover="showTip(event, '6321', 6321)">
-                <p>
-                  <a id="CR">
-                    <a href="#CR">
-                      <code><span>CR</span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="6321">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>CR</span></code>
-                  <br/>
-                  <br/>
-                </div>
-              </div>
-            </div>
+          <td class="fsdocs-entity-name">
+            <p>
+              <a name="CsvExport">
+                <a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-diagnostics-activity-csvexport.html">
+                  CsvExport
+                </a>
+              </a>
+            </p>
           </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
+          <td class="fsdocs-entity-xmldoc">
+            <div>
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:FSharp.Compiler.Diagnostics.Activity.CsvExport`')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:FSharp.Compiler.Diagnostics.Activity.CsvExport\'/>')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
                 <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
                 <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
@@ -288,29 +268,25 @@
           </td>
         </tr>
         <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '6322', 6322)" onmouseover="showTip(event, '6322', 6322)">
-                <p>
-                  <a id="CRLF">
-                    <a href="#CRLF">
-                      <code><span>CRLF</span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="6322">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>CRLF</span></code>
-                  <br/>
-                  <br/>
-                </div>
-              </div>
-            </div>
+          <td class="fsdocs-entity-name">
+            <p>
+              <a name="Events">
+                <a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-diagnostics-activity-events.html">
+                  Events
+                </a>
+              </a>
+            </p>
           </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
+          <td class="fsdocs-entity-xmldoc">
+            <div>
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:FSharp.Compiler.Diagnostics.Activity.Events`')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:FSharp.Compiler.Diagnostics.Activity.Events\'/>')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
                 <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
                 <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
@@ -322,29 +298,55 @@
           </td>
         </tr>
         <tr>
-          <td class="fsdocs-member-usage">
+          <td class="fsdocs-entity-name">
+            <p>
+              <a name="Profiling">
+                <a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-diagnostics-activity-profiling.html">
+                  Profiling
+                </a>
+              </a>
+            </p>
+          </td>
+          <td class="fsdocs-entity-xmldoc">
             <div>
-              <code onmouseout="hideTip(event, '6323', 6323)" onmouseover="showTip(event, '6323', 6323)">
-                <p>
-                  <a id="LF">
-                    <a href="#LF">
-                      <code><span>LF</span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="6323">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>LF</span></code>
-                  <br/>
-                  <br/>
-                </div>
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:FSharp.Compiler.Diagnostics.Activity.Profiling`')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
               </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:FSharp.Compiler.Diagnostics.Activity.Profiling\'/>')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
             </div>
           </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
+        </tr>
+        <tr>
+          <td class="fsdocs-entity-name">
+            <p>
+              <a name="Tags">
+                <a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-diagnostics-activity-tags.html">
+                  Tags
+                </a>
+              </a>
+            </p>
+          </td>
+          <td class="fsdocs-entity-xmldoc">
+            <div>
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:FSharp.Compiler.Diagnostics.Activity.Tags`')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:FSharp.Compiler.Diagnostics.Activity.Tags\'/>')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
                 <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
                 <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
@@ -358,18 +360,15 @@
       </tbody>
     </table>
   </div>
-  <div></div>
-  <div></div>
-  <div></div>
   <div>
     <h3>
-      Instance members
+      Functions and values
     </h3>
     <table class="table outer-list fsdocs-member-list">
       <thead>
         <tr>
           <td class="fsdocs-member-list-header">
-            Instance member
+            Function or value
           </td>
           <td class="fsdocs-member-list-header">
             Description
@@ -380,19 +379,19 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6324', 6324)" onmouseover="showTip(event, '6324', 6324)">
+              <code onmouseout="hideTip(event, '657', 657)" onmouseover="showTip(event, '657', 657)">
                 <p>
-                  <a id="NewLineString">
-                    <a href="#NewLineString">
-                      <code><span>this.NewLineString</span></code>
+                  <a id="FscSourceName">
+                    <a href="#FscSourceName">
+                      <code><span>Activity.FscSourceName&#32;<span></span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6324">
+              <div class="fsdocs-tip" id="657">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>this.NewLineString</span></code>
+                  <code><span>Activity.FscSourceName&#32;<span></span></span></code>
                   <br/>
                   <br/>
                   <span>
@@ -405,23 +404,6 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Fantomas.Core.FormatConfig.EndOfLineStyle.NewLineString`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.Core.FormatConfig.EndOfLineStyle.NewLineString\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
@@ -433,46 +415,94 @@
             </dl>
           </td>
         </tr>
-      </tbody>
-    </table>
-  </div>
-  <div>
-    <h3>
-      Static members
-    </h3>
-    <table class="table outer-list fsdocs-member-list">
-      <thead>
-        <tr>
-          <td class="fsdocs-member-list-header">
-            Static member
-          </td>
-          <td class="fsdocs-member-list-header">
-            Description
-          </td>
-        </tr>
-      </thead>
-      <tbody>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6325', 6325)" onmouseover="showTip(event, '6325', 6325)">
+              <code onmouseout="hideTip(event, '658', 658)" onmouseover="showTip(event, '658', 658)">
                 <p>
-                  <a id="FromEnvironment">
-                    <a href="#FromEnvironment">
-                      <code><span>EndOfLineStyle.FromEnvironment</span></code>
+                  <a id="addEvent">
+                    <a href="#addEvent">
+                      <code><span>Activity.addEvent&#32;<span>name</span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6325">
+              <div class="fsdocs-tip" id="658">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>EndOfLineStyle.FromEnvironment</span></code>
+                  <code><span>Activity.addEvent&#32;<span>name</span></span></code>
                   <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        name
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  name
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '659', 659)" onmouseover="showTip(event, '659', 659)">
+                <p>
+                  <a id="start">
+                    <a href="#start">
+                      <code><span>Activity.start&#32;<span>name&#32;tags</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="659">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Activity.start&#32;<span>name&#32;tags</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        name
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        tags
+                      </b>
+                      :
+                      <code><span>seq&lt;<span>string&#32;*&#32;string</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
                   <br/>
                   <span>
                     Returns: 
-                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a></code>
+                    <code><a href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></code>
                   </span>
                   <br/>
                 </div>
@@ -480,29 +510,30 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Fantomas.Core.FormatConfig.EndOfLineStyle.FromEnvironment`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.Core.FormatConfig.EndOfLineStyle.FromEnvironment\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  name
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  tags
+                </span>
+                :
+                <code><span>seq&lt;<span>string&#32;*&#32;string</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
             <dl class="fsdocs-returns">
               <dt>
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a></code>
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -511,26 +542,26 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6326', 6326)" onmouseover="showTip(event, '6326', 6326)">
+              <code onmouseout="hideTip(event, '660', 660)" onmouseover="showTip(event, '660', 660)">
                 <p>
-                  <a id="OfConfigString">
-                    <a href="#OfConfigString">
-                      <code><span>EndOfLineStyle.OfConfigString<span><span>(<span>eolString</span>)</span></span></span></code>
+                  <a id="startNoTags">
+                    <a href="#startNoTags">
+                      <code><span>Activity.startNoTags&#32;<span>name</span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6326">
+              <div class="fsdocs-tip" id="660">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>EndOfLineStyle.OfConfigString<span><span>(<span>eolString</span>)</span></span></span></code>
+                  <code><span>Activity.startNoTags&#32;<span>name</span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
                   <ul>
                     <span>
                       <b>
-                        eolString
+                        name
                       </b>
                       :
                       <code>string</code>
@@ -540,7 +571,7 @@
                   <br/>
                   <span>
                     Returns: 
-                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a>&#32;option</span></code>
+                    <code><a href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></code>
                   </span>
                   <br/>
                 </div>
@@ -548,27 +579,10 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.Core.FormatConfig.EndOfLineStyle.OfConfigString`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.Core.FormatConfig.EndOfLineStyle.OfConfigString\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
             <dl class="fsdocs-params">
               <dt class="fsdocs-param">
                 <span class="fsdocs-param-name">
-                  eolString
+                  name
                 </span>
                 :
                 <code>string</code>
@@ -580,85 +594,7 @@
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a>&#32;option</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '6327', 6327)" onmouseover="showTip(event, '6327', 6327)">
-                <p>
-                  <a id="ToConfigString">
-                    <a href="#ToConfigString">
-                      <code><span>EndOfLineStyle.ToConfigString<span><span>(<span>eol</span>)</span></span></span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="6327">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>EndOfLineStyle.ToConfigString<span><span>(<span>eol</span>)</span></span></span></code>
-                  <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        eol
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a></code>
-                    </span>
-                    <br/>
-                  </ul>
-                  <br/>
-                  <span>
-                    Returns: 
-                    <code>string</code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.Core.FormatConfig.EndOfLineStyle.ToConfigString`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.Core.FormatConfig.EndOfLineStyle.ToConfigString\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  eol
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>string</code>
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -667,6 +603,14 @@
       </tbody>
     </table>
   </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </div>
         
       </div>
