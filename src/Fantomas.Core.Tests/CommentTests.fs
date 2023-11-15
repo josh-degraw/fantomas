@@ -2653,3 +2653,111 @@ let EnableHeapTerminationOnCorruption () =
                 )
             )
 """
+
+[<Test>]
+let ``Comment after named pat pair`` () =
+    formatSourceString
+        false
+        """
+match synExpr with
+| SynExpr.App(
+    argExpr = SynExpr.Match _ // | SynExpr.MatchBang
+    )
+     ->
+Some ident.idRange
+| _ -> defaultTraverse synExpr
+        """
+        config
+    |> prepend newline
+    |> should
+        equal
+        """
+match synExpr with
+| SynExpr.App(
+    argExpr = SynExpr.Match _ // | SynExpr.MatchBang
+    )
+     ->
+Some ident.idRange
+| _ -> defaultTraverse synExpr
+"""
+
+[<Test>]
+let ``Comment after second named pat pair`` () =
+    formatSourceString
+        false
+        """
+match synExpr with
+| SynExpr.App(
+    argExpr = SynExpr.Match _ 
+    argExpr2 = SynExpr.Match _ // | SynExpr.MatchBang
+    )
+     ->
+Some ident.idRange
+| _ -> defaultTraverse synExpr
+        """
+        config
+    |> prepend newline
+    |> should
+        equal
+        """
+match synExpr with
+| SynExpr.App(
+    argExpr = SynExpr.Match _ 
+    argExpr2 = SynExpr.Match _ // | SynExpr.MatchBang
+    )
+     ->
+Some ident.idRange
+| _ -> defaultTraverse synExpr
+"""
+
+[<Test>]
+let ``Comment after first named pat pair`` () =
+    formatSourceString
+        false
+        """
+match synExpr with
+| SynExpr.App(
+    argExpr = SynExpr.Match _  // | SynExpr.MatchBang
+    argExpr2 = SynExpr.Match _
+    )
+     ->
+Some ident.idRange
+| _ -> defaultTraverse synExpr
+        """
+        config
+    |> prepend newline
+    |> should
+        equal
+        """
+match synExpr with
+| SynExpr.App(
+    argExpr = SynExpr.Match _ // | SynExpr.MatchBang
+    argExpr2 = SynExpr.Match _) -> Some ident.idRange
+| _ -> defaultTraverse synExpr
+"""
+
+[<Test>]
+let ``Comment before named pat pair`` () =
+    formatSourceString
+        false
+        """
+match synExpr with
+| SynExpr.App(
+    // | SynExpr.MatchBang
+    argExpr = SynExpr.Match _ 
+    )
+     ->
+Some ident.idRange
+| _ -> defaultTraverse synExpr
+        """
+        config
+    |> prepend newline
+    |> should
+        equal
+        """
+match synExpr with
+| SynExpr.App(
+    // | SynExpr.MatchBang
+    argExpr = SynExpr.Match _) -> Some ident.idRange
+| _ -> defaultTraverse synExpr
+"""

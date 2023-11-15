@@ -26,6 +26,7 @@ Some common use cases include:
         <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
         <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
         <WarningsAsErrors>FS0025;FS1182</WarningsAsErrors>
+        <OptimizeImplicitlyTriggeredBuild>true</OptimizeImplicitlyTriggeredBuild>
         <WarnOn>1182;3390;$(WarnOn)</WarnOn>
         <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
         <RestoreLockedMode>true</RestoreLockedMode>

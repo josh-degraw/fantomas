@@ -2600,12 +2600,14 @@ let genPat (p: Pattern) =
     | Pattern.As node
     | Pattern.ListCons node -> genPatLeftMiddleRight node
     | Pattern.NamePatPairs node ->
+
         let genPatWithIdent (node: NamePatPair) =
             genSingleTextNode node.Ident
             +> sepSpace
             +> genSingleTextNode node.Equals
             +> sepSpace
             +> genPat node.Pattern
+            |> genNode node
 
         let pats =
             expressionFitsOnRestOfLine

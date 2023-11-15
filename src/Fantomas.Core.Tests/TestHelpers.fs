@@ -29,7 +29,7 @@ let formatSourceString isFsiFile (s: string) config =
         let secondFormattedCode = secondFormat.Code.Replace("\r\n", "\n")
 
         if formattedCode <> secondFormattedCode then
-            failwithf $"The formatted result was not idempotent.\n%s{formattedCode}"
+            failwithf $"The formatted result was not idempotent.\n%s{formattedCode}\n%s{secondFormattedCode}"
 
         return formattedCode
     }
