@@ -1,204 +1,286 @@
 <!DOCTYPE html>
 <html lang="en" data-root="https://fsprojects.github.io/fantomas/">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Florian Verdonck, Jindřich Ivánek, David Schaefer">
-  <title>Extras (fantomas)</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="shortcut icon" type="image/x-icon" href="https://fsprojects.github.io/fantomas/images/favicon.ico">
-  <link type="text/css" rel="stylesheet" href="https://fsprojects.github.io/fantomas/content/fsdocs-custom.css" />
-  <script type="text/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
-  <!-- BEGIN SEARCH BOX: this adds support for the search box -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
-  <!-- END SEARCH BOX: this adds support for the search box -->
-  
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Florian Verdonck, Jindřich Ivánek, David Schaefer" name="author">
+    <!-- Opengraph properties (https://ogp.me/) -->
+    <meta property="og:site_name" content="fantomas">
+    <meta property="og:title" content="Extras (fantomas)" />
+    <meta property="og:url" content="https://fsprojects.github.io/fantomas/{{fsdocs-source-basename}}.html">
+    <meta property="og:type" content="website" />
+    <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://fsprojects.github.io/fantomas/">
+    <meta name="twitter:title" content="Extras (fantomas)">
+    
+    <title>Extras (fantomas) | fantomas</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
+
+    
 </head>
-
-<body>
-     <aside class="bg-primary h-100 fs-5">
-      <div id="sidebar-header" class="d-flex justify-content-end mt-1 d-md-none">
-      <button class="btn d-md-none" id="close-mobile-menu" aria-controls="sidebar-wrapper" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="sidebar-toggle fs-3 bi bi-x-lg"></i>
-                  </button>
-              </div>
-      <div id="sidebar-logo" class="d-flex justify-content-center p-5">
-        <a href="https://fsprojects.github.io/fantomas/docs/index.html" ><img id="fsdocs-logo" src="https://fsprojects.github.io/fantomas//images/logo-fantomas-white.svg" /></a>
-      </div>
-      <div id="sidebar-content" class="accordion accordion-flush ps-0 text-white fs-6">
-        <div id="end-users-wrapper" class="accordion-item">
-    <li class="docs-menu">
-        <button id="end-users-button"
-            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
-            data-bs-toggle="collapse" data-bs-target="#end-users" aria-expanded="false"
-            aria-control="end-users" type="button">
-            End-users
-        </button>
-        <div id="end-users" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
-            <ul class="list-unstyled fw-normal mb-0">
-                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GettingStarted.html" class="nav-link pb-2 d-block" > Getting Started
+<body class="api-docs">
+<header>
+    <div class="start">
+        <div id="menu-toggle">
+            <iconify-icon class="icon closed" height="22" icon="eva:menu-fill" width="22"></iconify-icon>
+            <iconify-icon class="icon open" height="22" icon="mi:close" width="22"></iconify-icon>
+            <input type="checkbox" name="mobile-menu" />
+            <ul class="menu">
+                <li class="nav-header">Links</li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/fsprojects/fantomas/blob/main/LICENSE.md">License</a>
+                </li>
+                <li class="nav-item"><a class="nav-link"
+                                        href="https://github.com/fsprojects/fantomas/blob/main/CHANGELOG.md">Release
+                    Notes</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/fsprojects/fantomas/">Source
+                    Repository</a></li>
+                <li class="nav-header " id="end-users">
+    End-users
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GettingStarted.html" class="nav-link" > Getting Started
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/StyleGuide.html" class="nav-link pb-2 d-block" > Style guide
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/StyleGuide.html" class="nav-link" > Style guide
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Configuration.html" class="nav-link pb-2 d-block" > Configuration
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Configuration.html" class="nav-link" > Configuration
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/IgnoreFiles.html" class="nav-link pb-2 d-block" > Ignore Files
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/IgnoreFiles.html" class="nav-link" > Ignore Files
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FormattingCheck.html" class="nav-link pb-2 d-block" > Formatting Check
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/FormattingCheck.html" class="nav-link" > Formatting Check
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GitHooks.html" class="nav-link pb-2 d-block" > Git hooks
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GitHooks.html" class="nav-link" > Git hooks
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Rider.html" class="nav-link pb-2 d-block" > JetBrains Rider
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Rider.html" class="nav-link" > JetBrains Rider
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/VisualStudio.html" class="nav-link pb-2 d-block" > Visual Studio
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/VisualStudio.html" class="nav-link" > Visual Studio
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/VSCode.html" class="nav-link pb-2 d-block" > Visual Studio Code
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/VSCode.html" class="nav-link" > Visual Studio Code
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link pb-2 d-block" > Generating source code
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link" > Generating source code
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link pb-2 d-block" > Upgrade guide
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link" > Upgrade guide
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link pb-2 d-block" > FAQ
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Recipes.html" class="nav-link" > Recipes
 </a></li>
 
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link" > FAQ
+</a></li>
+
+</div>
+<li class="nav-header " id="contributors">
+    Contributors
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Index.html" class="nav-link" > Contributors
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/FSharp.html" class="nav-link" > F#
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Getting Started.html" class="nav-link" > Getting started
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Solution Structure.html" class="nav-link" > Solution structure
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Transforming.html" class="nav-link" > Fantomas.Core overview (1)
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Traverse.html" class="nav-link" > Fantomas.Core overview (2)
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Formatted Code.html" class="nav-link" > Fantomas.Core overview (3)
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Conditional Compilation Directives.html" class="nav-link" > Formatting Conditional Compilation Directives
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/How Can I Contribute.html" class="nav-link" > How can I contribute?
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/The Missing Comment.html" class="nav-link" > The Missing Comment
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Multiple Times.html" class="nav-link" > Fantomas is trying to format the input multiple times due to the detection of multiple defines
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link" > Pull request ground rules
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link" > Updating the compiler sources
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link" > Releases
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Glossary.html" class="nav-link" > Glossary
+</a></li>
+
+</div>
+                <li class="nav-header " id="api_reference">
+    API Reference
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item active"><a href="https://fsprojects.github.io/fantomas/reference/index.html" class="nav-link" > All Namespaces</a></li>
+
+</div>
             </ul>
         </div>
-    </li>
+        <a href="https://fsprojects.github.io/fantomas/">
+            <img alt="Header menu logo" src="https://fsprojects.github.io/fantomas/images/logo.png">
+            <strong>fantomas</strong>
+        </a>
+    </div>
+    <div class="end">
+        <a href="https://github.com/fsprojects/fantomas/" target="_blank">
+            <iconify-icon icon="uil:github" width="26" height="26"></iconify-icon>
+        </a>
+        <iconify-icon id="search-btn" icon="carbon:search" class="search" width="24" height="24"></iconify-icon>
+        <fsdocs-theme-toggle></fsdocs-theme-toggle>
+    </div>
+</header>
+<aside id="fsdocs-main-menu">
+    <ul class="menu">
+        <li class="nav-header">Links</li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/fsprojects/fantomas/blob/main/LICENSE.md">License</a>
+        </li>
+        <li class="nav-item"><a class="nav-link"
+                                href="https://github.com/fsprojects/fantomas/blob/main/CHANGELOG.md">Release
+            Notes</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/fsprojects/fantomas/">Source
+            Repository</a></li>
+        <li class="nav-header " id="end-users">
+    End-users
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GettingStarted.html" class="nav-link" > Getting Started
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/StyleGuide.html" class="nav-link" > Style guide
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Configuration.html" class="nav-link" > Configuration
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/IgnoreFiles.html" class="nav-link" > Ignore Files
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/FormattingCheck.html" class="nav-link" > Formatting Check
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GitHooks.html" class="nav-link" > Git hooks
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Rider.html" class="nav-link" > JetBrains Rider
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/VisualStudio.html" class="nav-link" > Visual Studio
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/VSCode.html" class="nav-link" > Visual Studio Code
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link" > Generating source code
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link" > Upgrade guide
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Recipes.html" class="nav-link" > Recipes
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link" > FAQ
+</a></li>
+
 </div>
-<div id="contributors-wrapper" class="accordion-item">
-    <li class="docs-menu">
-        <button id="contributors-button"
-            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
-            data-bs-toggle="collapse" data-bs-target="#contributors" aria-expanded="false"
-            aria-control="contributors" type="button">
-            Contributors
-        </button>
-        <div id="contributors" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
-            <ul class="list-unstyled fw-normal mb-0">
-                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Index.html" class="nav-link pb-2 d-block" > Contributors
+<li class="nav-header " id="contributors">
+    Contributors
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Index.html" class="nav-link" > Contributors
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/FSharp.html" class="nav-link pb-2 d-block" > F#
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/FSharp.html" class="nav-link" > F#
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Getting Started.html" class="nav-link pb-2 d-block" > Getting started
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Getting Started.html" class="nav-link" > Getting started
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Solution Structure.html" class="nav-link pb-2 d-block" > Solution structure
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Solution Structure.html" class="nav-link" > Solution structure
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Transforming.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (1)
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Transforming.html" class="nav-link" > Fantomas.Core overview (1)
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Traverse.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (2)
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Traverse.html" class="nav-link" > Fantomas.Core overview (2)
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Formatted Code.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (3)
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Formatted Code.html" class="nav-link" > Fantomas.Core overview (3)
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Conditional Compilation Directives.html" class="nav-link pb-2 d-block" > Formatting Conditional Compilation Directives
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Conditional Compilation Directives.html" class="nav-link" > Formatting Conditional Compilation Directives
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/How Can I Contribute.html" class="nav-link pb-2 d-block" > How can I contribute?
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/How Can I Contribute.html" class="nav-link" > How can I contribute?
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/The Missing Comment.html" class="nav-link pb-2 d-block" > The Missing Comment
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/The Missing Comment.html" class="nav-link" > The Missing Comment
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Multiple Times.html" class="nav-link pb-2 d-block" > Fantomas is trying to format the input multiple times due to the detection of multiple defines
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Multiple Times.html" class="nav-link" > Fantomas is trying to format the input multiple times due to the detection of multiple defines
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link" > Pull request ground rules
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link pb-2 d-block" > Updating the compiler sources
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link" > Updating the compiler sources
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link pb-2 d-block" > Releases
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link" > Releases
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Glossary.html" class="nav-link pb-2 d-block" > Glossary
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Glossary.html" class="nav-link" > Glossary
 </a></li>
 
-            </ul>
-        </div>
-    </li>
 </div>
-        <div id="api_reference-wrapper" class="accordion-item">
-    <li class="docs-menu">
-        <button id="api_reference-button"
-            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
-            data-bs-toggle="collapse" data-bs-target="#api_reference" aria-expanded="false"
-            aria-control="api_reference" type="button">
-            API Reference
-        </button>
-        <div id="api_reference" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
-            <ul class="list-unstyled fw-normal mb-0">
-                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/reference/index.html" class="nav-link pb-2 d-block" > All Namespaces</a></li>
+        <li class="nav-header " id="api_reference">
+    API Reference
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item active"><a href="https://fsprojects.github.io/fantomas/reference/index.html" class="nav-link" > All Namespaces</a></li>
 
-            </ul>
-        </div>
-    </li>
 </div>
-      </div>
-    </aside>
-    <main class="doc-content">
-     <nav class="navbar navbar-expand-sm border py-1">
-        <div class="container-fluid flex-nowrap">
-          <button class="btn" id="toggle-mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="sidebar-toggle fs-3 bi bi-list"></i>
-          </button>
-          <div id="mobile-navbar" class="container-fluid d-flex justify-content-between d-sm-none">
-            <i class="invisible bi bi-github fs-3 align-self-end"></i>
-         <a href="./index.html" ><img id="fsdocs-logo-mobile" width="32" height="32" src="https://fsprojects.github.io/fantomas//images/logo.png" /></a>
-            <a class="nav-link m-0 p-0" target="_blank" href="https://github.com/fsprojects/fantomas/"> <i class="bi bi-github fs-3 align-self-end"></i>
-</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-                <a class="nav-link active" aria-current="page" href="https://fsprojects.github.io/fantomas/docs/index.html">Docs</a>
-                <a class="nav-link" target="_blank" href="https://fsprojects.github.io/fantomas-tools/">Tools</a>
-            </div>
-            <form class="d-flex">
-              <div class="input-group me-4">
-              <label for="search-by">
-                <i class="fas fa-search"></i>
-              </label>
-                <div class="btn border-end-0 border">
-                  <i class="bi bi-search"></i>
-                </div>
-                <input aria-label="Search" class="form-control  border-start-0 border" data-search-input=""
-                  id="search-by" type="search" placeholder="Search..." />
-                <span class="input-group-append">
-                </span>
-                <span data-search-clear="">
-                  <i class="fas fa-times"></i>
-                </span>
-              </div>
-            </form>
-            <a class="nav-link m-0 p-0" target="_blank" href="https://github.com/fsprojects/fantomas/">GitHub<i
-                class="bi bi-box-arrow-up-right mx-2"></i></a>
-          </div>
-        </div>
-      </nav>
-      <div id="fsdocs-content" class="bg-white m-2 m-sm-5 p-3 p-sm-4">
+    </ul>
+</aside>
+<main>
+    <div id="content">
         <div>
   <h2>
     Extras Module
@@ -250,23 +332,18 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.ArrayParallel`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.ArrayParallel\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
-                
- Specialized parallel functions for an array.
+                 Specialized parallel functions for an array.
  Different from Array.Parallel as it will try to minimize the max degree of parallelism.
  Will flatten aggregate exceptions that contain one exception.
-
               </p>
             </div>
           </td>
@@ -284,16 +361,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.Bits`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.Bits\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -314,16 +388,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.Bool`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.Bool\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -344,16 +415,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.Int32`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.Int32\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -374,16 +442,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.Int64`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.Int64\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -404,16 +469,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.IntMap`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.IntMap\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -434,16 +496,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.ListAssoc`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.ListAssoc\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -464,16 +523,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.ListParallel`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.ListParallel\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -494,16 +550,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.ListSet`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.ListSet\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -524,16 +577,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.NameMap`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.NameMap\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -554,16 +604,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.NameSetModule`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.NameSetModule\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -584,46 +631,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.Pair`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.Pair\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-entity-name">
-            <p>
-              <a name="UnmanagedProcessExecutionOptions">
-                <a href="https://fsprojects.github.io/fantomas/reference/internal-utilities-library-extras-unmanagedprocessexecutionoptions.html">
-                  UnmanagedProcessExecutionOptions
-                </a>
-              </a>
-            </p>
-          </td>
-          <td class="fsdocs-entity-xmldoc">
-            <div>
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.UnmanagedProcessExecutionOptions`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.UnmanagedProcessExecutionOptions\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -644,16 +658,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.Zmap`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.Zmap\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -674,16 +685,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.Zset`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.Zset\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -704,21 +712,16 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.DisposablesTracker`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.DisposablesTracker\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
-                
- Track a set of resources to cleanup
-
+                 Track a set of resources to cleanup
               </p>
             </div>
           </td>
@@ -736,16 +739,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:T:Internal.Utilities.Library.Extras.Graph`2``')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.Graph`2\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -766,16 +766,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:T:Internal.Utilities.Library.Extras.IntMap`1``')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.IntMap`1\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -796,16 +793,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:T:Internal.Utilities.Library.Extras.MaybeLazy`1``')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.MaybeLazy`1\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -826,16 +820,13 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:T:Internal.Utilities.Library.Extras.NameSet`')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.NameSet\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
                 
@@ -856,25 +847,20 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:T:Internal.Utilities.Library.Extras.NonNullSlot`1``')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.NonNullSlot`1\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
-                
- In some cases we play games where we use 'null' as a more efficient representation
+                 In some cases we play games where we use 'null' as a more efficient representation
  in F#. The functions below are used to give initial values to mutable fields.
  This is an unsafe trick, as it relies on the fact that the type of values
  being placed into the slot never utilizes "null" as a representation. To be used with
  with care.
-
               </p>
             </div>
           </td>
@@ -892,21 +878,16 @@
           <td class="fsdocs-entity-xmldoc">
             <div>
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:T:Internal.Utilities.Library.Extras.cache`1``')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.cache`1\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
               </a>
               <p class="fsdocs-summary">
-                
- Caches, mainly for free variables
-
+                 Caches, mainly for free variables
               </p>
             </div>
           </td>
@@ -933,7 +914,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1305', 1305)" onmouseover="showTip(event, '1305', 1305)">
+              <code onmouseout="hideTip(event, '1142', 1142)" onmouseover="showTip(event, '1142', 1142)">
                 <p>
                   <a id="GetEnvInteger">
                     <a href="#GetEnvInteger">
@@ -942,7 +923,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1305">
+              <div class="fsdocs-tip" id="1142">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>GetEnvInteger&#32;<span>e&#32;dflt</span></span></code>
@@ -1010,7 +991,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1306', 1306)" onmouseover="showTip(event, '1306', 1306)">
+              <code onmouseout="hideTip(event, '1143', 1143)" onmouseover="showTip(event, '1143', 1143)">
                 <p>
                   <a id="buildString">
                     <a href="#buildString">
@@ -1019,7 +1000,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1306">
+              <div class="fsdocs-tip" id="1143">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>buildString&#32;<span>f</span></span></code>
@@ -1051,21 +1032,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Internal.Utilities.Library.Extras.buildString`')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Library.Extras.buildString\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Buffer printing utility
-
+                     Buffer printing utility
                   </p>
                 </div>
               </summary>
@@ -1094,7 +1070,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1307', 1307)" onmouseover="showTip(event, '1307', 1307)">
+              <code onmouseout="hideTip(event, '1144', 1144)" onmouseover="showTip(event, '1144', 1144)">
                 <p>
                   <a id="cacheOptByref">
                     <a href="#cacheOptByref">
@@ -1103,7 +1079,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1307">
+              <div class="fsdocs-tip" id="1144">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>cacheOptByref&#32;<span>cache&#32;f</span></span></code>
@@ -1176,7 +1152,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1308', 1308)" onmouseover="showTip(event, '1308', 1308)">
+              <code onmouseout="hideTip(event, '1145', 1145)" onmouseover="showTip(event, '1145', 1145)">
                 <p>
                   <a id="cacheOptRef">
                     <a href="#cacheOptRef">
@@ -1185,7 +1161,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1308">
+              <div class="fsdocs-tip" id="1145">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>cacheOptRef&#32;<span>cache&#32;f</span></span></code>
@@ -1258,7 +1234,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1309', 1309)" onmouseover="showTip(event, '1309', 1309)">
+              <code onmouseout="hideTip(event, '1146', 1146)" onmouseover="showTip(event, '1146', 1146)">
                 <p>
                   <a id="cached">
                     <a href="#cached">
@@ -1267,7 +1243,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1309">
+              <div class="fsdocs-tip" id="1146">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>cached&#32;<span>cache&#32;resF</span></span></code>
@@ -1340,7 +1316,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1310', 1310)" onmouseover="showTip(event, '1310', 1310)">
+              <code onmouseout="hideTip(event, '1147', 1147)" onmouseover="showTip(event, '1147', 1147)">
                 <p>
                   <a id="debug">
                     <a href="#debug">
@@ -1349,7 +1325,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1310">
+              <div class="fsdocs-tip" id="1147">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>debug&#32;<span></span></span></code>
@@ -1379,7 +1355,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1311', 1311)" onmouseover="showTip(event, '1311', 1311)">
+              <code onmouseout="hideTip(event, '1148', 1148)" onmouseover="showTip(event, '1148', 1148)">
                 <p>
                   <a id="dispose">
                     <a href="#dispose">
@@ -1388,7 +1364,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1311">
+              <div class="fsdocs-tip" id="1148">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>dispose&#32;<span>x</span></span></code>
@@ -1426,7 +1402,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1312', 1312)" onmouseover="showTip(event, '1312', 1312)">
+              <code onmouseout="hideTip(event, '1149', 1149)" onmouseover="showTip(event, '1149', 1149)">
                 <p>
                   <a id="fold1Of2">
                     <a href="#fold1Of2">
@@ -1435,7 +1411,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1312">
+              <div class="fsdocs-tip" id="1149">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>fold1Of2&#32;<span>f1&#32;acc&#32;<span>(<span>a1,&#32;_a2</span>)</span></span></span></code>
@@ -1535,7 +1511,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1313', 1313)" onmouseover="showTip(event, '1313', 1313)">
+              <code onmouseout="hideTip(event, '1150', 1150)" onmouseover="showTip(event, '1150', 1150)">
                 <p>
                   <a id="foldPair">
                     <a href="#foldPair">
@@ -1544,7 +1520,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1313">
+              <div class="fsdocs-tip" id="1150">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>foldPair&#32;<span><span>(<span>f1,&#32;f2</span>)</span>&#32;acc&#32;<span>(<span>a1,&#32;a2</span>)</span></span></span></code>
@@ -1660,7 +1636,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1314', 1314)" onmouseover="showTip(event, '1314', 1314)">
+              <code onmouseout="hideTip(event, '1151', 1151)" onmouseover="showTip(event, '1151', 1151)">
                 <p>
                   <a id="foldQuadruple">
                     <a href="#foldQuadruple">
@@ -1669,7 +1645,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1314">
+              <div class="fsdocs-tip" id="1151">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>foldQuadruple&#32;<span><span>(<span>f1,&#32;f2,&#32;f3,&#32;f4</span>)</span>&#32;acc&#32;<span>(<span>a1,&#32;a2,&#32;a3,&#32;a4</span>)</span></span></span></code>
@@ -1849,7 +1825,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1315', 1315)" onmouseover="showTip(event, '1315', 1315)">
+              <code onmouseout="hideTip(event, '1152', 1152)" onmouseover="showTip(event, '1152', 1152)">
                 <p>
                   <a id="foldTriple">
                     <a href="#foldTriple">
@@ -1858,7 +1834,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1315">
+              <div class="fsdocs-tip" id="1152">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>foldTriple&#32;<span><span>(<span>f1,&#32;f2,&#32;f3</span>)</span>&#32;acc&#32;<span>(<span>a1,&#32;a2,&#32;a3</span>)</span></span></span></code>
@@ -2006,7 +1982,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1316', 1316)" onmouseover="showTip(event, '1316', 1316)">
+              <code onmouseout="hideTip(event, '1153', 1153)" onmouseover="showTip(event, '1153', 1153)">
                 <p>
                   <a id="isEnvVarSet">
                     <a href="#isEnvVarSet">
@@ -2015,7 +1991,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1316">
+              <div class="fsdocs-tip" id="1153">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>isEnvVarSet&#32;<span>s</span></span></code>
@@ -2067,7 +2043,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1317', 1317)" onmouseover="showTip(event, '1317', 1317)">
+              <code onmouseout="hideTip(event, '1154', 1154)" onmouseover="showTip(event, '1154', 1154)">
                 <p>
                   <a id="map1Of2">
                     <a href="#map1Of2">
@@ -2076,7 +2052,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1317">
+              <div class="fsdocs-tip" id="1154">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map1Of2&#32;<span>f&#32;<span>(<span>a1,&#32;a2</span>)</span></span></span></code>
@@ -2160,7 +2136,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1318', 1318)" onmouseover="showTip(event, '1318', 1318)">
+              <code onmouseout="hideTip(event, '1155', 1155)" onmouseover="showTip(event, '1155', 1155)">
                 <p>
                   <a id="map1Of3">
                     <a href="#map1Of3">
@@ -2169,7 +2145,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1318">
+              <div class="fsdocs-tip" id="1155">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map1Of3&#32;<span>f&#32;<span>(<span>a1,&#32;a2,&#32;a3</span>)</span></span></span></code>
@@ -2269,7 +2245,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1319', 1319)" onmouseover="showTip(event, '1319', 1319)">
+              <code onmouseout="hideTip(event, '1156', 1156)" onmouseover="showTip(event, '1156', 1156)">
                 <p>
                   <a id="map2Of2">
                     <a href="#map2Of2">
@@ -2278,7 +2254,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1319">
+              <div class="fsdocs-tip" id="1156">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map2Of2&#32;<span>f&#32;<span>(<span>a1,&#32;a2</span>)</span></span></span></code>
@@ -2362,7 +2338,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1320', 1320)" onmouseover="showTip(event, '1320', 1320)">
+              <code onmouseout="hideTip(event, '1157', 1157)" onmouseover="showTip(event, '1157', 1157)">
                 <p>
                   <a id="map2Of3">
                     <a href="#map2Of3">
@@ -2371,7 +2347,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1320">
+              <div class="fsdocs-tip" id="1157">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map2Of3&#32;<span>f&#32;<span>(<span>a1,&#32;a2,&#32;a3</span>)</span></span></span></code>
@@ -2471,7 +2447,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1321', 1321)" onmouseover="showTip(event, '1321', 1321)">
+              <code onmouseout="hideTip(event, '1158', 1158)" onmouseover="showTip(event, '1158', 1158)">
                 <p>
                   <a id="map3Of3">
                     <a href="#map3Of3">
@@ -2480,7 +2456,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1321">
+              <div class="fsdocs-tip" id="1158">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map3Of3&#32;<span>f&#32;<span>(<span>a1,&#32;a2,&#32;a3</span>)</span></span></span></code>
@@ -2580,7 +2556,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1322', 1322)" onmouseover="showTip(event, '1322', 1322)">
+              <code onmouseout="hideTip(event, '1159', 1159)" onmouseover="showTip(event, '1159', 1159)">
                 <p>
                   <a id="map3Of4">
                     <a href="#map3Of4">
@@ -2589,7 +2565,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1322">
+              <div class="fsdocs-tip" id="1159">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map3Of4&#32;<span>f&#32;<span>(<span>a1,&#32;a2,&#32;a3,&#32;a4</span>)</span></span></span></code>
@@ -2705,7 +2681,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1323', 1323)" onmouseover="showTip(event, '1323', 1323)">
+              <code onmouseout="hideTip(event, '1160', 1160)" onmouseover="showTip(event, '1160', 1160)">
                 <p>
                   <a id="map4Of4">
                     <a href="#map4Of4">
@@ -2714,7 +2690,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1323">
+              <div class="fsdocs-tip" id="1160">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map4Of4&#32;<span>f&#32;<span>(<span>a1,&#32;a2,&#32;a3,&#32;a4</span>)</span></span></span></code>
@@ -2830,7 +2806,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1324', 1324)" onmouseover="showTip(event, '1324', 1324)">
+              <code onmouseout="hideTip(event, '1161', 1161)" onmouseover="showTip(event, '1161', 1161)">
                 <p>
                   <a id="map5Of5">
                     <a href="#map5Of5">
@@ -2839,7 +2815,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1324">
+              <div class="fsdocs-tip" id="1161">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map5Of5&#32;<span>f&#32;<span>(<span>a1,&#32;a2,&#32;a3,&#32;a4,&#32;a5</span>)</span></span></span></code>
@@ -2971,7 +2947,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1325', 1325)" onmouseover="showTip(event, '1325', 1325)">
+              <code onmouseout="hideTip(event, '1162', 1162)" onmouseover="showTip(event, '1162', 1162)">
                 <p>
                   <a id="map6Of6">
                     <a href="#map6Of6">
@@ -2980,7 +2956,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1325">
+              <div class="fsdocs-tip" id="1162">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map6Of6&#32;<span>f&#32;<span>(<span>a1,&#32;a2,&#32;a3,&#32;a4,&#32;a5,&#32;a6</span>)</span></span></span></code>
@@ -3128,7 +3104,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1326', 1326)" onmouseover="showTip(event, '1326', 1326)">
+              <code onmouseout="hideTip(event, '1163', 1163)" onmouseover="showTip(event, '1163', 1163)">
                 <p>
                   <a id="mapFoldFst">
                     <a href="#mapFoldFst">
@@ -3137,7 +3113,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1326">
+              <div class="fsdocs-tip" id="1163">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>mapFoldFst&#32;<span>f&#32;s&#32;<span>(<span>x,&#32;y</span>)</span></span></span></code>
@@ -3237,7 +3213,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1327', 1327)" onmouseover="showTip(event, '1327', 1327)">
+              <code onmouseout="hideTip(event, '1164', 1164)" onmouseover="showTip(event, '1164', 1164)">
                 <p>
                   <a id="mapFoldSnd">
                     <a href="#mapFoldSnd">
@@ -3246,7 +3222,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1327">
+              <div class="fsdocs-tip" id="1164">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>mapFoldSnd&#32;<span>f&#32;s&#32;<span>(<span>x,&#32;y</span>)</span></span></span></code>
@@ -3346,7 +3322,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1328', 1328)" onmouseover="showTip(event, '1328', 1328)">
+              <code onmouseout="hideTip(event, '1165', 1165)" onmouseover="showTip(event, '1165', 1165)">
                 <p>
                   <a id="mapPair">
                     <a href="#mapPair">
@@ -3355,7 +3331,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1328">
+              <div class="fsdocs-tip" id="1165">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>mapPair&#32;<span><span>(<span>f1,&#32;f2</span>)</span>&#32;<span>(<span>a1,&#32;a2</span>)</span></span></span></code>
@@ -3455,7 +3431,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1329', 1329)" onmouseover="showTip(event, '1329', 1329)">
+              <code onmouseout="hideTip(event, '1166', 1166)" onmouseover="showTip(event, '1166', 1166)">
                 <p>
                   <a id="mapQuadruple">
                     <a href="#mapQuadruple">
@@ -3464,7 +3440,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1329">
+              <div class="fsdocs-tip" id="1166">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>mapQuadruple&#32;<span><span>(<span>f1,&#32;f2,&#32;f3,&#32;f4</span>)</span>&#32;<span>(<span>a1,&#32;a2,&#32;a3,&#32;a4</span>)</span></span></span></code>
@@ -3628,7 +3604,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1330', 1330)" onmouseover="showTip(event, '1330', 1330)">
+              <code onmouseout="hideTip(event, '1167', 1167)" onmouseover="showTip(event, '1167', 1167)">
                 <p>
                   <a id="mapTriple">
                     <a href="#mapTriple">
@@ -3637,7 +3613,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1330">
+              <div class="fsdocs-tip" id="1167">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>mapTriple&#32;<span><span>(<span>f1,&#32;f2,&#32;f3</span>)</span>&#32;<span>(<span>a1,&#32;a2,&#32;a3</span>)</span></span></span></code>
@@ -3769,7 +3745,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1331', 1331)" onmouseover="showTip(event, '1331', 1331)">
+              <code onmouseout="hideTip(event, '1168', 1168)" onmouseover="showTip(event, '1168', 1168)">
                 <p>
                   <a id="newCache">
                     <a href="#newCache">
@@ -3778,7 +3754,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1331">
+              <div class="fsdocs-tip" id="1168">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>newCache&#32;<span>()</span></span></code>
@@ -3830,7 +3806,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1332', 1332)" onmouseover="showTip(event, '1332', 1332)">
+              <code onmouseout="hideTip(event, '1169', 1169)" onmouseover="showTip(event, '1169', 1169)">
                 <p>
                   <a id="nullableSlotEmpty">
                     <a href="#nullableSlotEmpty">
@@ -3839,7 +3815,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1332">
+              <div class="fsdocs-tip" id="1169">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>nullableSlotEmpty&#32;<span>()</span></span></code>
@@ -3891,7 +3867,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1333', 1333)" onmouseover="showTip(event, '1333', 1333)">
+              <code onmouseout="hideTip(event, '1170', 1170)" onmouseover="showTip(event, '1170', 1170)">
                 <p>
                   <a id="nullableSlotFull">
                     <a href="#nullableSlotFull">
@@ -3900,7 +3876,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1333">
+              <div class="fsdocs-tip" id="1170">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>nullableSlotFull&#32;<span>x</span></span></code>
@@ -3952,7 +3928,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1334', 1334)" onmouseover="showTip(event, '1334', 1334)">
+              <code onmouseout="hideTip(event, '1171', 1171)" onmouseover="showTip(event, '1171', 1171)">
                 <p>
                   <a id="p13">
                     <a href="#p13">
@@ -3961,7 +3937,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1334">
+              <div class="fsdocs-tip" id="1171">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p13&#32;<span><span>(<span>x,&#32;_y,&#32;_z</span>)</span></span></span></code>
@@ -4045,7 +4021,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1335', 1335)" onmouseover="showTip(event, '1335', 1335)">
+              <code onmouseout="hideTip(event, '1172', 1172)" onmouseover="showTip(event, '1172', 1172)">
                 <p>
                   <a id="p14">
                     <a href="#p14">
@@ -4054,7 +4030,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1335">
+              <div class="fsdocs-tip" id="1172">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p14&#32;<span><span>(<span>x1,&#32;_x2,&#32;_x3,&#32;_x4</span>)</span></span></span></code>
@@ -4154,7 +4130,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1336', 1336)" onmouseover="showTip(event, '1336', 1336)">
+              <code onmouseout="hideTip(event, '1173', 1173)" onmouseover="showTip(event, '1173', 1173)">
                 <p>
                   <a id="p15">
                     <a href="#p15">
@@ -4163,7 +4139,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1336">
+              <div class="fsdocs-tip" id="1173">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p15&#32;<span><span>(<span>x1,&#32;_x2,&#32;_x3,&#32;_x4,&#32;_x5</span>)</span></span></span></code>
@@ -4279,7 +4255,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1337', 1337)" onmouseover="showTip(event, '1337', 1337)">
+              <code onmouseout="hideTip(event, '1174', 1174)" onmouseover="showTip(event, '1174', 1174)">
                 <p>
                   <a id="p23">
                     <a href="#p23">
@@ -4288,7 +4264,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1337">
+              <div class="fsdocs-tip" id="1174">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p23&#32;<span><span>(<span>_x,&#32;y,&#32;_z</span>)</span></span></span></code>
@@ -4372,7 +4348,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1338', 1338)" onmouseover="showTip(event, '1338', 1338)">
+              <code onmouseout="hideTip(event, '1175', 1175)" onmouseover="showTip(event, '1175', 1175)">
                 <p>
                   <a id="p24">
                     <a href="#p24">
@@ -4381,7 +4357,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1338">
+              <div class="fsdocs-tip" id="1175">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p24&#32;<span><span>(<span>_x1,&#32;x2,&#32;_x3,&#32;_x4</span>)</span></span></span></code>
@@ -4481,7 +4457,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1339', 1339)" onmouseover="showTip(event, '1339', 1339)">
+              <code onmouseout="hideTip(event, '1176', 1176)" onmouseover="showTip(event, '1176', 1176)">
                 <p>
                   <a id="p25">
                     <a href="#p25">
@@ -4490,7 +4466,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1339">
+              <div class="fsdocs-tip" id="1176">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p25&#32;<span><span>(<span>_x1,&#32;x2,&#32;_x3,&#32;_x4,&#32;_x5</span>)</span></span></span></code>
@@ -4606,7 +4582,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1340', 1340)" onmouseover="showTip(event, '1340', 1340)">
+              <code onmouseout="hideTip(event, '1177', 1177)" onmouseover="showTip(event, '1177', 1177)">
                 <p>
                   <a id="p33">
                     <a href="#p33">
@@ -4615,7 +4591,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1340">
+              <div class="fsdocs-tip" id="1177">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p33&#32;<span><span>(<span>_x,&#32;_y,&#32;z</span>)</span></span></span></code>
@@ -4699,7 +4675,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1341', 1341)" onmouseover="showTip(event, '1341', 1341)">
+              <code onmouseout="hideTip(event, '1178', 1178)" onmouseover="showTip(event, '1178', 1178)">
                 <p>
                   <a id="p34">
                     <a href="#p34">
@@ -4708,7 +4684,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1341">
+              <div class="fsdocs-tip" id="1178">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p34&#32;<span><span>(<span>_x1,&#32;_x2,&#32;x3,&#32;_x4</span>)</span></span></span></code>
@@ -4808,7 +4784,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1342', 1342)" onmouseover="showTip(event, '1342', 1342)">
+              <code onmouseout="hideTip(event, '1179', 1179)" onmouseover="showTip(event, '1179', 1179)">
                 <p>
                   <a id="p35">
                     <a href="#p35">
@@ -4817,7 +4793,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1342">
+              <div class="fsdocs-tip" id="1179">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p35&#32;<span><span>(<span>_x1,&#32;_x2,&#32;x3,&#32;_x4,&#32;_x5</span>)</span></span></span></code>
@@ -4933,7 +4909,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1343', 1343)" onmouseover="showTip(event, '1343', 1343)">
+              <code onmouseout="hideTip(event, '1180', 1180)" onmouseover="showTip(event, '1180', 1180)">
                 <p>
                   <a id="p44">
                     <a href="#p44">
@@ -4942,7 +4918,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1343">
+              <div class="fsdocs-tip" id="1180">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p44&#32;<span><span>(<span>_x1,&#32;_x2,&#32;_x3,&#32;x4</span>)</span></span></span></code>
@@ -5042,7 +5018,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1344', 1344)" onmouseover="showTip(event, '1344', 1344)">
+              <code onmouseout="hideTip(event, '1181', 1181)" onmouseover="showTip(event, '1181', 1181)">
                 <p>
                   <a id="p45">
                     <a href="#p45">
@@ -5051,7 +5027,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1344">
+              <div class="fsdocs-tip" id="1181">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p45&#32;<span><span>(<span>_x1,&#32;_x2,&#32;_x3,&#32;x4,&#32;_x5</span>)</span></span></span></code>
@@ -5167,7 +5143,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1345', 1345)" onmouseover="showTip(event, '1345', 1345)">
+              <code onmouseout="hideTip(event, '1182', 1182)" onmouseover="showTip(event, '1182', 1182)">
                 <p>
                   <a id="p55">
                     <a href="#p55">
@@ -5176,7 +5152,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1345">
+              <div class="fsdocs-tip" id="1182">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>p55&#32;<span><span>(<span>_x1,&#32;_x2,&#32;_x3,&#32;_x4,&#32;x5</span>)</span></span></span></code>
@@ -5292,7 +5268,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1346', 1346)" onmouseover="showTip(event, '1346', 1346)">
+              <code onmouseout="hideTip(event, '1183', 1183)" onmouseover="showTip(event, '1183', 1183)">
                 <p>
                   <a id="pair">
                     <a href="#pair">
@@ -5301,7 +5277,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1346">
+              <div class="fsdocs-tip" id="1183">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>pair&#32;<span>a&#32;b</span></span></code>
@@ -5369,7 +5345,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1347', 1347)" onmouseover="showTip(event, '1347', 1347)">
+              <code onmouseout="hideTip(event, '1184', 1184)" onmouseover="showTip(event, '1184', 1184)">
                 <p>
                   <a id="progress">
                     <a href="#progress">
@@ -5378,7 +5354,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1347">
+              <div class="fsdocs-tip" id="1184">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>progress&#32;<span></span></span></code>
@@ -5408,7 +5384,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1348', 1348)" onmouseover="showTip(event, '1348', 1348)">
+              <code onmouseout="hideTip(event, '1185', 1185)" onmouseover="showTip(event, '1185', 1185)">
                 <p>
                   <a id="tracking">
                     <a href="#tracking">
@@ -5417,7 +5393,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1348">
+              <div class="fsdocs-tip" id="1185">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>tracking&#32;<span></span></span></code>
@@ -5447,7 +5423,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1349', 1349)" onmouseover="showTip(event, '1349', 1349)">
+              <code onmouseout="hideTip(event, '1186', 1186)" onmouseover="showTip(event, '1186', 1186)">
                 <p>
                   <a id="tryGetCacheValue">
                     <a href="#tryGetCacheValue">
@@ -5456,7 +5432,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1349">
+              <div class="fsdocs-tip" id="1186">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>tryGetCacheValue&#32;<span>cache</span></span></code>
@@ -5513,7 +5489,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1350', 1350)" onmouseover="showTip(event, '1350', 1350)">
+              <code onmouseout="hideTip(event, '1187', 1187)" onmouseover="showTip(event, '1187', 1187)">
                 <p>
                   <a id="verbose">
                     <a href="#verbose">
@@ -5522,7 +5498,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1350">
+              <div class="fsdocs-tip" id="1187">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>verbose&#32;<span></span></span></code>
@@ -5552,7 +5528,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1351', 1351)" onmouseover="showTip(event, '1351', 1351)">
+              <code onmouseout="hideTip(event, '1188', 1188)" onmouseover="showTip(event, '1188', 1188)">
                 <p>
                   <a id="vsnd">
                     <a href="#vsnd">
@@ -5561,7 +5537,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1351">
+              <div class="fsdocs-tip" id="1188">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>vsnd&#32;<span>arg1</span></span></code>
@@ -5618,7 +5594,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1352', 1352)" onmouseover="showTip(event, '1352', 1352)">
+              <code onmouseout="hideTip(event, '1189', 1189)" onmouseover="showTip(event, '1189', 1189)">
                 <p>
                   <a id="writeViaBuffer">
                     <a href="#writeViaBuffer">
@@ -5627,7 +5603,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1352">
+              <div class="fsdocs-tip" id="1189">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>writeViaBuffer&#32;<span>os&#32;f</span></span></code>
@@ -5662,21 +5638,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Internal.Utilities.Library.Extras.writeViaBuffer`')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Library.Extras.writeViaBuffer\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Writing to output stream via a string buffer.
-
+                     Writing to output stream via a string buffer.
                   </p>
                 </div>
               </summary>
@@ -5723,7 +5694,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1353', 1353)" onmouseover="showTip(event, '1353', 1353)">
+              <code onmouseout="hideTip(event, '1190', 1190)" onmouseover="showTip(event, '1190', 1190)">
                 <p>
                   <a id="AppendString">
                     <a href="#AppendString">
@@ -5732,7 +5703,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1353">
+              <div class="fsdocs-tip" id="1190">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.AppendString</span></code>
@@ -5759,21 +5730,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Internal.Utilities.Library.Extras.StringBuilder.AppendString`')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Library.Extras.StringBuilder.AppendString\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Like Append, but returns unit
-
+                     Like Append, but returns unit
                   </p>
                 </div>
               </summary>
@@ -5806,30 +5772,42 @@
   <div></div>
 </div>
         
-      </div>
-        <div id="push"></div>
-    </main>
-  <script type="module" src="https://fsprojects.github.io/fantomas/content/docs-setup.js"></script>
-  <!-- BEGIN SEARCH BOX: this adds support for the search box -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
-  <script type="text/javascript">var fsdocs_search_baseurl = 'https://fsprojects.github.io/fantomas/';</script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
-  <script type="text/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
-  <!-- END SEARCH BOX: this adds support for the search box -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <script type="module" src="https://fsprojects.github.io/fantomas/content/webcomponents.js"></script>
-  <script type="module">
-      import mermaid from "https://cdn.skypack.dev/mermaid@9.2.2";
-      mermaid.initialize({
-          startOnLoad: true,
-          theme: "base",
-          themeVariables: {
-              primaryColor: '#eff5f7'
-          }
-      });
-  </script>
+    </div>
+</main>
+<aside id="fsdocs-page-menu">
+    <p id="on-this-page">On this page</p>
+    <div class="empty"></div>
+</aside>
+<dialog>
+    <input type="search" placeholder="Search docs" />
+    <div class="results">
+        <ul></ul>
+        <p class="empty">Type something to start searching.</p>
+    </div>
+</dialog>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
+<script type="module">
+    import mermaid from "https://esm.sh/mermaid@9.2.2";
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: "base",
+        themeVariables: {
+            primaryColor: '#338cbb',
+            primaryTextColor: '#FFF',
+            primaryBorderColor: '#5aacd6'
+        }
+    });
+
+    const menuHeaders = [...document.querySelectorAll(".nav-header")].filter(nh => nh.id);
+    menuHeaders.forEach(nv => {
+        nv.addEventListener("click", () => {
+            nv.classList.toggle("active");
+        })
+    })
+</script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/webcomponents.js"></script>
 </body>
 </html>

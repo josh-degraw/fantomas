@@ -1,204 +1,286 @@
 <!DOCTYPE html>
 <html lang="en" data-root="https://fsprojects.github.io/fantomas/">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Florian Verdonck, Jindřich Ivánek, David Schaefer">
-  <title>ResizeArray (fantomas)</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="shortcut icon" type="image/x-icon" href="https://fsprojects.github.io/fantomas/images/favicon.ico">
-  <link type="text/css" rel="stylesheet" href="https://fsprojects.github.io/fantomas/content/fsdocs-custom.css" />
-  <script type="text/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
-  <!-- BEGIN SEARCH BOX: this adds support for the search box -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
-  <!-- END SEARCH BOX: this adds support for the search box -->
-  
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Florian Verdonck, Jindřich Ivánek, David Schaefer" name="author">
+    <!-- Opengraph properties (https://ogp.me/) -->
+    <meta property="og:site_name" content="fantomas">
+    <meta property="og:title" content="ResizeArray (fantomas)" />
+    <meta property="og:url" content="https://fsprojects.github.io/fantomas/{{fsdocs-source-basename}}.html">
+    <meta property="og:type" content="website" />
+    <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://fsprojects.github.io/fantomas/">
+    <meta name="twitter:title" content="ResizeArray (fantomas)">
+    
+    <title>ResizeArray (fantomas) | fantomas</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
+
+    
 </head>
-
-<body>
-     <aside class="bg-primary h-100 fs-5">
-      <div id="sidebar-header" class="d-flex justify-content-end mt-1 d-md-none">
-      <button class="btn d-md-none" id="close-mobile-menu" aria-controls="sidebar-wrapper" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="sidebar-toggle fs-3 bi bi-x-lg"></i>
-                  </button>
-              </div>
-      <div id="sidebar-logo" class="d-flex justify-content-center p-5">
-        <a href="https://fsprojects.github.io/fantomas/docs/index.html" ><img id="fsdocs-logo" src="https://fsprojects.github.io/fantomas//images/logo-fantomas-white.svg" /></a>
-      </div>
-      <div id="sidebar-content" class="accordion accordion-flush ps-0 text-white fs-6">
-        <div id="end-users-wrapper" class="accordion-item">
-    <li class="docs-menu">
-        <button id="end-users-button"
-            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
-            data-bs-toggle="collapse" data-bs-target="#end-users" aria-expanded="false"
-            aria-control="end-users" type="button">
-            End-users
-        </button>
-        <div id="end-users" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
-            <ul class="list-unstyled fw-normal mb-0">
-                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GettingStarted.html" class="nav-link pb-2 d-block" > Getting Started
+<body class="api-docs">
+<header>
+    <div class="start">
+        <div id="menu-toggle">
+            <iconify-icon class="icon closed" height="22" icon="eva:menu-fill" width="22"></iconify-icon>
+            <iconify-icon class="icon open" height="22" icon="mi:close" width="22"></iconify-icon>
+            <input type="checkbox" name="mobile-menu" />
+            <ul class="menu">
+                <li class="nav-header">Links</li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/fsprojects/fantomas/blob/main/LICENSE.md">License</a>
+                </li>
+                <li class="nav-item"><a class="nav-link"
+                                        href="https://github.com/fsprojects/fantomas/blob/main/CHANGELOG.md">Release
+                    Notes</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/fsprojects/fantomas/">Source
+                    Repository</a></li>
+                <li class="nav-header " id="end-users">
+    End-users
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GettingStarted.html" class="nav-link" > Getting Started
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/StyleGuide.html" class="nav-link pb-2 d-block" > Style guide
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/StyleGuide.html" class="nav-link" > Style guide
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Configuration.html" class="nav-link pb-2 d-block" > Configuration
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Configuration.html" class="nav-link" > Configuration
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/IgnoreFiles.html" class="nav-link pb-2 d-block" > Ignore Files
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/IgnoreFiles.html" class="nav-link" > Ignore Files
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FormattingCheck.html" class="nav-link pb-2 d-block" > Formatting Check
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/FormattingCheck.html" class="nav-link" > Formatting Check
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GitHooks.html" class="nav-link pb-2 d-block" > Git hooks
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GitHooks.html" class="nav-link" > Git hooks
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Rider.html" class="nav-link pb-2 d-block" > JetBrains Rider
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Rider.html" class="nav-link" > JetBrains Rider
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/VisualStudio.html" class="nav-link pb-2 d-block" > Visual Studio
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/VisualStudio.html" class="nav-link" > Visual Studio
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/VSCode.html" class="nav-link pb-2 d-block" > Visual Studio Code
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/VSCode.html" class="nav-link" > Visual Studio Code
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link pb-2 d-block" > Generating source code
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link" > Generating source code
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link pb-2 d-block" > Upgrade guide
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link" > Upgrade guide
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link pb-2 d-block" > FAQ
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Recipes.html" class="nav-link" > Recipes
 </a></li>
 
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link" > FAQ
+</a></li>
+
+</div>
+<li class="nav-header " id="contributors">
+    Contributors
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Index.html" class="nav-link" > Contributors
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/FSharp.html" class="nav-link" > F#
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Getting Started.html" class="nav-link" > Getting started
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Solution Structure.html" class="nav-link" > Solution structure
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Transforming.html" class="nav-link" > Fantomas.Core overview (1)
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Traverse.html" class="nav-link" > Fantomas.Core overview (2)
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Formatted Code.html" class="nav-link" > Fantomas.Core overview (3)
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Conditional Compilation Directives.html" class="nav-link" > Formatting Conditional Compilation Directives
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/How Can I Contribute.html" class="nav-link" > How can I contribute?
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/The Missing Comment.html" class="nav-link" > The Missing Comment
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Multiple Times.html" class="nav-link" > Fantomas is trying to format the input multiple times due to the detection of multiple defines
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link" > Pull request ground rules
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link" > Updating the compiler sources
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link" > Releases
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Glossary.html" class="nav-link" > Glossary
+</a></li>
+
+</div>
+                <li class="nav-header " id="api_reference">
+    API Reference
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item active"><a href="https://fsprojects.github.io/fantomas/reference/index.html" class="nav-link" > All Namespaces</a></li>
+
+</div>
             </ul>
         </div>
-    </li>
+        <a href="https://fsprojects.github.io/fantomas/">
+            <img alt="Header menu logo" src="https://fsprojects.github.io/fantomas/images/logo.png">
+            <strong>fantomas</strong>
+        </a>
+    </div>
+    <div class="end">
+        <a href="https://github.com/fsprojects/fantomas/" target="_blank">
+            <iconify-icon icon="uil:github" width="26" height="26"></iconify-icon>
+        </a>
+        <iconify-icon id="search-btn" icon="carbon:search" class="search" width="24" height="24"></iconify-icon>
+        <fsdocs-theme-toggle></fsdocs-theme-toggle>
+    </div>
+</header>
+<aside id="fsdocs-main-menu">
+    <ul class="menu">
+        <li class="nav-header">Links</li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/fsprojects/fantomas/blob/main/LICENSE.md">License</a>
+        </li>
+        <li class="nav-item"><a class="nav-link"
+                                href="https://github.com/fsprojects/fantomas/blob/main/CHANGELOG.md">Release
+            Notes</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/fsprojects/fantomas/">Source
+            Repository</a></li>
+        <li class="nav-header " id="end-users">
+    End-users
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GettingStarted.html" class="nav-link" > Getting Started
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/StyleGuide.html" class="nav-link" > Style guide
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Configuration.html" class="nav-link" > Configuration
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/IgnoreFiles.html" class="nav-link" > Ignore Files
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/FormattingCheck.html" class="nav-link" > Formatting Check
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GitHooks.html" class="nav-link" > Git hooks
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Rider.html" class="nav-link" > JetBrains Rider
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/VisualStudio.html" class="nav-link" > Visual Studio
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/VSCode.html" class="nav-link" > Visual Studio Code
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/GeneratingCode.html" class="nav-link" > Generating source code
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/UpgradeGuide.html" class="nav-link" > Upgrade guide
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/Recipes.html" class="nav-link" > Recipes
+</a></li>
+
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link" > FAQ
+</a></li>
+
 </div>
-<div id="contributors-wrapper" class="accordion-item">
-    <li class="docs-menu">
-        <button id="contributors-button"
-            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
-            data-bs-toggle="collapse" data-bs-target="#contributors" aria-expanded="false"
-            aria-control="contributors" type="button">
-            Contributors
-        </button>
-        <div id="contributors" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
-            <ul class="list-unstyled fw-normal mb-0">
-                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Index.html" class="nav-link pb-2 d-block" > Contributors
+<li class="nav-header " id="contributors">
+    Contributors
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Index.html" class="nav-link" > Contributors
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/FSharp.html" class="nav-link pb-2 d-block" > F#
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/FSharp.html" class="nav-link" > F#
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Getting Started.html" class="nav-link pb-2 d-block" > Getting started
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Getting Started.html" class="nav-link" > Getting started
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Solution Structure.html" class="nav-link pb-2 d-block" > Solution structure
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Solution Structure.html" class="nav-link" > Solution structure
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Transforming.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (1)
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Transforming.html" class="nav-link" > Fantomas.Core overview (1)
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Traverse.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (2)
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Traverse.html" class="nav-link" > Fantomas.Core overview (2)
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Formatted Code.html" class="nav-link pb-2 d-block" > Fantomas.Core overview (3)
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Formatted Code.html" class="nav-link" > Fantomas.Core overview (3)
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Conditional Compilation Directives.html" class="nav-link pb-2 d-block" > Formatting Conditional Compilation Directives
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Conditional Compilation Directives.html" class="nav-link" > Formatting Conditional Compilation Directives
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/How Can I Contribute.html" class="nav-link pb-2 d-block" > How can I contribute?
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/How Can I Contribute.html" class="nav-link" > How can I contribute?
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/The Missing Comment.html" class="nav-link pb-2 d-block" > The Missing Comment
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/The Missing Comment.html" class="nav-link" > The Missing Comment
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Multiple Times.html" class="nav-link pb-2 d-block" > Fantomas is trying to format the input multiple times due to the detection of multiple defines
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Multiple Times.html" class="nav-link" > Fantomas is trying to format the input multiple times due to the detection of multiple defines
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link pb-2 d-block" > Pull request ground rules
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Pull request ground rules.html" class="nav-link" > Pull request ground rules
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link pb-2 d-block" > Updating the compiler sources
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Updating the compiler.html" class="nav-link" > Updating the compiler sources
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link pb-2 d-block" > Releases
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Releases.html" class="nav-link" > Releases
 </a></li>
 
-<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Glossary.html" class="nav-link pb-2 d-block" > Glossary
+<li class="nav-item "><a href="https://fsprojects.github.io/fantomas/docs/contributors/Glossary.html" class="nav-link" > Glossary
 </a></li>
 
-            </ul>
-        </div>
-    </li>
 </div>
-        <div id="api_reference-wrapper" class="accordion-item">
-    <li class="docs-menu">
-        <button id="api_reference-button"
-            class="accordion-button collapsed btn text-white d-flex justify-content-between align-items-center"
-            data-bs-toggle="collapse" data-bs-target="#api_reference" aria-expanded="false"
-            aria-control="api_reference" type="button">
-            API Reference
-        </button>
-        <div id="api_reference" class="accordion-collapse collapse ps-4 pb-2 " data-bs-parent="#sidebar-content">
-            <ul class="list-unstyled fw-normal mb-0">
-                <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/reference/index.html" class="nav-link pb-2 d-block" > All Namespaces</a></li>
+        <li class="nav-header " id="api_reference">
+    API Reference
+    <iconify-icon icon="fluent:chevron-up-24-regular" width="32" height="32" rotate="180deg"></iconify-icon>
+</li>
+<div class="menu-items">
+    <li class="nav-item active"><a href="https://fsprojects.github.io/fantomas/reference/index.html" class="nav-link" > All Namespaces</a></li>
 
-            </ul>
-        </div>
-    </li>
 </div>
-      </div>
-    </aside>
-    <main class="doc-content">
-     <nav class="navbar navbar-expand-sm border py-1">
-        <div class="container-fluid flex-nowrap">
-          <button class="btn" id="toggle-mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="sidebar-toggle fs-3 bi bi-list"></i>
-          </button>
-          <div id="mobile-navbar" class="container-fluid d-flex justify-content-between d-sm-none">
-            <i class="invisible bi bi-github fs-3 align-self-end"></i>
-         <a href="./index.html" ><img id="fsdocs-logo-mobile" width="32" height="32" src="https://fsprojects.github.io/fantomas//images/logo.png" /></a>
-            <a class="nav-link m-0 p-0" target="_blank" href="https://github.com/fsprojects/fantomas/"> <i class="bi bi-github fs-3 align-self-end"></i>
-</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-                <a class="nav-link active" aria-current="page" href="https://fsprojects.github.io/fantomas/docs/index.html">Docs</a>
-                <a class="nav-link" target="_blank" href="https://fsprojects.github.io/fantomas-tools/">Tools</a>
-            </div>
-            <form class="d-flex">
-              <div class="input-group me-4">
-              <label for="search-by">
-                <i class="fas fa-search"></i>
-              </label>
-                <div class="btn border-end-0 border">
-                  <i class="bi bi-search"></i>
-                </div>
-                <input aria-label="Search" class="form-control  border-start-0 border" data-search-input=""
-                  id="search-by" type="search" placeholder="Search..." />
-                <span class="input-group-append">
-                </span>
-                <span data-search-clear="">
-                  <i class="fas fa-times"></i>
-                </span>
-              </div>
-            </form>
-            <a class="nav-link m-0 p-0" target="_blank" href="https://github.com/fsprojects/fantomas/">GitHub<i
-                class="bi bi-box-arrow-up-right mx-2"></i></a>
-          </div>
-        </div>
-      </nav>
-      <div id="fsdocs-content" class="bg-white m-2 m-sm-5 p-3 p-sm-4">
+    </ul>
+</aside>
+<main>
+    <div id="content">
         <div>
   <h2>
     ResizeArray Module
@@ -217,9 +299,7 @@
   <div class="fsdocs-xmldoc">
     <div>
       <p class="fsdocs-summary">
-        
- Generic operations on the type System.Collections.Generic.List, which is called ResizeArray in the F# libraries.
-
+         Generic operations on the type System.Collections.Generic.List, which is called ResizeArray in the F# libraries.
       </p>
     </div>
   </div>
@@ -242,7 +322,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1167', 1167)" onmouseover="showTip(event, '1167', 1167)">
+              <code onmouseout="hideTip(event, '1000', 1000)" onmouseover="showTip(event, '1000', 1000)">
                 <p>
                   <a id="append">
                     <a href="#append">
@@ -251,7 +331,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1167">
+              <div class="fsdocs-tip" id="1000">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>append&#32;<span>arg1&#32;arg2</span></span></code>
@@ -291,21 +371,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.append``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.append``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a new array that contains the elements of the first array followed by the elements of the second array.
-
+                     Build a new array that contains the elements of the first array followed by the elements of the second array.
                   </p>
                 </div>
               </summary>
@@ -342,7 +417,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1168', 1168)" onmouseover="showTip(event, '1168', 1168)">
+              <code onmouseout="hideTip(event, '1001', 1001)" onmouseover="showTip(event, '1001', 1001)">
                 <p>
                   <a id="blit">
                     <a href="#blit">
@@ -351,7 +426,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1168">
+              <div class="fsdocs-tip" id="1001">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>blit&#32;<span>arg1&#32;arg2&#32;arg3&#32;arg4&#32;arg5</span></span></code>
@@ -410,21 +485,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.blit``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.blit``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Read a range of elements from the first array and write them into the second.
-
+                     Read a range of elements from the first array and write them into the second.
                   </p>
                 </div>
               </summary>
@@ -476,7 +546,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1169', 1169)" onmouseover="showTip(event, '1169', 1169)">
+              <code onmouseout="hideTip(event, '1002', 1002)" onmouseover="showTip(event, '1002', 1002)">
                 <p>
                   <a id="choose">
                     <a href="#choose">
@@ -485,7 +555,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1169">
+              <div class="fsdocs-tip" id="1002">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>choose&#32;<span>arg1&#32;arg2</span></span></code>
@@ -525,23 +595,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.choose``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.choose``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply the given function to each element of the array. Return
+                     Apply the given function to each element of the array. Return
  the array comprised of the results "x" for each element where
  the function returns <c>Some(x)</c>.
-
                   </p>
                 </div>
               </summary>
@@ -578,7 +643,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1170', 1170)" onmouseover="showTip(event, '1170', 1170)">
+              <code onmouseout="hideTip(event, '1003', 1003)" onmouseover="showTip(event, '1003', 1003)">
                 <p>
                   <a id="concat">
                     <a href="#concat">
@@ -587,7 +652,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1170">
+              <div class="fsdocs-tip" id="1003">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>concat&#32;<span>arg1</span></span></code>
@@ -619,21 +684,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.concat``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.concat``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a new array that contains the elements of each of the given list of arrays.
-
+                     Build a new array that contains the elements of each of the given list of arrays.
                   </p>
                 </div>
               </summary>
@@ -662,7 +722,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1171', 1171)" onmouseover="showTip(event, '1171', 1171)">
+              <code onmouseout="hideTip(event, '1004', 1004)" onmouseover="showTip(event, '1004', 1004)">
                 <p>
                   <a id="copy">
                     <a href="#copy">
@@ -671,7 +731,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1171">
+              <div class="fsdocs-tip" id="1004">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>copy&#32;<span>arg1</span></span></code>
@@ -703,21 +763,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.copy``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.copy``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a new array that contains the elements of the given array.
-
+                     Build a new array that contains the elements of the given array.
                   </p>
                 </div>
               </summary>
@@ -746,7 +801,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1172', 1172)" onmouseover="showTip(event, '1172', 1172)">
+              <code onmouseout="hideTip(event, '1005', 1005)" onmouseover="showTip(event, '1005', 1005)">
                 <p>
                   <a id="create">
                     <a href="#create">
@@ -755,7 +810,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1172">
+              <div class="fsdocs-tip" id="1005">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>create&#32;<span>arg1&#32;arg2</span></span></code>
@@ -795,21 +850,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.create``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.create``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Create an array whose elements are all initially the given value.
-
+                     Create an array whose elements are all initially the given value.
                   </p>
                 </div>
               </summary>
@@ -846,7 +896,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1173', 1173)" onmouseover="showTip(event, '1173', 1173)">
+              <code onmouseout="hideTip(event, '1006', 1006)" onmouseover="showTip(event, '1006', 1006)">
                 <p>
                   <a id="exists">
                     <a href="#exists">
@@ -855,7 +905,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1173">
+              <div class="fsdocs-tip" id="1006">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>exists&#32;<span>arg1&#32;arg2</span></span></code>
@@ -895,23 +945,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.exists``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.exists``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Test if any element of the array satisfies the given predicate.
+                     Test if any element of the array satisfies the given predicate.
  If the input function is <c>f</c> and the elements are <c>i0...iN</c>
  then computes <c>p i0 or ... or p iN</c>.
-
                   </p>
                 </div>
               </summary>
@@ -948,7 +993,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1174', 1174)" onmouseover="showTip(event, '1174', 1174)">
+              <code onmouseout="hideTip(event, '1007', 1007)" onmouseover="showTip(event, '1007', 1007)">
                 <p>
                   <a id="exists2">
                     <a href="#exists2">
@@ -957,7 +1002,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1174">
+              <div class="fsdocs-tip" id="1007">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>exists2&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -1005,22 +1050,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.exists2``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.exists2``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Test elements of the two arrays pairwise to see if any pair of element satisfies the given predicate.
+                     Test elements of the two arrays pairwise to see if any pair of element satisfies the given predicate.
  Raise ArgumentException if the arrays have different lengths.
-
                   </p>
                 </div>
               </summary>
@@ -1065,7 +1105,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1175', 1175)" onmouseover="showTip(event, '1175', 1175)">
+              <code onmouseout="hideTip(event, '1008', 1008)" onmouseover="showTip(event, '1008', 1008)">
                 <p>
                   <a id="fill">
                     <a href="#fill">
@@ -1074,7 +1114,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1175">
+              <div class="fsdocs-tip" id="1008">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>fill&#32;<span>arg1&#32;arg2&#32;arg3&#32;arg4</span></span></code>
@@ -1125,21 +1165,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.fill``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.fill``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Fill a range of the collection with the given element.
-
+                     Fill a range of the collection with the given element.
                   </p>
                 </div>
               </summary>
@@ -1183,7 +1218,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1176', 1176)" onmouseover="showTip(event, '1176', 1176)">
+              <code onmouseout="hideTip(event, '1009', 1009)" onmouseover="showTip(event, '1009', 1009)">
                 <p>
                   <a id="filter">
                     <a href="#filter">
@@ -1192,7 +1227,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1176">
+              <div class="fsdocs-tip" id="1009">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>filter&#32;<span>arg1&#32;arg2</span></span></code>
@@ -1232,22 +1267,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.filter``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.filter``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return a new collection containing only the elements of the collection
+                     Return a new collection containing only the elements of the collection
  for which the given predicate returns True.
-
                   </p>
                 </div>
               </summary>
@@ -1284,7 +1314,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1177', 1177)" onmouseover="showTip(event, '1177', 1177)">
+              <code onmouseout="hideTip(event, '1010', 1010)" onmouseover="showTip(event, '1010', 1010)">
                 <p>
                   <a id="find">
                     <a href="#find">
@@ -1293,7 +1323,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1177">
+              <div class="fsdocs-tip" id="1010">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>find&#32;<span>arg1&#32;arg2</span></span></code>
@@ -1333,22 +1363,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.find``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.find``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return the first element for which the given function returns True.
+                     Return the first element for which the given function returns True.
  Raise <c>KeyNotFoundException</c> if no such element exists.
-
                   </p>
                 </div>
               </summary>
@@ -1385,7 +1410,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1178', 1178)" onmouseover="showTip(event, '1178', 1178)">
+              <code onmouseout="hideTip(event, '1011', 1011)" onmouseover="showTip(event, '1011', 1011)">
                 <p>
                   <a id="findIndex">
                     <a href="#findIndex">
@@ -1394,7 +1419,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1178">
+              <div class="fsdocs-tip" id="1011">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>findIndex&#32;<span>arg1&#32;arg2</span></span></code>
@@ -1434,23 +1459,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.findIndex``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.findIndex``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return the index of the first element in the array
+                     Return the index of the first element in the array
  that satisfies the given predicate. Raise <c>KeyNotFoundException</c> if
  none of the elements satisfy the predicate.
-
                   </p>
                 </div>
               </summary>
@@ -1487,7 +1507,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1179', 1179)" onmouseover="showTip(event, '1179', 1179)">
+              <code onmouseout="hideTip(event, '1012', 1012)" onmouseover="showTip(event, '1012', 1012)">
                 <p>
                   <a id="findIndexi">
                     <a href="#findIndexi">
@@ -1496,7 +1516,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1179">
+              <div class="fsdocs-tip" id="1012">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>findIndexi&#32;<span>arg1&#32;arg2</span></span></code>
@@ -1536,23 +1556,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.findIndexi``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.findIndexi``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return the index of the first element in the array
+                     Return the index of the first element in the array
  that satisfies the given predicate. Raise <c>KeyNotFoundException</c> if
  none of the elements satisfy the predicate.
-
                   </p>
                 </div>
               </summary>
@@ -1589,7 +1604,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1180', 1180)" onmouseover="showTip(event, '1180', 1180)">
+              <code onmouseout="hideTip(event, '1013', 1013)" onmouseover="showTip(event, '1013', 1013)">
                 <p>
                   <a id="fold">
                     <a href="#fold">
@@ -1598,7 +1613,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1180">
+              <div class="fsdocs-tip" id="1013">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>fold&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -1646,23 +1661,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.fold``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.fold``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply a function to each element of the collection, threading an accumulator argument
+                     Apply a function to each element of the collection, threading an accumulator argument
  through the computation. If the input function is <c>f</c> and the elements are <c>i0...iN</c>
  then computes <c>f (... (f s i0)...) iN</c>
-
                   </p>
                 </div>
               </summary>
@@ -1707,7 +1717,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1181', 1181)" onmouseover="showTip(event, '1181', 1181)">
+              <code onmouseout="hideTip(event, '1014', 1014)" onmouseover="showTip(event, '1014', 1014)">
                 <p>
                   <a id="fold2">
                     <a href="#fold2">
@@ -1716,7 +1726,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1181">
+              <div class="fsdocs-tip" id="1014">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>fold2&#32;<span>arg1&#32;arg2&#32;arg3&#32;arg4</span></span></code>
@@ -1772,25 +1782,20 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.fold2``3```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.fold2``3\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply a function to pairs of elements drawn from the two collections,
+                     Apply a function to pairs of elements drawn from the two collections,
  left-to-right, threading an accumulator argument
  through the computation.  The two input
  arrays must have the same lengths, otherwise an <c>ArgumentException</c> is
  raised.
-
                   </p>
                 </div>
               </summary>
@@ -1843,7 +1848,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1182', 1182)" onmouseover="showTip(event, '1182', 1182)">
+              <code onmouseout="hideTip(event, '1015', 1015)" onmouseover="showTip(event, '1015', 1015)">
                 <p>
                   <a id="foldBack">
                     <a href="#foldBack">
@@ -1852,7 +1857,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1182">
+              <div class="fsdocs-tip" id="1015">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>foldBack&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -1900,23 +1905,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.foldBack``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.foldBack``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply a function to each element of the array, threading an accumulator argument
+                     Apply a function to each element of the array, threading an accumulator argument
  through the computation. If the input function is <c>f</c> and the elements are <c>i0...iN</c> then
  computes <c>f i0 (...(f iN s))</c>.
-
                   </p>
                 </div>
               </summary>
@@ -1961,7 +1961,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1183', 1183)" onmouseover="showTip(event, '1183', 1183)">
+              <code onmouseout="hideTip(event, '1016', 1016)" onmouseover="showTip(event, '1016', 1016)">
                 <p>
                   <a id="foldBack2">
                     <a href="#foldBack2">
@@ -1970,7 +1970,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1183">
+              <div class="fsdocs-tip" id="1016">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>foldBack2&#32;<span>arg1&#32;arg2&#32;arg3&#32;arg4</span></span></code>
@@ -2026,24 +2026,19 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.foldBack2``3```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.foldBack2``3\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply a function to pairs of elements drawn from the two collections, right-to-left,
+                     Apply a function to pairs of elements drawn from the two collections, right-to-left,
  threading an accumulator argument through the computation.  The two input
  arrays must have the same lengths, otherwise an <c>ArgumentException</c> is
  raised.
-
                   </p>
                 </div>
               </summary>
@@ -2096,7 +2091,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1184', 1184)" onmouseover="showTip(event, '1184', 1184)">
+              <code onmouseout="hideTip(event, '1017', 1017)" onmouseover="showTip(event, '1017', 1017)">
                 <p>
                   <a id="forall">
                     <a href="#forall">
@@ -2105,7 +2100,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1184">
+              <div class="fsdocs-tip" id="1017">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>forall&#32;<span>arg1&#32;arg2</span></span></code>
@@ -2145,23 +2140,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.forall``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.forall``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Test if all elements of the array satisfy the given predicate.
+                     Test if all elements of the array satisfy the given predicate.
  If the input function is <c>f</c> and the elements are <c>i0...iN</c> and "j0...jN"
  then computes <c>p i0 && ... && p iN</c>.
-
                   </p>
                 </div>
               </summary>
@@ -2198,7 +2188,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1185', 1185)" onmouseover="showTip(event, '1185', 1185)">
+              <code onmouseout="hideTip(event, '1018', 1018)" onmouseover="showTip(event, '1018', 1018)">
                 <p>
                   <a id="forall2">
                     <a href="#forall2">
@@ -2207,7 +2197,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1185">
+              <div class="fsdocs-tip" id="1018">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>forall2&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -2255,22 +2245,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.forall2``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.forall2``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Test elements of the two arrays pairwise to see if all pairs of elements satisfy the given predicate.
+                     Test elements of the two arrays pairwise to see if all pairs of elements satisfy the given predicate.
  Raise <c>ArgumentException</c> if the arrays have different lengths.
-
                   </p>
                 </div>
               </summary>
@@ -2315,7 +2300,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1186', 1186)" onmouseover="showTip(event, '1186', 1186)">
+              <code onmouseout="hideTip(event, '1019', 1019)" onmouseover="showTip(event, '1019', 1019)">
                 <p>
                   <a id="get">
                     <a href="#get">
@@ -2324,7 +2309,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1186">
+              <div class="fsdocs-tip" id="1019">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>get&#32;<span>arg1&#32;arg2</span></span></code>
@@ -2364,21 +2349,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.get``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.get``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Fetch an element from the collection.  You can also use the syntax <c>arr.[idx]</c>.
-
+                     Fetch an element from the collection.  You can also use the syntax <c>arr.[idx]</c>.
                   </p>
                 </div>
               </summary>
@@ -2415,7 +2395,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1187', 1187)" onmouseover="showTip(event, '1187', 1187)">
+              <code onmouseout="hideTip(event, '1020', 1020)" onmouseover="showTip(event, '1020', 1020)">
                 <p>
                   <a id="init">
                     <a href="#init">
@@ -2424,7 +2404,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1187">
+              <div class="fsdocs-tip" id="1020">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>init&#32;<span>arg1&#32;arg2</span></span></code>
@@ -2464,21 +2444,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.init``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.init``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Create an array by calling the given generator on each index.
-
+                     Create an array by calling the given generator on each index.
                   </p>
                 </div>
               </summary>
@@ -2515,7 +2490,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1188', 1188)" onmouseover="showTip(event, '1188', 1188)">
+              <code onmouseout="hideTip(event, '1021', 1021)" onmouseover="showTip(event, '1021', 1021)">
                 <p>
                   <a id="isEmpty">
                     <a href="#isEmpty">
@@ -2524,7 +2499,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1188">
+              <div class="fsdocs-tip" id="1021">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>isEmpty&#32;<span>arg1</span></span></code>
@@ -2556,21 +2531,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.isEmpty``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.isEmpty``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return True if the given array is empty, otherwise False.
-
+                     Return True if the given array is empty, otherwise False.
                   </p>
                 </div>
               </summary>
@@ -2599,7 +2569,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1189', 1189)" onmouseover="showTip(event, '1189', 1189)">
+              <code onmouseout="hideTip(event, '1022', 1022)" onmouseover="showTip(event, '1022', 1022)">
                 <p>
                   <a id="iter">
                     <a href="#iter">
@@ -2608,7 +2578,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1189">
+              <div class="fsdocs-tip" id="1022">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>iter&#32;<span>arg1&#32;arg2</span></span></code>
@@ -2643,21 +2613,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.iter``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.iter``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply the given function to each element of the array.
-
+                     Apply the given function to each element of the array.
                   </p>
                 </div>
               </summary>
@@ -2685,7 +2650,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1190', 1190)" onmouseover="showTip(event, '1190', 1190)">
+              <code onmouseout="hideTip(event, '1023', 1023)" onmouseover="showTip(event, '1023', 1023)">
                 <p>
                   <a id="iter2">
                     <a href="#iter2">
@@ -2694,7 +2659,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1190">
+              <div class="fsdocs-tip" id="1023">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>iter2&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -2737,23 +2702,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.iter2``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.iter2``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply the given function to two arrays simultaneously. The
+                     Apply the given function to two arrays simultaneously. The
  two arrays must have the same lengths, otherwise an Invalid_argument exception is
  raised.
-
                   </p>
                 </div>
               </summary>
@@ -2789,7 +2749,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1191', 1191)" onmouseover="showTip(event, '1191', 1191)">
+              <code onmouseout="hideTip(event, '1024', 1024)" onmouseover="showTip(event, '1024', 1024)">
                 <p>
                   <a id="iteri">
                     <a href="#iteri">
@@ -2798,7 +2758,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1191">
+              <div class="fsdocs-tip" id="1024">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>iteri&#32;<span>arg1&#32;arg2</span></span></code>
@@ -2833,22 +2793,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.iteri``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.iteri``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply the given function to each element of the array.  The integer passed to the
+                     Apply the given function to each element of the array.  The integer passed to the
  function indicates the index of element.
-
                   </p>
                 </div>
               </summary>
@@ -2876,7 +2831,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1192', 1192)" onmouseover="showTip(event, '1192', 1192)">
+              <code onmouseout="hideTip(event, '1025', 1025)" onmouseover="showTip(event, '1025', 1025)">
                 <p>
                   <a id="iteri2">
                     <a href="#iteri2">
@@ -2885,7 +2840,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1192">
+              <div class="fsdocs-tip" id="1025">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>iteri2&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -2928,23 +2883,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.iteri2``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.iteri2``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply the given function to pair of elements drawn from matching indices in two arrays,
+                     Apply the given function to pair of elements drawn from matching indices in two arrays,
  also passing the index of the elements. The two arrays must have the same lengths,
  otherwise an <c>ArgumentException</c> is raised.
-
                   </p>
                 </div>
               </summary>
@@ -2980,7 +2930,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1193', 1193)" onmouseover="showTip(event, '1193', 1193)">
+              <code onmouseout="hideTip(event, '1026', 1026)" onmouseover="showTip(event, '1026', 1026)">
                 <p>
                   <a id="length">
                     <a href="#length">
@@ -2989,7 +2939,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1193">
+              <div class="fsdocs-tip" id="1026">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>length&#32;<span>arg1</span></span></code>
@@ -3021,21 +2971,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.length``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.length``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return the length of the collection.  You can also use property <c>arr.Length</c>.
-
+                     Return the length of the collection.  You can also use property <c>arr.Length</c>.
                   </p>
                 </div>
               </summary>
@@ -3064,7 +3009,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1194', 1194)" onmouseover="showTip(event, '1194', 1194)">
+              <code onmouseout="hideTip(event, '1027', 1027)" onmouseover="showTip(event, '1027', 1027)">
                 <p>
                   <a id="map">
                     <a href="#map">
@@ -3073,7 +3018,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1194">
+              <div class="fsdocs-tip" id="1027">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map&#32;<span>arg1&#32;arg2</span></span></code>
@@ -3113,22 +3058,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.map``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.map``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a new array whose elements are the results of applying the given function
+                     Build a new array whose elements are the results of applying the given function
  to each of the elements of the array.
-
                   </p>
                 </div>
               </summary>
@@ -3165,7 +3105,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1195', 1195)" onmouseover="showTip(event, '1195', 1195)">
+              <code onmouseout="hideTip(event, '1028', 1028)" onmouseover="showTip(event, '1028', 1028)">
                 <p>
                   <a id="map2">
                     <a href="#map2">
@@ -3174,7 +3114,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1195">
+              <div class="fsdocs-tip" id="1028">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>map2&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -3222,23 +3162,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.map2``3```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.map2``3\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a new collection whose elements are the results of applying the given function
+                     Build a new collection whose elements are the results of applying the given function
  to the corresponding elements of the two collections pairwise.  The two input
  arrays must have the same lengths.
-
                   </p>
                 </div>
               </summary>
@@ -3283,7 +3218,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1196', 1196)" onmouseover="showTip(event, '1196', 1196)">
+              <code onmouseout="hideTip(event, '1029', 1029)" onmouseover="showTip(event, '1029', 1029)">
                 <p>
                   <a id="mapi">
                     <a href="#mapi">
@@ -3292,7 +3227,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1196">
+              <div class="fsdocs-tip" id="1029">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>mapi&#32;<span>arg1&#32;arg2</span></span></code>
@@ -3332,23 +3267,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.mapi``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.mapi``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a new array whose elements are the results of applying the given function
+                     Build a new array whose elements are the results of applying the given function
  to each of the elements of the array. The integer index passed to the
  function indicates the index of element being transformed.
-
                   </p>
                 </div>
               </summary>
@@ -3385,7 +3315,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1197', 1197)" onmouseover="showTip(event, '1197', 1197)">
+              <code onmouseout="hideTip(event, '1030', 1030)" onmouseover="showTip(event, '1030', 1030)">
                 <p>
                   <a id="mapi2">
                     <a href="#mapi2">
@@ -3394,7 +3324,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1197">
+              <div class="fsdocs-tip" id="1030">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>mapi2&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -3442,24 +3372,19 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.mapi2``3```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.mapi2``3\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a new collection whose elements are the results of applying the given function
+                     Build a new collection whose elements are the results of applying the given function
  to the corresponding elements of the two collections pairwise.  The two input
  arrays must have the same lengths, otherwise an <c>ArgumentException</c> is
  raised.
-
                   </p>
                 </div>
               </summary>
@@ -3504,7 +3429,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1198', 1198)" onmouseover="showTip(event, '1198', 1198)">
+              <code onmouseout="hideTip(event, '1031', 1031)" onmouseover="showTip(event, '1031', 1031)">
                 <p>
                   <a id="ofArray">
                     <a href="#ofArray">
@@ -3513,7 +3438,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1198">
+              <div class="fsdocs-tip" id="1031">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ofArray&#32;<span>arg1</span></span></code>
@@ -3545,21 +3470,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.ofArray``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.ofArray``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a <c>ResizeArray</c> from the given elements.
-
+                     Build a <c>ResizeArray</c> from the given elements.
                   </p>
                 </div>
               </summary>
@@ -3588,7 +3508,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1199', 1199)" onmouseover="showTip(event, '1199', 1199)">
+              <code onmouseout="hideTip(event, '1032', 1032)" onmouseover="showTip(event, '1032', 1032)">
                 <p>
                   <a id="ofList">
                     <a href="#ofList">
@@ -3597,7 +3517,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1199">
+              <div class="fsdocs-tip" id="1032">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ofList&#32;<span>arg1</span></span></code>
@@ -3629,21 +3549,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.ofList``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.ofList``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build an array from the given list.
-
+                     Build an array from the given list.
                   </p>
                 </div>
               </summary>
@@ -3672,7 +3587,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1200', 1200)" onmouseover="showTip(event, '1200', 1200)">
+              <code onmouseout="hideTip(event, '1033', 1033)" onmouseover="showTip(event, '1033', 1033)">
                 <p>
                   <a id="partition">
                     <a href="#partition">
@@ -3681,7 +3596,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1200">
+              <div class="fsdocs-tip" id="1033">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>partition&#32;<span>arg1&#32;arg2</span></span></code>
@@ -3721,23 +3636,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.partition``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.partition``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Split the collection into two collections, containing the
+                     Split the collection into two collections, containing the
  elements for which the given predicate returns True and False
  respectively.
-
                   </p>
                 </div>
               </summary>
@@ -3774,7 +3684,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1201', 1201)" onmouseover="showTip(event, '1201', 1201)">
+              <code onmouseout="hideTip(event, '1034', 1034)" onmouseover="showTip(event, '1034', 1034)">
                 <p>
                   <a id="reduce">
                     <a href="#reduce">
@@ -3783,7 +3693,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1201">
+              <div class="fsdocs-tip" id="1034">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>reduce&#32;<span>arg1&#32;arg2</span></span></code>
@@ -3823,23 +3733,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.reduce``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.reduce``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply a function to each element of the array, threading an accumulator argument
+                     Apply a function to each element of the array, threading an accumulator argument
  through the computation. If the input function is <c>f</c> and the elements are <c>i0...iN</c>
  then computes <c>f (... (f i0 i1)...) iN</c>. Raises ArgumentException if the array has size zero.
-
                   </p>
                 </div>
               </summary>
@@ -3876,7 +3781,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1202', 1202)" onmouseover="showTip(event, '1202', 1202)">
+              <code onmouseout="hideTip(event, '1035', 1035)" onmouseover="showTip(event, '1035', 1035)">
                 <p>
                   <a id="reduceBack">
                     <a href="#reduceBack">
@@ -3885,7 +3790,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1202">
+              <div class="fsdocs-tip" id="1035">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>reduceBack&#32;<span>arg1&#32;arg2</span></span></code>
@@ -3925,23 +3830,18 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.reduceBack``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.reduceBack``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply a function to each element of the array, threading an accumulator argument
+                     Apply a function to each element of the array, threading an accumulator argument
  through the computation. If the input function is <c>f</c> and the elements are <c>i0...iN</c> then
  computes <c>f i0 (...(f iN-1 iN))</c>. Raises ArgumentException if the array has size zero.
-
                   </p>
                 </div>
               </summary>
@@ -3978,7 +3878,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1203', 1203)" onmouseover="showTip(event, '1203', 1203)">
+              <code onmouseout="hideTip(event, '1036', 1036)" onmouseover="showTip(event, '1036', 1036)">
                 <p>
                   <a id="rev">
                     <a href="#rev">
@@ -3987,7 +3887,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1203">
+              <div class="fsdocs-tip" id="1036">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>rev&#32;<span>arg1</span></span></code>
@@ -4019,21 +3919,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.rev``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.rev``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return a new array with the elements in reverse order.
-
+                     Return a new array with the elements in reverse order.
                   </p>
                 </div>
               </summary>
@@ -4062,7 +3957,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1204', 1204)" onmouseover="showTip(event, '1204', 1204)">
+              <code onmouseout="hideTip(event, '1037', 1037)" onmouseover="showTip(event, '1037', 1037)">
                 <p>
                   <a id="scan">
                     <a href="#scan">
@@ -4071,7 +3966,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1204">
+              <div class="fsdocs-tip" id="1037">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>scan&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -4119,21 +4014,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.scan``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.scan``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Like <c>fold</c>, but return the intermediary and final results.
-
+                     Like <c>fold</c>, but return the intermediary and final results.
                   </p>
                 </div>
               </summary>
@@ -4178,7 +4068,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1205', 1205)" onmouseover="showTip(event, '1205', 1205)">
+              <code onmouseout="hideTip(event, '1038', 1038)" onmouseover="showTip(event, '1038', 1038)">
                 <p>
                   <a id="scanBack">
                     <a href="#scanBack">
@@ -4187,7 +4077,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1205">
+              <div class="fsdocs-tip" id="1038">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>scanBack&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -4235,21 +4125,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.scanBack``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.scanBack``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Like <c>foldBack</c>, but return both the intermediary and final results.
-
+                     Like <c>foldBack</c>, but return both the intermediary and final results.
                   </p>
                 </div>
               </summary>
@@ -4294,7 +4179,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1206', 1206)" onmouseover="showTip(event, '1206', 1206)">
+              <code onmouseout="hideTip(event, '1039', 1039)" onmouseover="showTip(event, '1039', 1039)">
                 <p>
                   <a id="set">
                     <a href="#set">
@@ -4303,7 +4188,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1206">
+              <div class="fsdocs-tip" id="1039">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>set&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -4346,21 +4231,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.set``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.set``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Set the value of an element in the collection. You can also use the syntax <c>arr.[idx] <- e</c>.
-
+                     Set the value of an element in the collection. You can also use the syntax <c>arr.[idx] <- e</c>.
                   </p>
                 </div>
               </summary>
@@ -4396,7 +4276,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1207', 1207)" onmouseover="showTip(event, '1207', 1207)">
+              <code onmouseout="hideTip(event, '1040', 1040)" onmouseover="showTip(event, '1040', 1040)">
                 <p>
                   <a id="singleton">
                     <a href="#singleton">
@@ -4405,7 +4285,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1207">
+              <div class="fsdocs-tip" id="1040">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>singleton&#32;<span>arg1</span></span></code>
@@ -4437,21 +4317,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.singleton``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.singleton``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return an array containing the given element.
-
+                     Return an array containing the given element.
                   </p>
                 </div>
               </summary>
@@ -4480,7 +4355,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1208', 1208)" onmouseover="showTip(event, '1208', 1208)">
+              <code onmouseout="hideTip(event, '1041', 1041)" onmouseover="showTip(event, '1041', 1041)">
                 <p>
                   <a id="sort">
                     <a href="#sort">
@@ -4489,7 +4364,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1208">
+              <div class="fsdocs-tip" id="1041">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>sort&#32;<span>arg1&#32;arg2</span></span></code>
@@ -4524,21 +4399,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.sort``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.sort``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Sort the elements using the given comparison function.
-
+                     Sort the elements using the given comparison function.
                   </p>
                 </div>
               </summary>
@@ -4566,7 +4436,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1209', 1209)" onmouseover="showTip(event, '1209', 1209)">
+              <code onmouseout="hideTip(event, '1042', 1042)" onmouseover="showTip(event, '1042', 1042)">
                 <p>
                   <a id="sortBy">
                     <a href="#sortBy">
@@ -4575,7 +4445,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1209">
+              <div class="fsdocs-tip" id="1042">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>sortBy&#32;<span>arg1&#32;arg2</span></span></code>
@@ -4610,21 +4480,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.sortBy``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.sortBy``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Sort the elements using the key extractor and generic comparison on the keys.
-
+                     Sort the elements using the key extractor and generic comparison on the keys.
                   </p>
                 </div>
               </summary>
@@ -4652,7 +4517,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1210', 1210)" onmouseover="showTip(event, '1210', 1210)">
+              <code onmouseout="hideTip(event, '1043', 1043)" onmouseover="showTip(event, '1043', 1043)">
                 <p>
                   <a id="sub">
                     <a href="#sub">
@@ -4661,7 +4526,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1210">
+              <div class="fsdocs-tip" id="1043">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>sub&#32;<span>arg1&#32;arg2&#32;arg3</span></span></code>
@@ -4709,22 +4574,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.sub``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.sub``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a new array that contains the given subrange specified by
+                     Build a new array that contains the given subrange specified by
  starting index and length.
-
                   </p>
                 </div>
               </summary>
@@ -4769,7 +4629,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1211', 1211)" onmouseover="showTip(event, '1211', 1211)">
+              <code onmouseout="hideTip(event, '1044', 1044)" onmouseover="showTip(event, '1044', 1044)">
                 <p>
                   <a id="toArray">
                     <a href="#toArray">
@@ -4778,7 +4638,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1211">
+              <div class="fsdocs-tip" id="1044">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>toArray&#32;<span>arg1</span></span></code>
@@ -4810,21 +4670,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.toArray``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.toArray``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return a fixed-length array containing the elements of the input <c>ResizeArray</c>.
-
+                     Return a fixed-length array containing the elements of the input <c>ResizeArray</c>.
                   </p>
                 </div>
               </summary>
@@ -4853,7 +4708,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1212', 1212)" onmouseover="showTip(event, '1212', 1212)">
+              <code onmouseout="hideTip(event, '1045', 1045)" onmouseover="showTip(event, '1045', 1045)">
                 <p>
                   <a id="toList">
                     <a href="#toList">
@@ -4862,7 +4717,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1212">
+              <div class="fsdocs-tip" id="1045">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>toList&#32;<span>arg1</span></span></code>
@@ -4894,21 +4749,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.toList``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.toList``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Build a list from the given array.
-
+                     Build a list from the given array.
                   </p>
                 </div>
               </summary>
@@ -4937,7 +4787,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1213', 1213)" onmouseover="showTip(event, '1213', 1213)">
+              <code onmouseout="hideTip(event, '1046', 1046)" onmouseover="showTip(event, '1046', 1046)">
                 <p>
                   <a id="toSeq">
                     <a href="#toSeq">
@@ -4946,7 +4796,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1213">
+              <div class="fsdocs-tip" id="1046">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>toSeq&#32;<span>arg1</span></span></code>
@@ -4966,7 +4816,7 @@
                   <br/>
                   <span>
                     Returns: 
-                    <code><span>seq&lt;'T&gt;</span></code>
+                    <code><span>'T&#32;seq</span></code>
                   </span>
                   <br/>
                 </div>
@@ -4978,21 +4828,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.toSeq``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.toSeq``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return a view of the array as an enumerable object.
-
+                     Return a view of the array as an enumerable object.
                   </p>
                 </div>
               </summary>
@@ -5011,7 +4856,7 @@
                   <span class="fsdocs-return-name">
                     Returns: 
                   </span>
-                  <code><span>seq&lt;'T&gt;</span></code>
+                  <code><span>'T&#32;seq</span></code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>
@@ -5021,7 +4866,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1214', 1214)" onmouseover="showTip(event, '1214', 1214)">
+              <code onmouseout="hideTip(event, '1047', 1047)" onmouseover="showTip(event, '1047', 1047)">
                 <p>
                   <a id="tryFind">
                     <a href="#tryFind">
@@ -5030,7 +4875,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1214">
+              <div class="fsdocs-tip" id="1047">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>tryFind&#32;<span>arg1&#32;arg2</span></span></code>
@@ -5070,22 +4915,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.tryFind``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.tryFind``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return the first element for which the given function returns True.
+                     Return the first element for which the given function returns True.
  Return None if no such element exists.
-
                   </p>
                 </div>
               </summary>
@@ -5122,7 +4962,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1215', 1215)" onmouseover="showTip(event, '1215', 1215)">
+              <code onmouseout="hideTip(event, '1048', 1048)" onmouseover="showTip(event, '1048', 1048)">
                 <p>
                   <a id="tryFindIndex">
                     <a href="#tryFindIndex">
@@ -5131,7 +4971,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1215">
+              <div class="fsdocs-tip" id="1048">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>tryFindIndex&#32;<span>arg1&#32;arg2</span></span></code>
@@ -5171,22 +5011,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.tryFindIndex``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.tryFindIndex``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return the index of the first element in the array
+                     Return the index of the first element in the array
  that satisfies the given predicate.
-
                   </p>
                 </div>
               </summary>
@@ -5223,7 +5058,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1216', 1216)" onmouseover="showTip(event, '1216', 1216)">
+              <code onmouseout="hideTip(event, '1049', 1049)" onmouseover="showTip(event, '1049', 1049)">
                 <p>
                   <a id="tryFindIndexi">
                     <a href="#tryFindIndexi">
@@ -5232,7 +5067,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1216">
+              <div class="fsdocs-tip" id="1049">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>tryFindIndexi&#32;<span>arg1&#32;arg2</span></span></code>
@@ -5272,22 +5107,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.tryFindIndexi``1```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.tryFindIndexi``1\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Return the index of the first element in the array
+                     Return the index of the first element in the array
  that satisfies the given predicate.
-
                   </p>
                 </div>
               </summary>
@@ -5324,7 +5154,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1217', 1217)" onmouseover="showTip(event, '1217', 1217)">
+              <code onmouseout="hideTip(event, '1050', 1050)" onmouseover="showTip(event, '1050', 1050)">
                 <p>
                   <a id="tryPick">
                     <a href="#tryPick">
@@ -5333,7 +5163,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1217">
+              <div class="fsdocs-tip" id="1050">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>tryPick&#32;<span>arg1&#32;arg2</span></span></code>
@@ -5373,22 +5203,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.tryPick``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.tryPick``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Apply the given function to successive elements, returning the first
+                     Apply the given function to successive elements, returning the first
  result where function returns Some(x) for some x.
-
                   </p>
                 </div>
               </summary>
@@ -5425,7 +5250,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1218', 1218)" onmouseover="showTip(event, '1218', 1218)">
+              <code onmouseout="hideTip(event, '1051', 1051)" onmouseover="showTip(event, '1051', 1051)">
                 <p>
                   <a id="unzip">
                     <a href="#unzip">
@@ -5434,7 +5259,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1218">
+              <div class="fsdocs-tip" id="1051">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>unzip&#32;<span>arg1</span></span></code>
@@ -5466,21 +5291,16 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.unzip``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.unzip``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Split an array of pairs into two arrays.
-
+                     Split an array of pairs into two arrays.
                   </p>
                 </div>
               </summary>
@@ -5509,7 +5329,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1219', 1219)" onmouseover="showTip(event, '1219', 1219)">
+              <code onmouseout="hideTip(event, '1052', 1052)" onmouseover="showTip(event, '1052', 1052)">
                 <p>
                   <a id="zip">
                     <a href="#zip">
@@ -5518,7 +5338,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1219">
+              <div class="fsdocs-tip" id="1052">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>zip&#32;<span>arg1&#32;arg2</span></span></code>
@@ -5558,22 +5378,17 @@
               <summary>
                 <div class="fsdocs-summary">
                   <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.ResizeArrayModule.zip``2```')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
                   </div>
                   <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.ResizeArrayModule.zip``2\'/>')">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
                   </div>
                   <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                    <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                   </a>
                   <p class="fsdocs-summary">
-                    
- Combine the two arrays into an array of pairs. The two arrays must have equal lengths, otherwise an <c>ArgumentException</c> is
+                     Combine the two arrays into an array of pairs. The two arrays must have equal lengths, otherwise an <c>ArgumentException</c> is
  raised..
-
                   </p>
                 </div>
               </summary>
@@ -5620,30 +5435,42 @@
   <div></div>
 </div>
         
-      </div>
-        <div id="push"></div>
-    </main>
-  <script type="module" src="https://fsprojects.github.io/fantomas/content/docs-setup.js"></script>
-  <!-- BEGIN SEARCH BOX: this adds support for the search box -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
-  <script type="text/javascript">var fsdocs_search_baseurl = 'https://fsprojects.github.io/fantomas/';</script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
-  <script type="text/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
-  <!-- END SEARCH BOX: this adds support for the search box -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <script type="module" src="https://fsprojects.github.io/fantomas/content/webcomponents.js"></script>
-  <script type="module">
-      import mermaid from "https://cdn.skypack.dev/mermaid@9.2.2";
-      mermaid.initialize({
-          startOnLoad: true,
-          theme: "base",
-          themeVariables: {
-              primaryColor: '#eff5f7'
-          }
-      });
-  </script>
+    </div>
+</main>
+<aside id="fsdocs-page-menu">
+    <p id="on-this-page">On this page</p>
+    <div class="empty"></div>
+</aside>
+<dialog>
+    <input type="search" placeholder="Search docs" />
+    <div class="results">
+        <ul></ul>
+        <p class="empty">Type something to start searching.</p>
+    </div>
+</dialog>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
+<script type="module">
+    import mermaid from "https://esm.sh/mermaid@9.2.2";
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: "base",
+        themeVariables: {
+            primaryColor: '#338cbb',
+            primaryTextColor: '#FFF',
+            primaryBorderColor: '#5aacd6'
+        }
+    });
+
+    const menuHeaders = [...document.querySelectorAll(".nav-header")].filter(nh => nh.id);
+    menuHeaders.forEach(nv => {
+        nv.addEventListener("click", () => {
+            nv.classList.toggle("active");
+        })
+    })
+</script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/webcomponents.js"></script>
 </body>
 </html>
