@@ -22,6 +22,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
     <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-set-expanded.js"></script>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -302,9 +303,11 @@
   </dl>
   <div class="fsdocs-xmldoc">
     <div>
-      <p class="fsdocs-summary">
-        
-      </p>
+      <div class="fsdocs-summary-contents">
+        <p class="fsdocs-summary">
+          
+        </p>
+      </div>
     </div>
   </div>
   <div></div>
@@ -326,6 +329,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -333,7 +337,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7303', 7303)" onmouseover="showTip(event, '7303', 7303)">
+              <code onmouseout="hideTip(event, '6569', 6569)" onmouseover="showTip(event, '6569', 6569)">
                 <p>
                   <a id="GetByteMemory">
                     <a href="#GetByteMemory">
@@ -342,7 +346,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7303">
+              <div class="fsdocs-tip" id="6569">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.GetByteMemory</span></code>
@@ -358,15 +362,22 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-io-readonlybytememory.html">ReadOnlyByteMemory</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-io-readonlybytememory.html">ReadOnlyByteMemory</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -384,6 +395,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -391,7 +403,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7304', 7304)" onmouseover="showTip(event, '7304', 7304)">
+              <code onmouseout="hideTip(event, '6570', 6570)" onmouseover="showTip(event, '6570', 6570)">
                 <p>
                   <a id="FromByteArray">
                     <a href="#FromByteArray">
@@ -400,7 +412,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7304">
+              <div class="fsdocs-tip" id="6570">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ByteStorage.FromByteArray<span><span>(<span>arg1</span>)</span></span></span></code>
@@ -431,18 +443,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromByteArray`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Creates a ByteStorage whose backing bytes are the given byte array. Does not make a copy.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromByteArray\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromByteArray\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromByteArray`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Creates a ByteStorage whose backing bytes are the given byte array. Does not make a copy.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -470,7 +486,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7305', 7305)" onmouseover="showTip(event, '7305', 7305)">
+              <code onmouseout="hideTip(event, '6571', 6571)" onmouseover="showTip(event, '6571', 6571)">
                 <p>
                   <a id="FromByteArrayAndCopy">
                     <a href="#FromByteArrayAndCopy">
@@ -479,7 +495,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7305">
+              <div class="fsdocs-tip" id="6571">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ByteStorage.FromByteArrayAndCopy<span><span>(<span>arg1,&#32;useBackingMemoryMappedFile</span>)</span></span></span></code>
@@ -518,18 +534,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromByteArrayAndCopy`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Creates a ByteStorage that has a copy of the given byte array.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromByteArrayAndCopy\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromByteArrayAndCopy\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromByteArrayAndCopy`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Creates a ByteStorage that has a copy of the given byte array.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -565,7 +585,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7306', 7306)" onmouseover="showTip(event, '7306', 7306)">
+              <code onmouseout="hideTip(event, '6572', 6572)" onmouseover="showTip(event, '6572', 6572)">
                 <p>
                   <a id="FromByteMemory">
                     <a href="#FromByteMemory">
@@ -574,7 +594,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7306">
+              <div class="fsdocs-tip" id="6572">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ByteStorage.FromByteMemory<span><span>(<span>arg1</span>)</span></span></span></code>
@@ -605,18 +625,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromByteMemory`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Creates a ByteStorage whose backing bytes are the given ByteMemory. Does not make a copy.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromByteMemory\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromByteMemory\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromByteMemory`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Creates a ByteStorage whose backing bytes are the given ByteMemory. Does not make a copy.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -644,7 +668,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7307', 7307)" onmouseover="showTip(event, '7307', 7307)">
+              <code onmouseout="hideTip(event, '6573', 6573)" onmouseover="showTip(event, '6573', 6573)">
                 <p>
                   <a id="FromByteMemoryAndCopy">
                     <a href="#FromByteMemoryAndCopy">
@@ -653,7 +677,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7307">
+              <div class="fsdocs-tip" id="6573">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ByteStorage.FromByteMemoryAndCopy<span><span>(<span>arg1,&#32;useBackingMemoryMappedFile</span>)</span></span></span></code>
@@ -692,18 +716,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromByteMemoryAndCopy`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Creates a ByteStorage that has a copy of the given ByteMemory.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromByteMemoryAndCopy\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromByteMemoryAndCopy\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromByteMemoryAndCopy`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Creates a ByteStorage that has a copy of the given ByteMemory.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -739,7 +767,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7308', 7308)" onmouseover="showTip(event, '7308', 7308)">
+              <code onmouseout="hideTip(event, '6574', 6574)" onmouseover="showTip(event, '6574', 6574)">
                 <p>
                   <a id="FromMemoryAndCopy">
                     <a href="#FromMemoryAndCopy">
@@ -748,7 +776,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7308">
+              <div class="fsdocs-tip" id="6574">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ByteStorage.FromMemoryAndCopy<span><span>(<span>arg1,&#32;useBackingMemoryMappedFile</span>)</span></span></span></code>
@@ -787,18 +815,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromMemoryAndCopy`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Creates a ByteStorage that has a copy of the given Memory<byte>.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromMemoryAndCopy\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.IO.ByteStorage.FromMemoryAndCopy\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.IO.ByteStorage.FromMemoryAndCopy`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Creates a ByteStorage that has a copy of the given Memory<byte>.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -851,6 +883,7 @@
 </dialog>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-toggle.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
 <script type="module">

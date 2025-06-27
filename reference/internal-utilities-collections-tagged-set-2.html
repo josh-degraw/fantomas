@@ -22,6 +22,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
     <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-set-expanded.js"></script>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -312,10 +313,12 @@
   </dl>
   <div class="fsdocs-xmldoc">
     <div>
-      <p class="fsdocs-summary">
-         Immutable sets based on binary trees, default tag
+      <div class="fsdocs-summary-contents">
+        <p class="fsdocs-summary">
+           Immutable sets based on binary trees, default tag
  Immutable sets where a constraint tag carries information about the class of key-comparer being used.
-      </p>
+        </p>
+      </div>
     </div>
   </div>
   <div></div>
@@ -337,6 +340,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -344,7 +348,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8639', 8639)" onmouseover="showTip(event, '8639', 8639)">
+              <code onmouseout="hideTip(event, '7489', 7489)" onmouseover="showTip(event, '7489', 7489)">
                 <p>
                   <a id="Add">
                     <a href="#Add">
@@ -353,7 +357,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8639">
+              <div class="fsdocs-tip" id="7489">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Add</span></code>
@@ -384,20 +388,24 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Add``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
-                  </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Add\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
-                  </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     A useful shortcut for <c>Set.add</c>.  Note this operation produces a new set
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       A useful shortcut for <c>Set.add</c>.  Note this operation produces a new set
  and does not mutate the original set.  The new set will share many storage
  nodes with the original.  See the <c>Set</c> module for further operations on sets.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Add\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Add``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -425,7 +433,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8640', 8640)" onmouseover="showTip(event, '8640', 8640)">
+              <code onmouseout="hideTip(event, '7490', 7490)" onmouseover="showTip(event, '7490', 7490)">
                 <p>
                   <a id="Choose">
                     <a href="#Choose">
@@ -434,7 +442,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8640">
+              <div class="fsdocs-tip" id="7490">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Choose</span></code>
@@ -453,18 +461,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.Choose``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       The number of elements in the set.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.Choose\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.Choose\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.Choose``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     The number of elements in the set.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -482,7 +494,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8641', 8641)" onmouseover="showTip(event, '8641', 8641)">
+              <code onmouseout="hideTip(event, '7491', 7491)" onmouseover="showTip(event, '7491', 7491)">
                 <p>
                   <a id="Contains">
                     <a href="#Contains">
@@ -491,7 +503,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8641">
+              <div class="fsdocs-tip" id="7491">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Contains</span></code>
@@ -522,18 +534,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Contains``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       A useful shortcut for <c>Set.contains</c>.  See the <c>Set</c> module for further operations on sets.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Contains\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Contains\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Contains``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     A useful shortcut for <c>Set.contains</c>.  See the <c>Set</c> module for further operations on sets.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -561,7 +577,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8642', 8642)" onmouseover="showTip(event, '8642', 8642)">
+              <code onmouseout="hideTip(event, '7492', 7492)" onmouseover="showTip(event, '7492', 7492)">
                 <p>
                   <a id="Count">
                     <a href="#Count">
@@ -570,7 +586,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8642">
+              <div class="fsdocs-tip" id="7492">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Count</span></code>
@@ -589,18 +605,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.Count``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Return the number of elements in the set.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.Count\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.Count\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.Count``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Return the number of elements in the set.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -618,7 +638,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8643', 8643)" onmouseover="showTip(event, '8643', 8643)">
+              <code onmouseout="hideTip(event, '7493', 7493)" onmouseover="showTip(event, '7493', 7493)">
                 <p>
                   <a id="Exists">
                     <a href="#Exists">
@@ -627,7 +647,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8643">
+              <div class="fsdocs-tip" id="7493">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Exists</span></code>
@@ -658,20 +678,24 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Exists``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
-                  </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Exists\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
-                  </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Test if any element of the collection satisfies the given predicate.
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Test if any element of the collection satisfies the given predicate.
  If the input function is f and the elements are i0...iN then computes 
  p i0 or ... or p iN.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Exists\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Exists``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -699,7 +723,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8644', 8644)" onmouseover="showTip(event, '8644', 8644)">
+              <code onmouseout="hideTip(event, '7494', 7494)" onmouseover="showTip(event, '7494', 7494)">
                 <p>
                   <a id="Filter">
                     <a href="#Filter">
@@ -708,7 +732,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8644">
+              <div class="fsdocs-tip" id="7494">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Filter</span></code>
@@ -739,19 +763,23 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Filter``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
-                  </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Filter\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
-                  </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Return a new collection containing only the elements of the collection
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Return a new collection containing only the elements of the collection
  for which the given predicate returns True.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Filter\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Filter``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -779,7 +807,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8645', 8645)" onmouseover="showTip(event, '8645', 8645)">
+              <code onmouseout="hideTip(event, '7495', 7495)" onmouseover="showTip(event, '7495', 7495)">
                 <p>
                   <a id="Fold">
                     <a href="#Fold">
@@ -788,7 +816,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8645">
+              <div class="fsdocs-tip" id="7495">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Fold</span></code>
@@ -827,18 +855,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.Collections.Tagged.Set`2.Fold``1```')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Apply the given accumulating function to all the elements of the set.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Fold``1\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Fold``1\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Internal.Utilities.Collections.Tagged.Set`2.Fold``1```')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Apply the given accumulating function to all the elements of the set.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -874,7 +906,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8646', 8646)" onmouseover="showTip(event, '8646', 8646)">
+              <code onmouseout="hideTip(event, '7496', 7496)" onmouseover="showTip(event, '7496', 7496)">
                 <p>
                   <a id="ForAll">
                     <a href="#ForAll">
@@ -883,7 +915,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8646">
+              <div class="fsdocs-tip" id="7496">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ForAll</span></code>
@@ -914,20 +946,24 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.ForAll``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
-                  </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.ForAll\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
-                  </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Test if all elements of the collection satisfy the given predicate.
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Test if all elements of the collection satisfy the given predicate.
  If the input function is f and the elements are i0...iN and j0...jN then 
  computes p i0 && ... && p iN.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.ForAll\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.ForAll``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -955,7 +991,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8647', 8647)" onmouseover="showTip(event, '8647', 8647)">
+              <code onmouseout="hideTip(event, '7497', 7497)" onmouseover="showTip(event, '7497', 7497)">
                 <p>
                   <a id="IsEmpty">
                     <a href="#IsEmpty">
@@ -964,7 +1000,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8647">
+              <div class="fsdocs-tip" id="7497">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsEmpty</span></code>
@@ -983,18 +1019,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.IsEmpty``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       A useful shortcut for <c>Set.isEmpty</c>.  See the <c>Set</c> module for further operations on sets.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.IsEmpty\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.IsEmpty\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.IsEmpty``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     A useful shortcut for <c>Set.isEmpty</c>.  See the <c>Set</c> module for further operations on sets.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -1012,7 +1052,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8648', 8648)" onmouseover="showTip(event, '8648', 8648)">
+              <code onmouseout="hideTip(event, '7498', 7498)" onmouseover="showTip(event, '7498', 7498)">
                 <p>
                   <a id="IsSubsetOf">
                     <a href="#IsSubsetOf">
@@ -1021,7 +1061,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8648">
+              <div class="fsdocs-tip" id="7498">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsSubsetOf</span></code>
@@ -1052,18 +1092,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.IsSubsetOf``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Evaluates to True if all elements of the second set are in the first.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.IsSubsetOf\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.IsSubsetOf\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.IsSubsetOf``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Evaluates to True if all elements of the second set are in the first.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1091,7 +1135,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8649', 8649)" onmouseover="showTip(event, '8649', 8649)">
+              <code onmouseout="hideTip(event, '7499', 7499)" onmouseover="showTip(event, '7499', 7499)">
                 <p>
                   <a id="IsSupersetOf">
                     <a href="#IsSupersetOf">
@@ -1100,7 +1144,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8649">
+              <div class="fsdocs-tip" id="7499">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsSupersetOf</span></code>
@@ -1131,18 +1175,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.IsSupersetOf``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Evaluates to True if all elements of the first set are in the second.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.IsSupersetOf\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.IsSupersetOf\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.IsSupersetOf``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Evaluates to True if all elements of the first set are in the second.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1170,7 +1218,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8650', 8650)" onmouseover="showTip(event, '8650', 8650)">
+              <code onmouseout="hideTip(event, '7500', 7500)" onmouseover="showTip(event, '7500', 7500)">
                 <p>
                   <a id="Iterate">
                     <a href="#Iterate">
@@ -1179,7 +1227,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8650">
+              <div class="fsdocs-tip" id="7500">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Iterate</span></code>
@@ -1205,18 +1253,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Iterate``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Apply the given function to each binding in the collection.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Iterate\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Iterate\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Iterate``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Apply the given function to each binding in the collection.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1235,7 +1287,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8651', 8651)" onmouseover="showTip(event, '8651', 8651)">
+              <code onmouseout="hideTip(event, '7501', 7501)" onmouseover="showTip(event, '7501', 7501)">
                 <p>
                   <a id="MaximumElement">
                     <a href="#MaximumElement">
@@ -1244,7 +1296,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8651">
+              <div class="fsdocs-tip" id="7501">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.MaximumElement</span></code>
@@ -1263,18 +1315,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.MaximumElement``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Returns the highest element in the set according to the ordering being used for the set.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.MaximumElement\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.MaximumElement\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.MaximumElement``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Returns the highest element in the set according to the ordering being used for the set.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -1292,7 +1348,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8652', 8652)" onmouseover="showTip(event, '8652', 8652)">
+              <code onmouseout="hideTip(event, '7502', 7502)" onmouseover="showTip(event, '7502', 7502)">
                 <p>
                   <a id="MinimumElement">
                     <a href="#MinimumElement">
@@ -1301,7 +1357,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8652">
+              <div class="fsdocs-tip" id="7502">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.MinimumElement</span></code>
@@ -1320,18 +1376,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.MinimumElement``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Returns the lowest element in the set according to the ordering being used for the set.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.MinimumElement\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Internal.Utilities.Collections.Tagged.Set`2.MinimumElement\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Internal.Utilities.Collections.Tagged.Set`2.MinimumElement``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Returns the lowest element in the set according to the ordering being used for the set.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -1349,7 +1409,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8653', 8653)" onmouseover="showTip(event, '8653', 8653)">
+              <code onmouseout="hideTip(event, '7503', 7503)" onmouseover="showTip(event, '7503', 7503)">
                 <p>
                   <a id="Partition">
                     <a href="#Partition">
@@ -1358,7 +1418,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8653">
+              <div class="fsdocs-tip" id="7503">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Partition</span></code>
@@ -1389,19 +1449,23 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Partition``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
-                  </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Partition\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
-                  </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Build two new sets, one containing the elements for which the given predicate returns True,
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Build two new sets, one containing the elements for which the given predicate returns True,
  and another with the remaining elements.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Partition\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Partition``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1429,7 +1493,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8654', 8654)" onmouseover="showTip(event, '8654', 8654)">
+              <code onmouseout="hideTip(event, '7504', 7504)" onmouseover="showTip(event, '7504', 7504)">
                 <p>
                   <a id="Remove">
                     <a href="#Remove">
@@ -1438,7 +1502,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8654">
+              <div class="fsdocs-tip" id="7504">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Remove</span></code>
@@ -1469,20 +1533,24 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Remove``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
-                  </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Remove\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
-                  </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     A useful shortcut for <c>Set.remove</c>.  Note this operation produces a new set
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       A useful shortcut for <c>Set.remove</c>.  Note this operation produces a new set
  and does not mutate the original set.  The new set will share many storage
  nodes with the original.  See the <c>Set</c> module for further operations on sets.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Remove\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Remove``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1510,7 +1578,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8655', 8655)" onmouseover="showTip(event, '8655', 8655)">
+              <code onmouseout="hideTip(event, '7505', 7505)" onmouseover="showTip(event, '7505', 7505)">
                 <p>
                   <a id="ToArray">
                     <a href="#ToArray">
@@ -1519,7 +1587,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8655">
+              <div class="fsdocs-tip" id="7505">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ToArray</span></code>
@@ -1538,18 +1606,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.ToArray``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       The elements of the set as an array.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.ToArray\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.ToArray\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.ToArray``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     The elements of the set as an array.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -1567,7 +1639,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8656', 8656)" onmouseover="showTip(event, '8656', 8656)">
+              <code onmouseout="hideTip(event, '7506', 7506)" onmouseover="showTip(event, '7506', 7506)">
                 <p>
                   <a id="ToList">
                     <a href="#ToList">
@@ -1576,7 +1648,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8656">
+              <div class="fsdocs-tip" id="7506">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ToList</span></code>
@@ -1595,18 +1667,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.ToList``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       The elements of the set as a list.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.ToList\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.ToList\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.ToList``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     The elements of the set as a list.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -1636,6 +1712,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -1643,7 +1720,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8657', 8657)" onmouseover="showTip(event, '8657', 8657)">
+              <code onmouseout="hideTip(event, '7507', 7507)" onmouseover="showTip(event, '7507', 7507)">
                 <p>
                   <a id="(+)">
                     <a href="#(+)">
@@ -1652,7 +1729,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8657">
+              <div class="fsdocs-tip" id="7507">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>arg0&#32;+&#32;arg1</span></code>
@@ -1691,18 +1768,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.op_Addition``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Compute the union of the two sets.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.op_Addition\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.op_Addition\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.op_Addition``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Compute the union of the two sets.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1738,7 +1819,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8658', 8658)" onmouseover="showTip(event, '8658', 8658)">
+              <code onmouseout="hideTip(event, '7508', 7508)" onmouseover="showTip(event, '7508', 7508)">
                 <p>
                   <a id="(-)">
                     <a href="#(-)">
@@ -1747,7 +1828,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8658">
+              <div class="fsdocs-tip" id="7508">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>arg0&#32;-&#32;arg1</span></code>
@@ -1786,18 +1867,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.op_Subtraction``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Return a new set with the elements of the second set removed from the first.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.op_Subtraction\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.op_Subtraction\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.op_Subtraction``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Return a new set with the elements of the second set removed from the first.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1833,7 +1918,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8659', 8659)" onmouseover="showTip(event, '8659', 8659)">
+              <code onmouseout="hideTip(event, '7509', 7509)" onmouseover="showTip(event, '7509', 7509)">
                 <p>
                   <a id="Compare">
                     <a href="#Compare">
@@ -1842,7 +1927,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8659">
+              <div class="fsdocs-tip" id="7509">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>Set.Compare<span><span>(<span>a,&#32;b</span>)</span></span></span></code>
@@ -1881,18 +1966,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Compare``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Compares a and b and returns 1 if a > b, -1 if b < a and 0 if a = b.       
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Compare\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Compare\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Compare``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Compares a and b and returns 1 if a > b, -1 if b < a and 0 if a = b.       
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1928,7 +2017,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8660', 8660)" onmouseover="showTip(event, '8660', 8660)">
+              <code onmouseout="hideTip(event, '7510', 7510)" onmouseover="showTip(event, '7510', 7510)">
                 <p>
                   <a id="Create">
                     <a href="#Create">
@@ -1937,7 +2026,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8660">
+              <div class="fsdocs-tip" id="7510">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>Set.Create<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
@@ -1976,18 +2065,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Create``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       A set based on the given comparer containing the given initial elements.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Create\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Create\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Create``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     A set based on the given comparer containing the given initial elements.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2023,7 +2116,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8661', 8661)" onmouseover="showTip(event, '8661', 8661)">
+              <code onmouseout="hideTip(event, '7511', 7511)" onmouseover="showTip(event, '7511', 7511)">
                 <p>
                   <a id="Difference">
                     <a href="#Difference">
@@ -2032,7 +2125,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8661">
+              <div class="fsdocs-tip" id="7511">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>Set.Difference<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
@@ -2071,18 +2164,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Difference``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Return a new set with the elements of the second set removed from the first.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Difference\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Difference\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Difference``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Return a new set with the elements of the second set removed from the first.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2118,7 +2215,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8662', 8662)" onmouseover="showTip(event, '8662', 8662)">
+              <code onmouseout="hideTip(event, '7512', 7512)" onmouseover="showTip(event, '7512', 7512)">
                 <p>
                   <a id="Empty">
                     <a href="#Empty">
@@ -2127,7 +2224,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8662">
+              <div class="fsdocs-tip" id="7512">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>Set.Empty<span><span>(<span>arg1</span>)</span></span></span></code>
@@ -2158,18 +2255,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Empty``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       The empty set based on the given comparer.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Empty\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Empty\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Empty``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     The empty set based on the given comparer.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2197,7 +2298,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8663', 8663)" onmouseover="showTip(event, '8663', 8663)">
+              <code onmouseout="hideTip(event, '7513', 7513)" onmouseover="showTip(event, '7513', 7513)">
                 <p>
                   <a id="Equality">
                     <a href="#Equality">
@@ -2206,7 +2307,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8663">
+              <div class="fsdocs-tip" id="7513">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>Set.Equality<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
@@ -2245,18 +2346,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Equality``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Compares two sets and returns True if they are equal or False otherwise.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Equality\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Equality\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Equality``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Compares two sets and returns True if they are equal or False otherwise.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2292,7 +2397,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8664', 8664)" onmouseover="showTip(event, '8664', 8664)">
+              <code onmouseout="hideTip(event, '7514', 7514)" onmouseover="showTip(event, '7514', 7514)">
                 <p>
                   <a id="Intersection">
                     <a href="#Intersection">
@@ -2301,7 +2406,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8664">
+              <div class="fsdocs-tip" id="7514">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>Set.Intersection<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
@@ -2340,18 +2445,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Intersection``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Compute the intersection of the two sets.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Intersection\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Intersection\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Intersection``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Compute the intersection of the two sets.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2387,7 +2496,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8665', 8665)" onmouseover="showTip(event, '8665', 8665)">
+              <code onmouseout="hideTip(event, '7515', 7515)" onmouseover="showTip(event, '7515', 7515)">
                 <p>
                   <a id="Singleton">
                     <a href="#Singleton">
@@ -2396,7 +2505,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8665">
+              <div class="fsdocs-tip" id="7515">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>Set.Singleton<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
@@ -2435,18 +2544,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Singleton``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       A singleton set based on the given comparison operator.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Singleton\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Singleton\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Singleton``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     A singleton set based on the given comparison operator.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2482,7 +2595,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8666', 8666)" onmouseover="showTip(event, '8666', 8666)">
+              <code onmouseout="hideTip(event, '7516', 7516)" onmouseover="showTip(event, '7516', 7516)">
                 <p>
                   <a id="Union">
                     <a href="#Union">
@@ -2491,7 +2604,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8666">
+              <div class="fsdocs-tip" id="7516">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>Set.Union<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
@@ -2530,18 +2643,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Union``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Compute the union of the two sets.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Union\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.Tagged.Set`2.Union\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.Tagged.Set`2.Union``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Compute the union of the two sets.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2594,6 +2711,7 @@
 </dialog>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-toggle.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
 <script type="module">

@@ -22,6 +22,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
     <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-set-expanded.js"></script>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -302,9 +303,11 @@
   </dl>
   <div class="fsdocs-xmldoc">
     <div>
-      <p class="fsdocs-summary">
-         Represents the full syntax tree, file name and other parsing information for an implementation file
-      </p>
+      <div class="fsdocs-summary-contents">
+        <p class="fsdocs-summary">
+           Represents the full syntax tree, file name and other parsing information for an implementation file
+        </p>
+      </div>
     </div>
   </div>
   <div></div>
@@ -322,6 +325,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -329,7 +333,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7464', 7464)" onmouseover="showTip(event, '7464', 7464)">
+              <code onmouseout="hideTip(event, '6701', 6701)" onmouseover="showTip(event, '6701', 6701)">
                 <p>
                   <a id="ParsedImplFileInput">
                     <a href="#ParsedImplFileInput">
@@ -338,7 +342,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7464">
+              <div class="fsdocs-tip" id="6701">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>ParsedImplFileInput(<span>fileName,&#32;isScript,&#32;qualifiedNameOfFile,&#32;scopedPragmas,&#32;hashDirectives,&#32;contents,&#32;flags,&#32;trivia,&#32;identifiers</span>)</span></code>
@@ -425,80 +429,87 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  fileName
-                </span>
-                :
-                <code>string</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  isScript
-                </span>
-                :
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  qualifiedNameOfFile
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-qualifiednameoffile.html">QualifiedNameOfFile</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  scopedPragmas
-                </span>
-                :
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-scopedpragma.html">ScopedPragma</a>&#32;list</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  hashDirectives
-                </span>
-                :
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-parsedhashdirective.html">ParsedHashDirective</a>&#32;list</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  contents
-                </span>
-                :
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-synmoduleornamespace.html">SynModuleOrNamespace</a>&#32;list</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  flags
-                </span>
-                :
-                <code><span>bool&#32;*&#32;bool</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  trivia
-                </span>
-                :
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-parsedimplfileinputtrivia.html">ParsedImplFileInputTrivia</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  identifiers
-                </span>
-                :
-                <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpset-1">Set</a>&lt;string&gt;</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    fileName
+                  </span>
+                  :
+                  <code>string</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    isScript
+                  </span>
+                  :
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    qualifiedNameOfFile
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-qualifiednameoffile.html">QualifiedNameOfFile</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    scopedPragmas
+                  </span>
+                  :
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-scopedpragma.html">ScopedPragma</a>&#32;list</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    hashDirectives
+                  </span>
+                  :
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-parsedhashdirective.html">ParsedHashDirective</a>&#32;list</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    contents
+                  </span>
+                  :
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-synmoduleornamespace.html">SynModuleOrNamespace</a>&#32;list</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    flags
+                  </span>
+                  :
+                  <code><span>bool&#32;*&#32;bool</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    trivia
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-parsedimplfileinputtrivia.html">ParsedImplFileInputTrivia</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    identifiers
+                  </span>
+                  :
+                  <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpset-1">Set</a>&lt;string&gt;</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -519,6 +530,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -526,7 +538,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7465', 7465)" onmouseover="showTip(event, '7465', 7465)">
+              <code onmouseout="hideTip(event, '6702', 6702)" onmouseover="showTip(event, '6702', 6702)">
                 <p>
                   <a id="Contents">
                     <a href="#Contents">
@@ -535,7 +547,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7465">
+              <div class="fsdocs-tip" id="6702">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Contents</span></code>
@@ -551,21 +563,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-synmoduleornamespace.html">SynModuleOrNamespace</a>&#32;list</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-synmoduleornamespace.html">SynModuleOrNamespace</a>&#32;list</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7466', 7466)" onmouseover="showTip(event, '7466', 7466)">
+              <code onmouseout="hideTip(event, '6703', 6703)" onmouseover="showTip(event, '6703', 6703)">
                 <p>
                   <a id="FileName">
                     <a href="#FileName">
@@ -574,7 +593,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7466">
+              <div class="fsdocs-tip" id="6703">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.FileName</span></code>
@@ -590,21 +609,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>string</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code>string</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7467', 7467)" onmouseover="showTip(event, '7467', 7467)">
+              <code onmouseout="hideTip(event, '6704', 6704)" onmouseover="showTip(event, '6704', 6704)">
                 <p>
                   <a id="HashDirectives">
                     <a href="#HashDirectives">
@@ -613,7 +639,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7467">
+              <div class="fsdocs-tip" id="6704">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.HashDirectives</span></code>
@@ -629,21 +655,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-parsedhashdirective.html">ParsedHashDirective</a>&#32;list</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-parsedhashdirective.html">ParsedHashDirective</a>&#32;list</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7468', 7468)" onmouseover="showTip(event, '7468', 7468)">
+              <code onmouseout="hideTip(event, '6705', 6705)" onmouseover="showTip(event, '6705', 6705)">
                 <p>
                   <a id="IsExe">
                     <a href="#IsExe">
@@ -652,7 +685,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7468">
+              <div class="fsdocs-tip" id="6705">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsExe</span></code>
@@ -668,21 +701,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7469', 7469)" onmouseover="showTip(event, '7469', 7469)">
+              <code onmouseout="hideTip(event, '6706', 6706)" onmouseover="showTip(event, '6706', 6706)">
                 <p>
                   <a id="IsLastCompiland">
                     <a href="#IsLastCompiland">
@@ -691,7 +731,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7469">
+              <div class="fsdocs-tip" id="6706">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsLastCompiland</span></code>
@@ -707,60 +747,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '7470', 7470)" onmouseover="showTip(event, '7470', 7470)">
-                <p>
-                  <a id="IsParsedImplFileInput">
-                    <a href="#IsParsedImplFileInput">
-                      <code><span>this.IsParsedImplFileInput</span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="7470">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>this.IsParsedImplFileInput</span></code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Returns: 
-                    <code>bool</code>
-                  </span>
-                  <br/>
-                </div>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
               </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
             </div>
           </td>
-          <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7471', 7471)" onmouseover="showTip(event, '7471', 7471)">
+              <code onmouseout="hideTip(event, '6707', 6707)" onmouseover="showTip(event, '6707', 6707)">
                 <p>
                   <a id="IsScript">
                     <a href="#IsScript">
@@ -769,7 +777,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7471">
+              <div class="fsdocs-tip" id="6707">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.IsScript</span></code>
@@ -785,21 +793,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7472', 7472)" onmouseover="showTip(event, '7472', 7472)">
+              <code onmouseout="hideTip(event, '6708', 6708)" onmouseover="showTip(event, '6708', 6708)">
                 <p>
                   <a id="QualifiedName">
                     <a href="#QualifiedName">
@@ -808,7 +823,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7472">
+              <div class="fsdocs-tip" id="6708">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.QualifiedName</span></code>
@@ -824,21 +839,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-qualifiednameoffile.html">QualifiedNameOfFile</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-qualifiednameoffile.html">QualifiedNameOfFile</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7473', 7473)" onmouseover="showTip(event, '7473', 7473)">
+              <code onmouseout="hideTip(event, '6709', 6709)" onmouseover="showTip(event, '6709', 6709)">
                 <p>
                   <a id="ScopedPragmas">
                     <a href="#ScopedPragmas">
@@ -847,7 +869,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7473">
+              <div class="fsdocs-tip" id="6709">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ScopedPragmas</span></code>
@@ -863,21 +885,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-scopedpragma.html">ScopedPragma</a>&#32;list</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntax-scopedpragma.html">ScopedPragma</a>&#32;list</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '7474', 7474)" onmouseover="showTip(event, '7474', 7474)">
+              <code onmouseout="hideTip(event, '6710', 6710)" onmouseover="showTip(event, '6710', 6710)">
                 <p>
                   <a id="Trivia">
                     <a href="#Trivia">
@@ -886,7 +915,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="7474">
+              <div class="fsdocs-tip" id="6710">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Trivia</span></code>
@@ -902,15 +931,22 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-parsedimplfileinputtrivia.html">ParsedImplFileInputTrivia</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-parsedimplfileinputtrivia.html">ParsedImplFileInputTrivia</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -934,6 +970,7 @@
 </dialog>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-toggle.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
 <script type="module">

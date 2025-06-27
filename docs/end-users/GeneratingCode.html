@@ -25,6 +25,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
     <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-set-expanded.js"></script>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -538,9 +539,7 @@ type Range =
   | Ident of SingleTextNode
   | KnownDot of SingleTextNode
   | UnknownDot
-  member IsIdent: bool
-  member IsKnownDot: bool
-  member IsUnknownDot: bool
+  member Equals: IdentifierOrDot * IEqualityComparer -&gt; bool
   member Range: range option</div>
 <div class="fsdocs-tip" id="fs18">union case IdentifierOrDot.Ident: SingleTextNode -&gt; IdentifierOrDot</div>
 <div class="fsdocs-tip" id="fs19">type Expr =
@@ -556,25 +555,13 @@ type Range =
   | ArrayOrList of ExprArrayOrListNode
   ...
   static member Node: x: Expr -&gt; Node
-  member HasParentheses: bool
-  member IsAnonStructRecord: bool
-  member IsApp: bool
-  member IsAppLongIdentAndSingleParenArg: bool
-  member IsAppSingleParenArg: bool
-  member IsAppWithLambda: bool
-  member IsArrayOrList: bool
-  member IsBeginEnd: bool
-  member IsChain: bool
-  ...</div>
+  member HasParentheses: bool</div>
 <div class="fsdocs-tip" id="fs20">union case Expr.Constant: Constant -&gt; Expr</div>
 <div class="fsdocs-tip" id="fs21">type Constant =
   | FromText of SingleTextNode
   | Unit of UnitNode
   | Measure of ConstantMeasureNode
-  static member Node: c: Constant -&gt; NodeBase
-  member IsFromText: bool
-  member IsMeasure: bool
-  member IsUnit: bool</div>
+  static member Node: c: Constant -&gt; NodeBase</div>
 <div class="fsdocs-tip" id="fs22">union case Constant.FromText: SingleTextNode -&gt; Constant</div>
 <div class="fsdocs-tip" id="fs23">type ModuleDecl =
   | OpenList of OpenListNode
@@ -588,17 +575,7 @@ type Range =
   | NestedModule of NestedModuleNode
   | TypeDefn of TypeDefn
   ...
-  static member Node: x: ModuleDecl -&gt; Node
-  member IsAttributes: bool
-  member IsDeclExpr: bool
-  member IsException: bool
-  member IsExternBinding: bool
-  member IsHashDirectiveList: bool
-  member IsModuleAbbrev: bool
-  member IsNestedModule: bool
-  member IsOpenList: bool
-  member IsTopLevelBinding: bool
-  ...<br /><em>&lt;summary&gt;
+  static member Node: x: ModuleDecl -&gt; Node<br /><em>&lt;summary&gt;
  Each case in this DU should have a container node
 &lt;/summary&gt;</em></div>
 <div class="fsdocs-tip" id="fs24">union case ModuleDecl.TopLevelBinding: BindingNode -&gt; ModuleDecl</div>
@@ -690,17 +667,7 @@ from Fantomas.FCS.Text<br /><em>&lt;summary&gt;
   | As of PatLeftMiddleRight
   | ListCons of PatLeftMiddleRight
   ...
-  static member Node: x: Pattern -&gt; Node
-  member IsAnds: bool
-  member IsArrayOrList: bool
-  member IsAs: bool
-  member IsConst: bool
-  member IsIsInst: bool
-  member IsListCons: bool
-  member IsLongIdent: bool
-  member IsNamePatPairs: bool
-  member IsNamed: bool
-  ...</div>
+  static member Node: x: Pattern -&gt; Node</div>
 <div class="fsdocs-tip" id="fs50">union case Pattern.Named: PatNamedNode -&gt; Pattern</div>
 <div class="fsdocs-tip" id="fs51">Multiple items<br />type PatNamedNode =
   inherit NodeBase
@@ -781,6 +748,7 @@ from Fantomas.FCS.Text<br /><em>&lt;summary&gt;
 </dialog>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-toggle.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
 <script type="module">

@@ -22,6 +22,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
     <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-set-expanded.js"></script>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -298,14 +299,16 @@
   </dl>
   <div class="fsdocs-xmldoc">
     <div>
-      <p class="fsdocs-summary">
-         A layout is a sequence of strings which have been joined together.
+      <div class="fsdocs-summary-contents">
+        <p class="fsdocs-summary">
+           A layout is a sequence of strings which have been joined together.
  The strings are classified as words, separators and left and right parenthesis.
  This classification determines where spaces are inserted.
  A joint is either unbreakable, breakable or broken.
  If a joint is broken the RHS layout occurs on the next line with optional indentation.
  A layout can be squashed to for given width which forces breaks as required.
-      </p>
+        </p>
+      </div>
     </div>
   </div>
   <div>
@@ -320,6 +323,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -327,7 +331,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '829', 829)" onmouseover="showTip(event, '829', 829)">
+              <code onmouseout="hideTip(event, '879', 879)" onmouseover="showTip(event, '879', 879)">
                 <p>
                   <a id="(++)">
                     <a href="#(++)">
@@ -336,7 +340,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="829">
+              <div class="fsdocs-tip" id="879">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;++&#32;layout2</span></code>
@@ -375,18 +379,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_PlusPlus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join, possible break with indent=0
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_PlusPlus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_PlusPlus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_PlusPlus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join, possible break with indent=0
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -422,7 +430,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '830', 830)" onmouseover="showTip(event, '830', 830)">
+              <code onmouseout="hideTip(event, '880', 880)" onmouseover="showTip(event, '880', 880)">
                 <p>
                   <a id="(--)">
                     <a href="#(--)">
@@ -431,7 +439,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="830">
+              <div class="fsdocs-tip" id="880">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;--&#32;layout2</span></code>
@@ -470,18 +478,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_MinusMinus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join, possible break with indent=1
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_MinusMinus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_MinusMinus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_MinusMinus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join, possible break with indent=1
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -517,7 +529,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '831', 831)" onmouseover="showTip(event, '831', 831)">
+              <code onmouseout="hideTip(event, '881', 881)" onmouseover="showTip(event, '881', 881)">
                 <p>
                   <a id="(---)">
                     <a href="#(---)">
@@ -526,7 +538,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="831">
+              <div class="fsdocs-tip" id="881">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;---&#32;layout2</span></code>
@@ -565,18 +577,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join, possible break with indent=2
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join, possible break with indent=2
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -612,7 +628,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '832', 832)" onmouseover="showTip(event, '832', 832)">
+              <code onmouseout="hideTip(event, '882', 882)" onmouseover="showTip(event, '882', 882)">
                 <p>
                   <a id="(----)">
                     <a href="#(----)">
@@ -621,7 +637,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="832">
+              <div class="fsdocs-tip" id="882">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>arg0&#32;----&#32;arg1</span></code>
@@ -660,18 +676,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinusMinus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       optional break, indent=3
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinusMinus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinusMinus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinusMinus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     optional break, indent=3
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -707,7 +727,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '833', 833)" onmouseover="showTip(event, '833', 833)">
+              <code onmouseout="hideTip(event, '883', 883)" onmouseover="showTip(event, '883', 883)">
                 <p>
                   <a id="(-----)">
                     <a href="#(-----)">
@@ -716,7 +736,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="833">
+              <div class="fsdocs-tip" id="883">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>arg0&#32;-----&#32;arg1</span></code>
@@ -755,18 +775,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinusMinusMinus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       optional break, indent=4
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinusMinusMinus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinusMinusMinus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_MinusMinusMinusMinusMinus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     optional break, indent=4
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -802,7 +826,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '834', 834)" onmouseover="showTip(event, '834', 834)">
+              <code onmouseout="hideTip(event, '884', 884)" onmouseover="showTip(event, '884', 884)">
                 <p>
                   <a id="(@@)">
                     <a href="#(@@)">
@@ -811,7 +835,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="834">
+              <div class="fsdocs-tip" id="884">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;@@&#32;layout2</span></code>
@@ -850,18 +874,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAt`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join broken with ident=0
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAt\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAt\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAt`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join broken with ident=0
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -897,7 +925,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '835', 835)" onmouseover="showTip(event, '835', 835)">
+              <code onmouseout="hideTip(event, '885', 885)" onmouseover="showTip(event, '885', 885)">
                 <p>
                   <a id="(@@-)">
                     <a href="#(@@-)">
@@ -906,7 +934,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="835">
+              <div class="fsdocs-tip" id="885">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;@@-&#32;layout2</span></code>
@@ -945,18 +973,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join broken with ident=1
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join broken with ident=1
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -992,7 +1024,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '836', 836)" onmouseover="showTip(event, '836', 836)">
+              <code onmouseout="hideTip(event, '886', 886)" onmouseover="showTip(event, '886', 886)">
                 <p>
                   <a id="(@@--)">
                     <a href="#(@@--)">
@@ -1001,7 +1033,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="836">
+              <div class="fsdocs-tip" id="886">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;@@--&#32;layout2</span></code>
@@ -1040,18 +1072,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join broken with ident=2
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join broken with ident=2
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1087,7 +1123,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '837', 837)" onmouseover="showTip(event, '837', 837)">
+              <code onmouseout="hideTip(event, '887', 887)" onmouseover="showTip(event, '887', 887)">
                 <p>
                   <a id="(@@---)">
                     <a href="#(@@---)">
@@ -1096,7 +1132,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="837">
+              <div class="fsdocs-tip" id="887">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;@@---&#32;layout2</span></code>
@@ -1135,18 +1171,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinusMinus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join broken with ident=3
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinusMinus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinusMinus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinusMinus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join broken with ident=3
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1182,7 +1222,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '838', 838)" onmouseover="showTip(event, '838', 838)">
+              <code onmouseout="hideTip(event, '888', 888)" onmouseover="showTip(event, '888', 888)">
                 <p>
                   <a id="(@@----)">
                     <a href="#(@@----)">
@@ -1191,7 +1231,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="838">
+              <div class="fsdocs-tip" id="888">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;@@----&#32;layout2</span></code>
@@ -1230,18 +1270,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinusMinusMinus`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join broken with ident=4
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinusMinusMinus\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinusMinusMinus\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_AtAtMinusMinusMinusMinus`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join broken with ident=4
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1277,7 +1321,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '839', 839)" onmouseover="showTip(event, '839', 839)">
+              <code onmouseout="hideTip(event, '889', 889)" onmouseover="showTip(event, '889', 889)">
                 <p>
                   <a id="(^^)">
                     <a href="#(^^)">
@@ -1286,7 +1330,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="839">
+              <div class="fsdocs-tip" id="889">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>layout1&#32;^^&#32;layout2</span></code>
@@ -1325,18 +1369,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_HatHat`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join, unbreakable.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_HatHat\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.op_HatHat\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.op_HatHat`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join, unbreakable.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1372,7 +1420,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '840', 840)" onmouseover="showTip(event, '840', 840)">
+              <code onmouseout="hideTip(event, '890', 890)" onmouseover="showTip(event, '890', 890)">
                 <p>
                   <a id="aboveL">
                     <a href="#aboveL">
@@ -1381,7 +1429,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="840">
+              <div class="fsdocs-tip" id="890">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>aboveL&#32;<span>layout1&#32;layout2</span></span></code>
@@ -1420,18 +1468,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.aboveL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Layout two vertically.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.aboveL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.aboveL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.aboveL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Layout two vertically.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1467,7 +1519,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '841', 841)" onmouseover="showTip(event, '841', 841)">
+              <code onmouseout="hideTip(event, '891', 891)" onmouseover="showTip(event, '891', 891)">
                 <p>
                   <a id="aboveListL">
                     <a href="#aboveListL">
@@ -1476,7 +1528,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="841">
+              <div class="fsdocs-tip" id="891">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>aboveListL&#32;<span>layouts</span></span></code>
@@ -1507,18 +1559,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.aboveListL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Layout list vertically.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.aboveListL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.aboveListL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.aboveListL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Layout list vertically.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1546,7 +1602,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '842', 842)" onmouseover="showTip(event, '842', 842)">
+              <code onmouseout="hideTip(event, '892', 892)" onmouseover="showTip(event, '892', 892)">
                 <p>
                   <a id="braceL">
                     <a href="#braceL">
@@ -1555,7 +1611,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="842">
+              <div class="fsdocs-tip" id="892">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>braceL&#32;<span>layout</span></span></code>
@@ -1586,18 +1642,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.braceL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Wrap braces around layout.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.braceL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.braceL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.braceL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Wrap braces around layout.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1625,7 +1685,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '843', 843)" onmouseover="showTip(event, '843', 843)">
+              <code onmouseout="hideTip(event, '893', 893)" onmouseover="showTip(event, '893', 893)">
                 <p>
                   <a id="bracketL">
                     <a href="#bracketL">
@@ -1634,7 +1694,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="843">
+              <div class="fsdocs-tip" id="893">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>bracketL&#32;<span>layout</span></span></code>
@@ -1665,18 +1725,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.bracketL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Wrap round brackets around Layout.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.bracketL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.bracketL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.bracketL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Wrap round brackets around Layout.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1704,7 +1768,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '844', 844)" onmouseover="showTip(event, '844', 844)">
+              <code onmouseout="hideTip(event, '894', 894)" onmouseover="showTip(event, '894', 894)">
                 <p>
                   <a id="commaListL">
                     <a href="#commaListL">
@@ -1713,7 +1777,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="844">
+              <div class="fsdocs-tip" id="894">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>commaListL&#32;<span>layouts</span></span></code>
@@ -1744,18 +1808,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.commaListL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join layouts into a comma separated list.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.commaListL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.commaListL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.commaListL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join layouts into a comma separated list.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1783,7 +1851,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '845', 845)" onmouseover="showTip(event, '845', 845)">
+              <code onmouseout="hideTip(event, '895', 895)" onmouseover="showTip(event, '895', 895)">
                 <p>
                   <a id="emptyL">
                     <a href="#emptyL">
@@ -1792,7 +1860,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="845">
+              <div class="fsdocs-tip" id="895">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>emptyL&#32;<span></span></span></code>
@@ -1811,18 +1879,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Fantomas.FCS.Text.LayoutModule.emptyL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       The empty layout
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.FCS.Text.LayoutModule.emptyL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.FCS.Text.LayoutModule.emptyL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Fantomas.FCS.Text.LayoutModule.emptyL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     The empty layout
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -1840,7 +1912,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '846', 846)" onmouseover="showTip(event, '846', 846)">
+              <code onmouseout="hideTip(event, '896', 896)" onmouseover="showTip(event, '896', 896)">
                 <p>
                   <a id="endsWithL">
                     <a href="#endsWithL">
@@ -1849,7 +1921,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="846">
+              <div class="fsdocs-tip" id="896">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>endsWithL&#32;<span>text&#32;layout</span></span></code>
@@ -1888,18 +1960,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.endsWithL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Check if the last character in the layout is the given character
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.endsWithL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.endsWithL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.endsWithL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Check if the last character in the layout is the given character
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1935,7 +2011,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '847', 847)" onmouseover="showTip(event, '847', 847)">
+              <code onmouseout="hideTip(event, '897', 897)" onmouseover="showTip(event, '897', 897)">
                 <p>
                   <a id="isEmptyL">
                     <a href="#isEmptyL">
@@ -1944,7 +2020,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="847">
+              <div class="fsdocs-tip" id="897">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>isEmptyL&#32;<span>layout</span></span></code>
@@ -1975,18 +2051,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.isEmptyL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Is it the empty layout?
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.isEmptyL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.isEmptyL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.isEmptyL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Is it the empty layout?
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2014,7 +2094,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '848', 848)" onmouseover="showTip(event, '848', 848)">
+              <code onmouseout="hideTip(event, '898', 898)" onmouseover="showTip(event, '898', 898)">
                 <p>
                   <a id="leftL">
                     <a href="#leftL">
@@ -2023,7 +2103,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="848">
+              <div class="fsdocs-tip" id="898">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>leftL&#32;<span>text</span></span></code>
@@ -2054,18 +2134,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.leftL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       An string which is left  parenthesis (no space on the right).
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.leftL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.leftL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.leftL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     An string which is left  parenthesis (no space on the right).
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2093,7 +2177,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '849', 849)" onmouseover="showTip(event, '849', 849)">
+              <code onmouseout="hideTip(event, '899', 899)" onmouseover="showTip(event, '899', 899)">
                 <p>
                   <a id="listL">
                     <a href="#listL">
@@ -2102,7 +2186,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="849">
+              <div class="fsdocs-tip" id="899">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>listL&#32;<span>selector&#32;value</span></span></code>
@@ -2141,18 +2225,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Fantomas.FCS.Text.LayoutModule.listL``1```')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Layout like an F# list.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.listL``1\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.listL``1\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Fantomas.FCS.Text.LayoutModule.listL``1```')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Layout like an F# list.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2188,7 +2276,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '850', 850)" onmouseover="showTip(event, '850', 850)">
+              <code onmouseout="hideTip(event, '900', 900)" onmouseover="showTip(event, '900', 900)">
                 <p>
                   <a id="objL">
                     <a href="#objL">
@@ -2197,7 +2285,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="850">
+              <div class="fsdocs-tip" id="900">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>objL&#32;<span>value</span></span></code>
@@ -2228,20 +2316,24 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.objL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
-                  </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.objL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
-                  </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     An uninterpreted leaf, to be interpreted into a string
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       An uninterpreted leaf, to be interpreted into a string
  by the layout engine. This allows leaf layouts for numbers, strings and
  other atoms to be customized according to culture.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.objL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.objL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2269,7 +2361,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '851', 851)" onmouseover="showTip(event, '851', 851)">
+              <code onmouseout="hideTip(event, '901', 901)" onmouseover="showTip(event, '901', 901)">
                 <p>
                   <a id="optionL">
                     <a href="#optionL">
@@ -2278,7 +2370,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="851">
+              <div class="fsdocs-tip" id="901">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>optionL&#32;<span>selector&#32;value</span></span></code>
@@ -2317,18 +2409,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Fantomas.FCS.Text.LayoutModule.optionL``1```')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Layout like an F# option.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.optionL``1\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.optionL``1\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Fantomas.FCS.Text.LayoutModule.optionL``1```')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Layout like an F# option.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2364,7 +2460,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '852', 852)" onmouseover="showTip(event, '852', 852)">
+              <code onmouseout="hideTip(event, '902', 902)" onmouseover="showTip(event, '902', 902)">
                 <p>
                   <a id="rightL">
                     <a href="#rightL">
@@ -2373,7 +2469,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="852">
+              <div class="fsdocs-tip" id="902">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>rightL&#32;<span>text</span></span></code>
@@ -2404,18 +2500,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.rightL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       An string which is right parenthesis (no space on the left).
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.rightL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.rightL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.rightL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     An string which is right parenthesis (no space on the left).
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2443,7 +2543,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '853', 853)" onmouseover="showTip(event, '853', 853)">
+              <code onmouseout="hideTip(event, '903', 903)" onmouseover="showTip(event, '903', 903)">
                 <p>
                   <a id="semiListL">
                     <a href="#semiListL">
@@ -2452,7 +2552,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="853">
+              <div class="fsdocs-tip" id="903">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>semiListL&#32;<span>layouts</span></span></code>
@@ -2483,18 +2583,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.semiListL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join layouts into a semi-colon separated list.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.semiListL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.semiListL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.semiListL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join layouts into a semi-colon separated list.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2522,7 +2626,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '854', 854)" onmouseover="showTip(event, '854', 854)">
+              <code onmouseout="hideTip(event, '904', 904)" onmouseover="showTip(event, '904', 904)">
                 <p>
                   <a id="sepL">
                     <a href="#sepL">
@@ -2531,7 +2635,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="854">
+              <div class="fsdocs-tip" id="904">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>sepL&#32;<span>text</span></span></code>
@@ -2562,18 +2666,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.sepL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       An string which requires no spaces either side.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.sepL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.sepL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.sepL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     An string which requires no spaces either side.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2601,7 +2709,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '855', 855)" onmouseover="showTip(event, '855', 855)">
+              <code onmouseout="hideTip(event, '905', 905)" onmouseover="showTip(event, '905', 905)">
                 <p>
                   <a id="sepListL">
                     <a href="#sepListL">
@@ -2610,7 +2718,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="855">
+              <div class="fsdocs-tip" id="905">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>sepListL&#32;<span>layout1&#32;layouts</span></span></code>
@@ -2649,18 +2757,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.sepListL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join layouts into a list separated using the given Layout.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.sepListL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.sepListL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.sepListL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join layouts into a list separated using the given Layout.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2696,7 +2808,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '856', 856)" onmouseover="showTip(event, '856', 856)">
+              <code onmouseout="hideTip(event, '906', 906)" onmouseover="showTip(event, '906', 906)">
                 <p>
                   <a id="spaceListL">
                     <a href="#spaceListL">
@@ -2705,7 +2817,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="856">
+              <div class="fsdocs-tip" id="906">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>spaceListL&#32;<span>layouts</span></span></code>
@@ -2736,18 +2848,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.spaceListL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Join layouts into a space separated list.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.spaceListL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.spaceListL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.spaceListL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Join layouts into a space separated list.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2775,7 +2891,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '857', 857)" onmouseover="showTip(event, '857', 857)">
+              <code onmouseout="hideTip(event, '907', 907)" onmouseover="showTip(event, '907', 907)">
                 <p>
                   <a id="squareBracketL">
                     <a href="#squareBracketL">
@@ -2784,7 +2900,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="857">
+              <div class="fsdocs-tip" id="907">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>squareBracketL&#32;<span>layout</span></span></code>
@@ -2815,18 +2931,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.squareBracketL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Wrap square brackets around layout.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.squareBracketL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.squareBracketL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.squareBracketL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Wrap square brackets around layout.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2854,7 +2974,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '858', 858)" onmouseover="showTip(event, '858', 858)">
+              <code onmouseout="hideTip(event, '908', 908)" onmouseover="showTip(event, '908', 908)">
                 <p>
                   <a id="tagAttrL">
                     <a href="#tagAttrL">
@@ -2863,7 +2983,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="858">
+              <div class="fsdocs-tip" id="908">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>tagAttrL&#32;<span>text&#32;maps&#32;layout</span></span></code>
@@ -2910,18 +3030,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.tagAttrL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       See tagL
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.tagAttrL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.tagAttrL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.tagAttrL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     See tagL
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -2965,7 +3089,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '859', 859)" onmouseover="showTip(event, '859', 859)">
+              <code onmouseout="hideTip(event, '909', 909)" onmouseover="showTip(event, '909', 909)">
                 <p>
                   <a id="tupleL">
                     <a href="#tupleL">
@@ -2974,7 +3098,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="859">
+              <div class="fsdocs-tip" id="909">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>tupleL&#32;<span>layouts</span></span></code>
@@ -3005,18 +3129,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.tupleL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Form tuple of layouts.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.tupleL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.tupleL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.tupleL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Form tuple of layouts.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -3044,7 +3172,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '860', 860)" onmouseover="showTip(event, '860', 860)">
+              <code onmouseout="hideTip(event, '910', 910)" onmouseover="showTip(event, '910', 910)">
                 <p>
                   <a id="unfoldL">
                     <a href="#unfoldL">
@@ -3053,7 +3181,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="860">
+              <div class="fsdocs-tip" id="910">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>unfoldL&#32;<span>selector&#32;folder&#32;state&#32;count</span></span></code>
@@ -3108,20 +3236,24 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Fantomas.FCS.Text.LayoutModule.unfoldL``2```')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
-                  </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.unfoldL``2\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
-                  </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     For limiting layout of list-like sequences (lists,arrays,etc).
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       For limiting layout of list-like sequences (lists,arrays,etc).
  unfold a list of items using (project and z) making layout list via itemL.
  If reach maxLength (before exhausting) then truncate.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.unfoldL``2\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('```cref:M:Fantomas.FCS.Text.LayoutModule.unfoldL``2```')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -3173,7 +3305,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '861', 861)" onmouseover="showTip(event, '861', 861)">
+              <code onmouseout="hideTip(event, '911', 911)" onmouseover="showTip(event, '911', 911)">
                 <p>
                   <a id="wordL">
                     <a href="#wordL">
@@ -3182,7 +3314,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="861">
+              <div class="fsdocs-tip" id="911">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>wordL&#32;<span>text</span></span></code>
@@ -3213,18 +3345,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.wordL`')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       An string leaf
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.wordL\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Text.LayoutModule.wordL\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.FCS.Text.LayoutModule.wordL`')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     An string leaf
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -3277,6 +3413,7 @@
 </dialog>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-toggle.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
 <script type="module">

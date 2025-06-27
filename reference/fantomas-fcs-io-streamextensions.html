@@ -22,6 +22,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
     <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-set-expanded.js"></script>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -298,9 +299,11 @@
   </dl>
   <div class="fsdocs-xmldoc">
     <div>
-      <p class="fsdocs-summary">
-        
-      </p>
+      <div class="fsdocs-summary-contents">
+        <p class="fsdocs-summary">
+          
+        </p>
+      </div>
     </div>
   </div>
   <div></div>
@@ -316,6 +319,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -323,7 +327,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '735', 735)" onmouseover="showTip(event, '735', 735)">
+              <code onmouseout="hideTip(event, '781', 781)" onmouseover="showTip(event, '781', 781)">
                 <p>
                   <a id="AsByteMemory">
                     <a href="#AsByteMemory">
@@ -332,7 +336,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="735">
+              <div class="fsdocs-tip" id="781">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.AsByteMemory</span></code>
@@ -360,35 +364,42 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ()
-                </span>
-                :
-                <code>unit</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-io-bytememory.html">ByteMemory</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ()
+                  </span>
+                  :
+                  <code>unit</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-io-bytememory.html">ByteMemory</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '736', 736)" onmouseover="showTip(event, '736', 736)">
+              <code onmouseout="hideTip(event, '782', 782)" onmouseover="showTip(event, '782', 782)">
                 <p>
                   <a id="GetReader">
                     <a href="#GetReader">
@@ -397,7 +408,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="736">
+              <div class="fsdocs-tip" id="782">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.GetReader</span></code>
@@ -433,43 +444,50 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  codePage
-                </span>
-                :
-                <code><span>int&#32;option</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?retryLocked
-                </span>
-                :
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.streamreader">StreamReader</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    codePage
+                  </span>
+                  :
+                  <code><span>int&#32;option</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?retryLocked
+                  </span>
+                  :
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.io.streamreader">StreamReader</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '737', 737)" onmouseover="showTip(event, '737', 737)">
+              <code onmouseout="hideTip(event, '783', 783)" onmouseover="showTip(event, '783', 783)">
                 <p>
                   <a id="GetWriter">
                     <a href="#GetWriter">
@@ -478,7 +496,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="737">
+              <div class="fsdocs-tip" id="783">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.GetWriter</span></code>
@@ -506,35 +524,42 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?encoding
-                </span>
-                :
-                <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?encoding
+                  </span>
+                  :
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '738', 738)" onmouseover="showTip(event, '738', 738)">
+              <code onmouseout="hideTip(event, '784', 784)" onmouseover="showTip(event, '784', 784)">
                 <p>
                   <a id="ReadAllBytes">
                     <a href="#ReadAllBytes">
@@ -543,7 +568,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="738">
+              <div class="fsdocs-tip" id="784">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ReadAllBytes</span></code>
@@ -571,35 +596,42 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ()
-                </span>
-                :
-                <code>unit</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><span>byte[]</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ()
+                  </span>
+                  :
+                  <code>unit</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span>byte[]</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '739', 739)" onmouseover="showTip(event, '739', 739)">
+              <code onmouseout="hideTip(event, '785', 785)" onmouseover="showTip(event, '785', 785)">
                 <p>
                   <a id="ReadAllLines">
                     <a href="#ReadAllLines">
@@ -608,7 +640,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="739">
+              <div class="fsdocs-tip" id="785">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ReadAllLines</span></code>
@@ -636,35 +668,42 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?encoding
-                </span>
-                :
-                <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><span>string&#32;array</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?encoding
+                  </span>
+                  :
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span>string&#32;array</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '740', 740)" onmouseover="showTip(event, '740', 740)">
+              <code onmouseout="hideTip(event, '786', 786)" onmouseover="showTip(event, '786', 786)">
                 <p>
                   <a id="ReadAllText">
                     <a href="#ReadAllText">
@@ -673,7 +712,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="740">
+              <div class="fsdocs-tip" id="786">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ReadAllText</span></code>
@@ -701,35 +740,42 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?encoding
-                </span>
-                :
-                <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code>string</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?encoding
+                  </span>
+                  :
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code>string</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '741', 741)" onmouseover="showTip(event, '741', 741)">
+              <code onmouseout="hideTip(event, '787', 787)" onmouseover="showTip(event, '787', 787)">
                 <p>
                   <a id="ReadBytes">
                     <a href="#ReadBytes">
@@ -738,7 +784,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="741">
+              <div class="fsdocs-tip" id="787">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ReadBytes</span></code>
@@ -774,43 +820,50 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  start
-                </span>
-                :
-                <code>int</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  len
-                </span>
-                :
-                <code>int</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><span>byte[]</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    start
+                  </span>
+                  :
+                  <code>int</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    len
+                  </span>
+                  :
+                  <code>int</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span>byte[]</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '742', 742)" onmouseover="showTip(event, '742', 742)">
+              <code onmouseout="hideTip(event, '788', 788)" onmouseover="showTip(event, '788', 788)">
                 <p>
                   <a id="ReadLines">
                     <a href="#ReadLines">
@@ -819,7 +872,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="742">
+              <div class="fsdocs-tip" id="788">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ReadLines</span></code>
@@ -847,35 +900,42 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?encoding
-                </span>
-                :
-                <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><span>string&#32;seq</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?encoding
+                  </span>
+                  :
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span>string&#32;seq</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '743', 743)" onmouseover="showTip(event, '743', 743)">
+              <code onmouseout="hideTip(event, '789', 789)" onmouseover="showTip(event, '789', 789)">
                 <p>
                   <a id="Write">
                     <a href="#Write">
@@ -884,7 +944,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="743">
+              <div class="fsdocs-tip" id="789">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Write</span></code>
@@ -907,26 +967,33 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  data
-                </span>
-                :
-                <code>'a</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    data
+                  </span>
+                  :
+                  <code>'a</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '744', 744)" onmouseover="showTip(event, '744', 744)">
+              <code onmouseout="hideTip(event, '790', 790)" onmouseover="showTip(event, '790', 790)">
                 <p>
                   <a id="WriteAllLines">
                     <a href="#WriteAllLines">
@@ -935,7 +1002,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="744">
+              <div class="fsdocs-tip" id="790">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WriteAllLines</span></code>
@@ -966,34 +1033,41 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  contents
-                </span>
-                :
-                <code><span>string&#32;seq</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?encoding
-                </span>
-                :
-                <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    contents
+                  </span>
+                  :
+                  <code><span>string&#32;seq</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?encoding
+                  </span>
+                  :
+                  <code><a href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '745', 745)" onmouseover="showTip(event, '745', 745)">
+              <code onmouseout="hideTip(event, '791', 791)" onmouseover="showTip(event, '791', 791)">
                 <p>
                   <a id="WriteAllText">
                     <a href="#WriteAllText">
@@ -1002,7 +1076,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="745">
+              <div class="fsdocs-tip" id="791">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.WriteAllText</span></code>
@@ -1025,20 +1099,27 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <p>
-              Extended Type: 
-              <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
-            </p>
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  text
-                </span>
-                :
-                <code>string</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <p>
+                Extended Type: 
+                <code><a href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></code>
+              </p>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    text
+                  </span>
+                  :
+                  <code>string</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -1068,6 +1149,7 @@
 </dialog>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-toggle.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
 <script type="module">

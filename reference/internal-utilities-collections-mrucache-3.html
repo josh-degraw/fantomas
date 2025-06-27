@@ -22,6 +22,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
     <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-set-expanded.js"></script>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -331,6 +332,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -338,7 +340,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8595', 8595)" onmouseover="showTip(event, '8595', 8595)">
+              <code onmouseout="hideTip(event, '7445', 7445)" onmouseover="showTip(event, '7445', 7445)">
                 <p>
                   <a id="``.ctor``">
                     <a href="#``.ctor``">
@@ -347,7 +349,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8595">
+              <div class="fsdocs-tip" id="7445">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>MruCache<span><span>(<span>keepStrongly,&#32;areSame,&#32;?isStillValid,&#32;?areSimilar,&#32;?requiredToKeep,&#32;?keepMax</span>)</span></span></span></code>
@@ -415,65 +417,72 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-params">
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  keepStrongly
-                </span>
-                :
-                <code>int</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  areSame
-                </span>
-                :
-                <code><span><span>'Key&#32;*&#32;'Key</span>&#32;->&#32;bool</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?isStillValid
-                </span>
-                :
-                <code><span><span>'Key&#32;*&#32;'Value</span>&#32;->&#32;bool</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?areSimilar
-                </span>
-                :
-                <code><span><span>'Key&#32;*&#32;'Key</span>&#32;->&#32;bool</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?requiredToKeep
-                </span>
-                :
-                <code><span>'Value&#32;->&#32;bool</span></code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-              <dt class="fsdocs-param">
-                <span class="fsdocs-param-name">
-                  ?keepMax
-                </span>
-                :
-                <code>int</code>
-              </dt>
-              <dd class="fsdocs-param-docs"></dd>
-            </dl>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/internal-utilities-collections-mrucache-3.html">MruCache</a>&lt;<span>'Token,&#32;'Key,&#32;'Value</span>&gt;</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    keepStrongly
+                  </span>
+                  :
+                  <code>int</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    areSame
+                  </span>
+                  :
+                  <code><span><span>'Key&#32;*&#32;'Key</span>&#32;->&#32;bool</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?isStillValid
+                  </span>
+                  :
+                  <code><span><span>'Key&#32;*&#32;'Value</span>&#32;->&#32;bool</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?areSimilar
+                  </span>
+                  :
+                  <code><span><span>'Key&#32;*&#32;'Key</span>&#32;->&#32;bool</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?requiredToKeep
+                  </span>
+                  :
+                  <code><span>'Value&#32;->&#32;bool</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    ?keepMax
+                  </span>
+                  :
+                  <code>int</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/internal-utilities-collections-mrucache-3.html">MruCache</a>&lt;<span>'Token,&#32;'Key,&#32;'Value</span>&gt;</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -491,6 +500,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -498,7 +508,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8596', 8596)" onmouseover="showTip(event, '8596', 8596)">
+              <code onmouseout="hideTip(event, '7446', 7446)" onmouseover="showTip(event, '7446', 7446)">
                 <p>
                   <a id="Clear">
                     <a href="#Clear">
@@ -507,7 +517,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8596">
+              <div class="fsdocs-tip" id="7446">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Clear</span></code>
@@ -533,18 +543,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.Clear``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Clear out the cache.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.Clear\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.Clear\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.Clear``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Clear out the cache.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -563,7 +577,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8597', 8597)" onmouseover="showTip(event, '8597', 8597)">
+              <code onmouseout="hideTip(event, '7447', 7447)" onmouseover="showTip(event, '7447', 7447)">
                 <p>
                   <a id="ContainsSimilarKey">
                     <a href="#ContainsSimilarKey">
@@ -572,7 +586,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8597">
+              <div class="fsdocs-tip" id="7447">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.ContainsSimilarKey</span></code>
@@ -611,18 +625,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.ContainsSimilarKey``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Get the similar (subsumable) value for the given key or <c>None</c> if not already available.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.ContainsSimilarKey\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.ContainsSimilarKey\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.ContainsSimilarKey``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Get the similar (subsumable) value for the given key or <c>None</c> if not already available.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -658,7 +676,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8598', 8598)" onmouseover="showTip(event, '8598', 8598)">
+              <code onmouseout="hideTip(event, '7448', 7448)" onmouseover="showTip(event, '7448', 7448)">
                 <p>
                   <a id="RemoveAnySimilar">
                     <a href="#RemoveAnySimilar">
@@ -667,7 +685,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8598">
+              <div class="fsdocs-tip" id="7448">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.RemoveAnySimilar</span></code>
@@ -701,18 +719,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.RemoveAnySimilar``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Remove the given value from the mru cache.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.RemoveAnySimilar\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.RemoveAnySimilar\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.RemoveAnySimilar``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Remove the given value from the mru cache.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -739,7 +761,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8599', 8599)" onmouseover="showTip(event, '8599', 8599)">
+              <code onmouseout="hideTip(event, '7449', 7449)" onmouseover="showTip(event, '7449', 7449)">
                 <p>
                   <a id="Resize">
                     <a href="#Resize">
@@ -748,7 +770,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8599">
+              <div class="fsdocs-tip" id="7449">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Resize</span></code>
@@ -790,18 +812,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.Resize``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Resize
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.Resize\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.Resize\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.Resize``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Resize
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -836,7 +862,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8600', 8600)" onmouseover="showTip(event, '8600', 8600)">
+              <code onmouseout="hideTip(event, '7450', 7450)" onmouseover="showTip(event, '7450', 7450)">
                 <p>
                   <a id="Set">
                     <a href="#Set">
@@ -845,7 +871,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8600">
+              <div class="fsdocs-tip" id="7450">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.Set</span></code>
@@ -887,18 +913,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.Set``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Set the given key.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.Set\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.Set\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.Set``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Set the given key.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -933,7 +963,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8601', 8601)" onmouseover="showTip(event, '8601', 8601)">
+              <code onmouseout="hideTip(event, '7451', 7451)" onmouseover="showTip(event, '7451', 7451)">
                 <p>
                   <a id="TryGet">
                     <a href="#TryGet">
@@ -942,7 +972,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8601">
+              <div class="fsdocs-tip" id="7451">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.TryGet</span></code>
@@ -981,18 +1011,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.TryGet``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Get the value for the given key or None, but only if entry is still valid
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.TryGet\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.TryGet\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.TryGet``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Get the value for the given key or None, but only if entry is still valid
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1028,7 +1062,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8602', 8602)" onmouseover="showTip(event, '8602', 8602)">
+              <code onmouseout="hideTip(event, '7452', 7452)" onmouseover="showTip(event, '7452', 7452)">
                 <p>
                   <a id="TryGetAny">
                     <a href="#TryGetAny">
@@ -1037,7 +1071,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8602">
+              <div class="fsdocs-tip" id="7452">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.TryGetAny</span></code>
@@ -1076,18 +1110,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.TryGetAny``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Get the value for the given key or <c>None</c> if not still valid.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.TryGetAny\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.TryGetAny\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.TryGetAny``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Get the value for the given key or <c>None</c> if not still valid.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1123,7 +1161,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8603', 8603)" onmouseover="showTip(event, '8603', 8603)">
+              <code onmouseout="hideTip(event, '7453', 7453)" onmouseover="showTip(event, '7453', 7453)">
                 <p>
                   <a id="TryGetSimilar">
                     <a href="#TryGetSimilar">
@@ -1132,7 +1170,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8603">
+              <div class="fsdocs-tip" id="7453">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.TryGetSimilar</span></code>
@@ -1171,18 +1209,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.TryGetSimilar``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Get the value for the given key or None, but only if entry is still valid. Skips `areSame` checking unless `areSimilar` is not provided.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.TryGetSimilar\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.TryGetSimilar\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.TryGetSimilar``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Get the value for the given key or None, but only if entry is still valid. Skips `areSame` checking unless `areSimilar` is not provided.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1218,7 +1260,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '8604', 8604)" onmouseover="showTip(event, '8604', 8604)">
+              <code onmouseout="hideTip(event, '7454', 7454)" onmouseover="showTip(event, '7454', 7454)">
                 <p>
                   <a id="TryGetSimilarAny">
                     <a href="#TryGetSimilarAny">
@@ -1227,7 +1269,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="8604">
+              <div class="fsdocs-tip" id="7454">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.TryGetSimilarAny</span></code>
@@ -1266,18 +1308,22 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.TryGetSimilarAny``')">
-                    <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Get the value for the given key or <c>None</c> if not still valid. Skips `areSame` checking unless `areSimilar` is not provided.
+                    </p>
                   </div>
-                  <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.TryGetSimilarAny\'/>')">
-                    <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Internal.Utilities.Collections.MruCache`3.TryGetSimilarAny\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Internal.Utilities.Collections.MruCache`3.TryGetSimilarAny``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
                   </div>
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Get the value for the given key or <c>None</c> if not still valid. Skips `areSame` checking unless `areSimilar` is not provided.
-                  </p>
                 </div>
               </summary>
               <dl class="fsdocs-params">
@@ -1331,6 +1377,7 @@
 </dialog>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-toggle.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
 <script type="module">

@@ -22,6 +22,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fsprojects.github.io/fantomas/images/favicon.ico" rel="icon" sizes="32x32" type="image/png"/>
     <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-set-dark.js"></script>
+    <script type="application/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-set-expanded.js"></script>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-default.css" rel="stylesheet" type="text/css"/>
     <link href="https://fsprojects.github.io/fantomas/content/fsdocs-theme.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -308,9 +309,11 @@
   </dl>
   <div class="fsdocs-xmldoc">
     <div>
-      <p class="fsdocs-summary">
-         The main module of an assembly is a module plus some manifest information.
-      </p>
+      <div class="fsdocs-summary-contents">
+        <p class="fsdocs-summary">
+           The main module of an assembly is a module plus some manifest information.
+        </p>
+      </div>
     </div>
   </div>
   <div></div>
@@ -329,6 +332,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -336,7 +340,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6785', 6785)" onmouseover="showTip(event, '6785', 6785)">
+              <code onmouseout="hideTip(event, '5645', 5645)" onmouseover="showTip(event, '5645', 5645)">
                 <p>
                   <a id="AssemblyLongevity">
                     <a href="#AssemblyLongevity">
@@ -345,7 +349,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6785">
+              <div class="fsdocs-tip" id="5645">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>AssemblyLongevity</code>
@@ -361,21 +365,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilassemblylongevity.html">ILAssemblyLongevity</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilassemblylongevity.html">ILAssemblyLongevity</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6786', 6786)" onmouseover="showTip(event, '6786', 6786)">
+              <code onmouseout="hideTip(event, '5646', 5646)" onmouseover="showTip(event, '5646', 5646)">
                 <p>
                   <a id="AuxModuleHashAlgorithm">
                     <a href="#AuxModuleHashAlgorithm">
@@ -384,7 +395,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6786">
+              <div class="fsdocs-tip" id="5646">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>AuxModuleHashAlgorithm</code>
@@ -403,16 +414,20 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     This is the ID of the algorithm used for the hashes of auxiliary
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       This is the ID of the algorithm used for the hashes of auxiliary
  files in the assembly.   These hashes are stored in the
  <c>ILModuleRef.Hash</c> fields of this assembly. These are not
  cryptographic hashes: they are simple file hashes. The algorithm
  is normally <c>0x00008004</c> indicating the SHA1 hash algorithm.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -430,7 +445,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6787', 6787)" onmouseover="showTip(event, '6787', 6787)">
+              <code onmouseout="hideTip(event, '5647', 5647)" onmouseover="showTip(event, '5647', 5647)">
                 <p>
                   <a id="CustomAttrsStored">
                     <a href="#CustomAttrsStored">
@@ -439,7 +454,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6787">
+              <div class="fsdocs-tip" id="5647">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>CustomAttrsStored</code>
@@ -455,21 +470,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilattributesstored.html">ILAttributesStored</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilattributesstored.html">ILAttributesStored</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6788', 6788)" onmouseover="showTip(event, '6788', 6788)">
+              <code onmouseout="hideTip(event, '5648', 5648)" onmouseover="showTip(event, '5648', 5648)">
                 <p>
                   <a id="DisableJitOptimizations">
                     <a href="#DisableJitOptimizations">
@@ -478,7 +500,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6788">
+              <div class="fsdocs-tip" id="5648">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>DisableJitOptimizations</code>
@@ -494,21 +516,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6789', 6789)" onmouseover="showTip(event, '6789', 6789)">
+              <code onmouseout="hideTip(event, '5649', 5649)" onmouseover="showTip(event, '5649', 5649)">
                 <p>
                   <a id="EntrypointElsewhere">
                     <a href="#EntrypointElsewhere">
@@ -517,7 +546,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6789">
+              <div class="fsdocs-tip" id="5649">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>EntrypointElsewhere</code>
@@ -536,12 +565,16 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Records whether the entrypoint resides in another module.
-                  </p>
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Records whether the entrypoint resides in another module.
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -559,7 +592,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6790', 6790)" onmouseover="showTip(event, '6790', 6790)">
+              <code onmouseout="hideTip(event, '5650', 5650)" onmouseover="showTip(event, '5650', 5650)">
                 <p>
                   <a id="ExportedTypes">
                     <a href="#ExportedTypes">
@@ -568,7 +601,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6790">
+              <div class="fsdocs-tip" id="5650">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>ExportedTypes</code>
@@ -587,13 +620,17 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     Records the types implemented by this assembly in auxiliary
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Records the types implemented by this assembly in auxiliary
  modules.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -611,7 +648,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6791', 6791)" onmouseover="showTip(event, '6791', 6791)">
+              <code onmouseout="hideTip(event, '5651', 5651)" onmouseover="showTip(event, '5651', 5651)">
                 <p>
                   <a id="IgnoreSymbolStoreSequencePoints">
                     <a href="#IgnoreSymbolStoreSequencePoints">
@@ -620,7 +657,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6791">
+              <div class="fsdocs-tip" id="5651">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>IgnoreSymbolStoreSequencePoints</code>
@@ -636,21 +673,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6792', 6792)" onmouseover="showTip(event, '6792', 6792)">
+              <code onmouseout="hideTip(event, '5652', 5652)" onmouseover="showTip(event, '5652', 5652)">
                 <p>
                   <a id="JitTracking">
                     <a href="#JitTracking">
@@ -659,7 +703,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6792">
+              <div class="fsdocs-tip" id="5652">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>JitTracking</code>
@@ -675,21 +719,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6793', 6793)" onmouseover="showTip(event, '6793', 6793)">
+              <code onmouseout="hideTip(event, '5653', 5653)" onmouseover="showTip(event, '5653', 5653)">
                 <p>
                   <a id="Locale">
                     <a href="#Locale">
@@ -698,7 +749,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6793">
+              <div class="fsdocs-tip" id="5653">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>Locale</code>
@@ -714,21 +765,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><span>string&#32;option</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code><span>string&#32;option</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6794', 6794)" onmouseover="showTip(event, '6794', 6794)">
+              <code onmouseout="hideTip(event, '5654', 5654)" onmouseover="showTip(event, '5654', 5654)">
                 <p>
                   <a id="MetadataIndex">
                     <a href="#MetadataIndex">
@@ -737,7 +795,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6794">
+              <div class="fsdocs-tip" id="5654">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>MetadataIndex</code>
@@ -753,21 +811,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>int32</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code>int32</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6795', 6795)" onmouseover="showTip(event, '6795', 6795)">
+              <code onmouseout="hideTip(event, '5655', 5655)" onmouseover="showTip(event, '5655', 5655)">
                 <p>
                   <a id="Name">
                     <a href="#Name">
@@ -776,7 +841,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6795">
+              <div class="fsdocs-tip" id="5655">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>Name</code>
@@ -792,21 +857,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>string</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code>string</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6796', 6796)" onmouseover="showTip(event, '6796', 6796)">
+              <code onmouseout="hideTip(event, '5656', 5656)" onmouseover="showTip(event, '5656', 5656)">
                 <p>
                   <a id="PublicKey">
                     <a href="#PublicKey">
@@ -815,7 +887,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6796">
+              <div class="fsdocs-tip" id="5656">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>PublicKey</code>
@@ -834,16 +906,20 @@
             <details>
               <summary>
                 <div class="fsdocs-summary">
-                  <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                    <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                  </a>
-                  <p class="fsdocs-summary">
-                     This is the public key used to sign this
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       This is the public key used to sign this
  assembly (the signature itself is stored elsewhere: see the
  binary format, and may not have been written if delay signing
  is used).  (member Name, member PublicKey) forms the full
  public name of the assembly.
-                  </p>
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </summary>
               <dl class="fsdocs-returns">
@@ -861,7 +937,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6797', 6797)" onmouseover="showTip(event, '6797', 6797)">
+              <code onmouseout="hideTip(event, '5657', 5657)" onmouseover="showTip(event, '5657', 5657)">
                 <p>
                   <a id="Retargetable">
                     <a href="#Retargetable">
@@ -870,7 +946,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6797">
+              <div class="fsdocs-tip" id="5657">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>Retargetable</code>
@@ -886,21 +962,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6798', 6798)" onmouseover="showTip(event, '6798', 6798)">
+              <code onmouseout="hideTip(event, '5658', 5658)" onmouseover="showTip(event, '5658', 5658)">
                 <p>
                   <a id="SecurityDeclsStored">
                     <a href="#SecurityDeclsStored">
@@ -909,7 +992,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6798">
+              <div class="fsdocs-tip" id="5658">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>SecurityDeclsStored</code>
@@ -925,21 +1008,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilsecuritydeclsstored.html">ILSecurityDeclsStored</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilsecuritydeclsstored.html">ILSecurityDeclsStored</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6799', 6799)" onmouseover="showTip(event, '6799', 6799)">
+              <code onmouseout="hideTip(event, '5659', 5659)" onmouseover="showTip(event, '5659', 5659)">
                 <p>
                   <a id="Version">
                     <a href="#Version">
@@ -948,7 +1038,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6799">
+              <div class="fsdocs-tip" id="5659">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>Version</code>
@@ -964,15 +1054,22 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilversioninfo.html">ILVersionInfo</a>&#32;option</span></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilversioninfo.html">ILVersionInfo</a>&#32;option</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -992,6 +1089,7 @@
           </td>
           <td class="fsdocs-member-list-header">
             Description
+            <fsdocs-details-toggle></fsdocs-details-toggle>
           </td>
         </tr>
       </thead>
@@ -999,7 +1097,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6800', 6800)" onmouseover="showTip(event, '6800', 6800)">
+              <code onmouseout="hideTip(event, '5660', 5660)" onmouseover="showTip(event, '5660', 5660)">
                 <p>
                   <a id="CustomAttrs">
                     <a href="#CustomAttrs">
@@ -1008,7 +1106,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6800">
+              <div class="fsdocs-tip" id="5660">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.CustomAttrs</span></code>
@@ -1024,21 +1122,28 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilattributes.html">ILAttributes</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilattributes.html">ILAttributes</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '6801', 6801)" onmouseover="showTip(event, '6801', 6801)">
+              <code onmouseout="hideTip(event, '5661', 5661)" onmouseover="showTip(event, '5661', 5661)">
                 <p>
                   <a id="SecurityDecls">
                     <a href="#SecurityDecls">
@@ -1047,7 +1152,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="6801">
+              <div class="fsdocs-tip" id="5661">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>this.SecurityDecls</span></code>
@@ -1063,15 +1168,22 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Returns: 
-                </span>
-                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilsecuritydecls.html">ILSecurityDecls</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-abstractil-il-ilsecuritydecls.html">ILSecurityDecls</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -1095,6 +1207,7 @@
 </dialog>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme-toggle.js"></script>
+<script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-details-toggle.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-theme.js"></script>
 <script type="module" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
 <script type="module">
